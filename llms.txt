@@ -12,6 +12,7 @@
 - [소개](https://agentbigboard.com/about.html): 이 사이트가 무엇을 모으고 무엇을 올리지 않는지
 - [선정 기준](https://agentbigboard.com/criteria.html): 채널을 고르는 기준
 - [오늘 읽을 글](https://agentbigboard.com/digests.html): 분야별 당일 해설
+- [자체 글](https://agentbigboard.com/articles.html): 편집부가 직접 쓴 해설
 - [선정 채널](https://agentbigboard.com/channels.html): 고른 사람과 채널 목록
 - [가이드](https://agentbigboard.com/guides.html): 분류별 상시 안내
 - [개인정보](https://agentbigboard.com/privacy.html)
