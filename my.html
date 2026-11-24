@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>내 피드 — 에이전트빅보드</title>
+  <meta name="description" content="즐겨찾기와 오늘 안 읽은 글.">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+  <link rel="canonical" href="https://agentbigboard.com/my.html">
+  <meta property="og:title" content="내 피드 — 에이전트빅보드">
+  <meta property="og:description" content="즐겨찾기와 오늘 안 읽은 글.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="에이전트빅보드">
+  <meta property="og:url" content="https://agentbigboard.com/my.html">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./assets/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="./assets/favicon-180.png">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="./index.html" aria-label="에이전트빅보드"><span class="wordmark">에이전트<span class="wm-accent">빅보드</span></span></a>
+    <div class="top-actions">
+      <button type="button" class="icon-btn" id="searchBtn">검색</button>
+      <button type="button" class="icon-btn" id="themeBtn">어둡게</button>
+    </div>
+  </header>
+  <div class="search-panel" id="searchPanel" hidden>
+    <form id="searchForm" class="search" role="search" action="./index.html" method="get">
+      <label class="sr-only" for="q">검색</label>
+      <input id="q" name="q" type="search" placeholder="사람이나 글 제목을 찾습니다" autocomplete="off">
+    </form>
+  </div>
+  <div class="wrap">
+    <nav class="crumbs"><a href="./index.html">에이전트빅보드</a> <span>/</span> <a href="./my.html">내 피드</a></nav>
+    <div class="layout">
+      <main class="main"><div class="page" id="my-feed">
+  <h1>내 피드</h1>
+  <p class="lead">즐겨찾기와 읽음 표시는 이 브라우저에만 저장됩니다. 서버로 보내지 않습니다.</p>
+  <p class="meta">즐겨찾기 채널 <strong id="fav-count">0</strong> / 오늘 안 읽은 글 <strong id="unread-today">0</strong></p>
+  <p class="actions"><button type="button" id="mark-today" class="icon-btn">오늘 글 모두 읽음</button></p>
+  <section id="fav-channels">
+    <h2>즐겨찾기 채널</h2>
+    <p class="muted" id="fav-empty">아직 즐겨찾기한 채널이 없습니다. 채널 페이지나 글 카드의 버튼을 누르면 여기에 모입니다.</p>
+    <ul id="fav-list"></ul>
+  </section>
+  <section>
+    <h2>즐겨찾기 채널의 새 글</h2>
+    <div class="cards" id="fav-posts"></div>
+  </section>
+</div>
+<script>
+(function(){
+  const favKey="gorneun:favs", readKey="gorneun:read";
+  const favs=new Set(JSON.parse(localStorage.getItem(favKey)||"[]"));
+  const read=new Set(JSON.parse(localStorage.getItem(readKey)||"[]"));
+  const today=(new Date()).toISOString().slice(0,10);
+  function isToday(iso){ return (iso||"").slice(0,10)===today; }
+  fetch("./data/feed.json").then(function(r){ return r.json(); }).then(function(data){
+    const ch={};
+    (data.channels||[]).forEach(function(c){ ch[c.id]=c; });
+    const favCh=[];
+    favs.forEach(function(id){ const c=ch[String(id).replace(/^ch:/,"")]; if(c) favCh.push(c); });
+    document.getElementById("fav-count").textContent=favCh.length;
+    const ul=document.getElementById("fav-list");
+    if(favCh.length){
+      document.getElementById("fav-empty").hidden=true;
+      favCh.forEach(function(c){ const li=document.createElement("li"); li.innerHTML='<a href="./channel-'+c.id+'.html">'+c.name+'</a>'; ul.appendChild(li); });
+    }
+    const posts=(data.posts||[]).filter(function(p){ return favs.has(p.channel_id)||favs.has("ch:"+p.channel_id); });
+    const unreadToday=(data.posts||[]).filter(function(p){ return isToday(p.published)&&!read.has(p.id); });
+    document.getElementById("unread-today").textContent=unreadToday.length;
+    const box=document.getElementById("fav-posts");
+    posts.slice(0,40).forEach(function(p){
+      const c=ch[p.channel_id]||{};
+      const art=document.createElement("article");
+      art.className="card"+(read.has(p.id)?" is-read":"");
+      art.innerHTML='<p class="meta">'+(c.name||"")+'</p><h3><a href="./post-'+p.id+'.html">'+(p.title||"(제목 없음)")+'</a></h3><p class="excerpt">'+(p.excerpt||"")+'</p>';
+      box.appendChild(art);
+    });
+    document.getElementById("mark-today").addEventListener("click", function(){
+      (data.posts||[]).forEach(function(p){ if(isToday(p.published)) read.add(p.id); });
+      localStorage.setItem(readKey, JSON.stringify(Array.from(read)));
+      location.reload();
+    });
+  });
+})();
+</script>
+</main>
+      
+    <aside class="drawer" data-drawer>
+      <h2>내 서랍</h2>
+      <p>담아 둔 사람과 아직 안 읽은 글을 이 기기에서만 모읍니다. 서버로 보내지 않습니다.</p>
+      <a class="btn-block" href="./my.html">서랍 열기</a>
+      <div class="drawer-stats">
+        <span><strong data-saved-count>0</strong>글</span>
+        <span><strong data-unread-count>0</strong>안 읽음</span>
+      </div>
+    </aside>
+    
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="tagline">에이전트빅보드 · 유명인·네임드들의 인사이트를 한곳에 모아 보는 곳</p>
+      <nav>
+        <a href="./about.html">소개</a>
+        <a href="./criteria.html">선정 기준</a>
+        <a href="./guides.html">가이드</a>
+        <a href="./digests.html">오늘 읽을 글</a>
+        <a href="./privacy.html">개인정보</a>
+        <a href="./contact.html">문의</a>
+      </nav>
+      <p>공개 페이지에는 제목과 짧은 소개, 원문 링크, 그리고 에이전트빅보드가 직접 쓴 해설만 있습니다. 원문 전문은 올리지 않습니다. 광고 스크립트는 아직 넣지 않았습니다. 이 시제품은 아직 공개 배포하지 않았습니다.</p>
+    </div>
+  </footer>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

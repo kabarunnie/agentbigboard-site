@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI·테크 — 에이전트빅보드</title>
+  <meta name="description" content="도구·모델·활용 기록">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+  <link rel="canonical" href="https://agentbigboard.com/cat-ai.html">
+  <meta property="og:title" content="AI·테크 — 에이전트빅보드">
+  <meta property="og:description" content="도구·모델·활용 기록">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="에이전트빅보드">
+  <meta property="og:url" content="https://agentbigboard.com/cat-ai.html">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./assets/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="./assets/favicon-180.png">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="./index.html" aria-label="에이전트빅보드"><span class="wordmark">에이전트<span class="wm-accent">빅보드</span></span></a>
+    <div class="top-actions">
+      <button type="button" class="icon-btn" id="searchBtn">검색</button>
+      <button type="button" class="icon-btn" id="themeBtn">어둡게</button>
+    </div>
+  </header>
+  <div class="search-panel" id="searchPanel" hidden>
+    <form id="searchForm" class="search" role="search" action="./index.html" method="get">
+      <label class="sr-only" for="q">검색</label>
+      <input id="q" name="q" type="search" placeholder="사람이나 글 제목을 찾습니다" autocomplete="off">
+    </form>
+  </div>
+  <div class="wrap">
+    <nav class="crumbs"><a href="./index.html">에이전트빅보드</a> <span>/</span> <a href="./cat-ai.html">AI·테크</a></nav>
+    <div class="layout">
+      <main class="main">
+        
+    <div class="pills" role="navigation" aria-label="분류">
+      <a class="pill is-on" href="./index.html" data-filter="all">전체</a>
+      <div class="pill-menu">
+        <button type="button" class="pill" id="catMenuBtn">분류</button>
+        <div class="menu"><a href="./cat-stocks.html">주식·산업분석</a><a href="./cat-macro.html">거시경제</a><a href="./cat-realestate.html">부동산</a><a href="./cat-crypto.html">코인·가상자산</a><a href="./cat-ai.html">AI·테크</a><a href="./cat-startup.html">창업·부업</a><a href="./cat-life.html">생활·소비</a></div>
+      </div>
+      <button type="button" class="pill" data-filter="hot">지금 뜨거운 글</button>
+      <a class="pill" href="./index.html?origin=해외" data-filter="overseas">해외</a>
+      <a class="pill" href="./cat-life.html" data-filter="light">가벼운 글</a>
+    </div>
+    
+        <h1>AI·테크</h1>
+        <p class="lead">도구·모델·활용 기록</p>
+        
+        <p><a class="go" href="./digest-2026-11-24-ai.html">오늘 읽을 글: AI 글, 공식 발표와 개인 해설을 나눠 읽는 법</a></p>
+        <h2 class="section-title">이 분류에서 먼저 볼 사람</h2>
+        <div class="person-grid"><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/temk5102.jpg" alt="" width="44" height="44"><a href="./channel-temk5102.html">정성욱</a></p>
+  <p class="badges-row"><span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">18일 연속</span></p>
+  <p class="who">정성욱의 AI 일잘법 블로그의 작성자로, 채널 제목에 이름이 적혀 있습니다.</p>
+  <p class="why">매일 AI 소식과 사용법을 한국어로 적는 블로그라, 텔레그램 속보와 호흡을 나눠 읽기 좋다.</p>
+  <p class="meta"><span class="chip">AI·테크</span><span class="chip">22 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44"><a href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a></p>
+  <p class="badges-row"><span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span></p>
+  <p class="who">작성자 실명과 약력은 미확인입니다. 공개 피드와 선정 이유로만 소개합니다.</p>
+  <p class="why">모델·에이전트 소식이 매우 잦다. 속보형과 실습형을 섞기 위한 축이다.</p>
+  <p class="meta"><span class="chip">AI·테크</span><span class="chip">23 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/aidailykr.jpg" alt="" width="44" height="44"><a href="./channel-aidailykr.html">AI 데일리 뉴스 채널</a></p>
+  <p class="badges-row"><span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span></p>
+  <p class="who">작성자 실명과 약력은 미확인입니다. 공개 피드와 선정 이유로만 소개합니다.</p>
+  <p class="why">글로벌 AI 뉴스를 짧게 한국어로 큐레이션한다. 매일 아침 훑는 용도.</p>
+  <p class="meta"><span class="chip">AI·테크</span><span class="chip">21 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/ai_masters_community.jpg" alt="" width="44" height="44"><a href="./channel-ai_masters_community.html">AI MASTERS</a></p>
+  <p class="badges-row"><span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span></p>
+  <p class="who">작성자 실명과 약력은 미확인입니다. 공개 피드와 선정 이유로만 소개합니다.</p>
+  <p class="why">도구·기능 소식을 설명과 함께 전한다. 단순 링크 덤프보다 읽히는 문장이 있다.</p>
+  <p class="meta"><span class="chip">AI·테크</span><span class="chip">22 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/diatrain.jpg" alt="" width="44" height="44"><a href="./channel-diatrain.html">💎다이아광산특급열차</a></p>
+  <p class="badges-row"><span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span></p>
+  <p class="who">작성자 실명과 약력은 미확인입니다. 공개 피드와 선정 이유로만 소개합니다.</p>
+  <p class="why">AI 도구·테크 이슈를 자주 올린다. 유명 뉴스 채널과 겹치지 않는 짧은 팁을 고를 때 쓴다.</p>
+  <p class="meta"><span class="chip">AI·테크</span><span class="chip">20 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/web3subin.jpg" alt="" width="44" height="44"><a href="./channel-web3subin.html">ordinary subinium</a></p>
+  <p class="badges-row"><span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">5일 연속</span></p>
+  <p class="who">작성자 실명과 약력은 미확인입니다. 공개 피드와 선정 이유로만 소개합니다.</p>
+  <p class="why">개인 개발자의 도구 사용기라, 미디어 속보와 결이 다르다.</p>
+  <p class="meta"><span class="chip">AI·테크</span><span class="chip">20 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/easynoscamai.jpg" alt="" width="44" height="44"><a href="./channel-easynoscamai.html">이제부터 진짜 AI</a></p>
+  <p class="badges-row"><span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span></p>
+  <p class="who">작성자 실명과 약력은 미확인입니다. 공개 피드와 선정 이유로만 소개합니다.</p>
+  <p class="why">모델·벤치 리뷰에 가깝다. 신제품 홍보 채널과 구분하려고 넣었다.</p>
+  <p class="meta"><span class="chip">AI·테크</span><span class="chip">20 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/ow_openai.png" alt="" width="44" height="44"><a href="./channel-ow_openai.html">OpenAI</a></p>
+  <p class="badges-row"><span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span></p>
+  <p class="who">OpenAI의 공식 연구·제품 블로그입니다.</p>
+  <p class="why">공식 발표 창구. 해석 뉴스레터와 구분해, 무엇이 발표됐는지를 1차로 확인할 때 쓴다.</p>
+  <p class="meta"><span class="origin">해외</span><span class="chip">AI·테크</span><span class="chip">19 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/ow_latentspace.png" alt="" width="44" height="44"><a href="./channel-ow_latentspace.html">Latent Space</a></p>
+  <p class="badges-row"><span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span></p>
+  <p class="who">AI 엔지니어 인터뷰 팟캐스트·뉴스레터입니다. 호스트 실명 표기는 게시마다 확인이 필요합니다.</p>
+  <p class="why">엔지니어 대상 뉴스·인터뷰. 발표 다음의 ‘어떻게 쓰나’를 볼 때 고른다.</p>
+  <p class="meta"><span class="origin">해외</span><span class="chip">AI·테크</span><span class="chip">20 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44"><a href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a></p>
+  <p class="badges-row"><span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span></p>
+  <p class="who">테크 매체의 AI 보도 창구입니다.</p>
+  <p class="why">AI 섹션 속보. 깊이보다 오늘 나온 제목을 훑는 용도다.</p>
+  <p class="meta"><span class="origin">해외</span><span class="chip">AI·테크</span><span class="chip">20 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><span class="avatar-fallback" aria-hidden="true">N</span><a href="./channel-ow_nvidia.html">NVIDIA 블로그</a></p>
+  <p class="badges-row"><span class="badge-today">오늘도 글</span></p>
+  <p class="who">엔비디아(NVIDIA)의 공식 블로그입니다.</p>
+  <p class="why">공식 블로그. 제품 홍보 비중이 있어 선정은 하되 1차 자료로만 쓴다.</p>
+  <p class="meta"><span class="origin">해외</span><span class="chip">AI·테크</span><span class="chip">19 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/ow_google_ai.png" alt="" width="44" height="44"><a href="./channel-ow_google_ai.html">구글 AI 블로그</a></p>
+  <p class="badges-row"><span class="badge-today">오늘도 글</span></p>
+  <p class="who">구글의 공식 AI 연구 블로그입니다.</p>
+  <p class="why">구글의 AI 공식 블로그. 모델·제품 설명을 1차로 볼 때 쓴다.</p>
+  <p class="meta"><span class="origin">해외</span><span class="chip">AI·테크</span><span class="chip">22 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><img class="avatar" src="./static/avatars/ow_mittr.jpg" alt="" width="44" height="44"><a href="./channel-ow_mittr.html">MIT Technology Review</a></p>
+  <p class="badges-row"><span class="badge-today">오늘도 글</span></p>
+  <p class="who">매사추세츠공과대학(MIT)이 발행하는 테크 매체입니다.</p>
+  <p class="why">기술 매체의 취재·해설. 공식 블로그의 톤과 거리가 있다.</p>
+  <p class="meta"><span class="origin">해외</span><span class="chip">AI·테크</span><span class="chip">20 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><span class="avatar-fallback" aria-hidden="true">잭</span><a href="./channel-ow_importai.html">잭 클라크(Jack Clark)</a></p>
+  <p class="badges-row"><span class="badge-today">오늘도 글</span></p>
+  <p class="who">Anthropic 공동창립자이자 Import AI 뉴스레터 저자로 공개 소개되어 있습니다.</p>
+  <p class="why">잭 클라크의 AI 정책·연구 뉴스레터. 공식 발표문만 볼 때 빠지는 맥락을 보충한다.</p>
+  <p class="meta"><span class="origin">해외</span><span class="chip">AI·테크</span><span class="chip">22 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><span class="avatar-fallback" aria-hidden="true">네</span><a href="./channel-ow_interconnects.html">네이선 램버트(Nathan Lambert)</a></p>
+  <p class="badges-row"></p>
+  <p class="who">Interconnects 뉴스레터에서 언어모델 연구·정책을 해설합니다.</p>
+  <p class="why">오픈소스·후훈련을 깊게 쓰는 뉴스레터라, 제품 발표 피드와 짝을 맞춘다.</p>
+  <p class="meta"><span class="origin">해외</span><span class="chip">AI·테크</span><span class="chip">22 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><span class="avatar-fallback" aria-hidden="true">h</span><a href="./channel-honey_box_main.html">honey_box_main</a></p>
+  <p class="badges-row"></p>
+  <p class="who">작성자 실명과 약력은 미확인입니다. 공개 피드와 선정 이유로만 소개합니다.</p>
+  <p class="why">실사용 기록이 중심인 개인 채널. 공개 미리보기 글 수는 적지만 최근 게시가 확인됐다.</p>
+  <p class="meta"><span class="chip">AI·테크</span><span class="chip">20 / 25</span></p>
+</article><article class="person-card">
+  <p class="name"><span class="avatar-fallback" aria-hidden="true">베</span><a href="./channel-ow_benevans.html">베네딕트 에반스(Benedict Evans)</a></p>
+  <p class="badges-row"></p>
+  <p class="who">테크 산업 구조와 플랫폼을 해설하는 애널리스트로 알려져 있습니다.</p>
+  <p class="why">기술 전략 에세이. 빈도는 낮지만 공식 뉴스와 결이 달라 남겨 둔다.</p>
+  <p class="meta"><span class="origin">해외</span><span class="chip">AI·테크</span><span class="chip">19 / 25</span></p>
+</article></div>
+        <h2 class="section-title">최근 글</h2>
+        <div class="cards"><article class="card" data-id="371ae77004e49dcc95c3715f591d1cc78a2614f6" data-channel="aidailykr" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T14:14:24+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aidailykr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aidailykr.html">AI 데일리 뉴스 채널</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T14:14:24+09:00">2026-11-24 14:14 KST</time>
+  </div>
+  <h3><a href="./post-371ae77004e49dcc95c3715f591d1cc78a2614f6.html">(미디어·짧은 게시)</a></h3>
+  <p class="excerpt">발췌를 만들지 못했습니다. 원문에서 확인하세요.</p>
+  <p class="actions">
+    <a class="go" href="./post-371ae77004e49dcc95c3715f591d1cc78a2614f6.html">브리핑</a>
+    <a class="go" href="https://t.me/aidailykr/1108" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aidailykr">담기</button>
+    <button type="button" class="icon-btn read" data-read="371ae77004e49dcc95c3715f591d1cc78a2614f6">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="1de7e324087cbc30b763ca64d7f449102b560682" data-channel="aidailykr" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T14:14:23+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aidailykr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aidailykr.html">AI 데일리 뉴스 채널</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T14:14:23+09:00">2026-11-24 14:14 KST</time>
+  </div>
+  <h3><a href="./post-1de7e324087cbc30b763ca64d7f449102b560682.html">AI 데일리 뉴스 채널 pinned « 📌 오늘의 핵심 · 11월 24일 (화) ⚖️ 규제 · 🔥 HOT · 중요도 9/10 젠슨 황 복귀에 미 의회 초당적…</a></h3>
+  <p class="excerpt">AI 데일리 뉴스 채널 pinned « 📌 오늘의 핵심 · 11월 24일 (화) ⚖️ 규제 · 🔥 HOT · 중요도 9/10 젠슨 황 복귀에 미 의회 초당적 반발…AI 칩 수출 규제 강화 요구 • 미 의회가 엔비디아의 대중국 AI 칩 수출 규제 강화를 요구하며 초당적…</p>
+  <p class="actions">
+    <a class="go" href="./post-1de7e324087cbc30b763ca64d7f449102b560682.html">브리핑</a>
+    <a class="go" href="https://t.me/aidailykr/1106" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aidailykr">담기</button>
+    <button type="button" class="icon-btn read" data-read="1de7e324087cbc30b763ca64d7f449102b560682">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="f2eaae838b31b066de1d636fd71503a1d2c35402" data-channel="aidailykr" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T14:14:23+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aidailykr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aidailykr.html">AI 데일리 뉴스 채널</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T14:14:23+09:00">2026-11-24 14:14 KST</time>
+  </div>
+  <h3><a href="./post-f2eaae838b31b066de1d636fd71503a1d2c35402.html">📡 11월 24일 (화) · 오늘의 AI 뉴스</a></h3>
+  <p class="excerpt">📡 11월 24일 (화) · 오늘의 AI 뉴스 1. ⚖️ 🔥 HOT NYT &quot;앨리스 황, 중국 정보기관과 1년 넘게 접촉&quot;…정부 조사는 계속 젠슨 황 엔비디아 CEO가 복귀했음에도 불구하고 첨단 반도체 유출 및 투자자 기만 의혹에 대한 조사가 지속되고 있다. 2. 📦…</p>
+  <p class="actions">
+    <a class="go" href="./post-f2eaae838b31b066de1d636fd71503a1d2c35402.html">브리핑</a>
+    <a class="go" href="https://t.me/aidailykr/1107" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aidailykr">담기</button>
+    <button type="button" class="icon-btn read" data-read="f2eaae838b31b066de1d636fd71503a1d2c35402">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="68b5ed949c29c7b0f3d9ef74817e6d06c026e6fb" data-channel="aidailykr" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T14:14:21+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aidailykr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aidailykr.html">AI 데일리 뉴스 채널</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T14:14:21+09:00">2026-11-24 14:14 KST</time>
+  </div>
+  <h3><a href="./post-68b5ed949c29c7b0f3d9ef74817e6d06c026e6fb.html">📌 오늘의 핵심 · 11월 24일 (화)</a></h3>
+  <p class="excerpt">📌 오늘의 핵심 · 11월 24일 (화) ⚖️ 규제 · 🔥 HOT · 중요도 9/10 젠슨 황 복귀에 미 의회 초당적 반발…AI 칩 수출 규제 강화 요구 • 미 의회가 엔비디아의 대중국 AI 칩 수출 규제 강화를 요구하며 초당적 반발에 나섰습니다. • 톰 코튼 상원…</p>
+  <p class="actions">
+    <a class="go" href="./post-68b5ed949c29c7b0f3d9ef74817e6d06c026e6fb.html">브리핑</a>
+    <a class="go" href="https://t.me/aidailykr/1105" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aidailykr">담기</button>
+    <button type="button" class="icon-btn read" data-read="68b5ed949c29c7b0f3d9ef74817e6d06c026e6fb">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="056f144f74b339b94935c0e87324d2547eab8afc" data-channel="diatrain" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T14:02:09+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/diatrain.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-diatrain.html">💎다이아광산특급열차</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T14:02:09+09:00">2026-11-24 14:02 KST</time>
+  </div>
+  <h3><a href="./post-056f144f74b339b94935c0e87324d2547eab8afc.html">AI 안경 메타 레이벤 25% 할인!! 이번 달 11/30까지 할인하고 있슴다 무려 17만원 할인 받아서 51만원에 샀네유 ㄷㄷ 참고로 2세대 제품이고 3세…</a></h3>
+  <p class="excerpt">AI 안경 메타 레이벤 25% 할인!! 이번 달 11/30까지 할인하고 있슴다 무려 17만원 할인 받아서 51만원에 샀네유 ㄷㄷ 참고로 2세대 제품이고 3세대랑은 기능적으로는 큰 차이가 없고 오히려 20만원 가량 저렴함다!! 안경점에서 사용해봤는데 생각보다 괜찮네유…</p>
+  <p class="actions">
+    <a class="go" href="./post-056f144f74b339b94935c0e87324d2547eab8afc.html">브리핑</a>
+    <a class="go" href="https://t.me/diatrain/5099" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="diatrain">담기</button>
+    <button type="button" class="icon-btn read" data-read="056f144f74b339b94935c0e87324d2547eab8afc">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="b89418a773ad51450e5ac17151f5f0167ec87d00" data-channel="ai_masters_community" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T13:36:25+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ai_masters_community.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ai_masters_community.html">AI MASTERS</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T13:36:25+09:00">2026-11-24 13:36 KST</time>
+  </div>
+  <h3><a href="./post-b89418a773ad51450e5ac17151f5f0167ec87d00.html">ㄴ 국내에도 메타 AI 안경을 실착 해볼수 있는 안경점들이 꽤 많습니다.</a></h3>
+  <p class="excerpt">ㄴ 국내에도 메타 AI 안경을 실착 해볼수 있는 안경점들이 꽤 많습니다. 이번 블프 할인 (이라는 변명아래) 때 궁금하신분은 한번 써보시고 구매하는걸 추천 드립니다 🙂</p>
+  <p class="actions">
+    <a class="go" href="./post-b89418a773ad51450e5ac17151f5f0167ec87d00.html">브리핑</a>
+    <a class="go" href="https://t.me/ai_masters_community/7998" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ai_masters_community">담기</button>
+    <button type="button" class="icon-btn read" data-read="b89418a773ad51450e5ac17151f5f0167ec87d00">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="bdec53bb8b10d8265a6ac613c6ad4412283be0e4" data-channel="ai_masters_community" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T13:35:31+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ai_masters_community.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ai_masters_community.html">AI MASTERS</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T13:35:31+09:00">2026-11-24 13:35 KST</time>
+  </div>
+  <h3><a href="./post-bdec53bb8b10d8265a6ac613c6ad4412283be0e4.html">AI 안경 메타 레이벤 20% 할인!!</a></h3>
+  <p class="excerpt">AI 안경 메타 레이벤 20% 할인!! 이번 달 11/30까지 할인하고 있슴다 무려 17만원 할인 받아서 51만원에 샀네유 ㄷㄷ 참고로 2세대 제품이고 3세대랑은 기능적으로는 큰 차이가 없고 오히려 20만원 가량 저렴함다!! 안경점에서 사용해봤는데 생각보다 괜찮네유…</p>
+  <p class="actions">
+    <a class="go" href="./post-bdec53bb8b10d8265a6ac613c6ad4412283be0e4.html">브리핑</a>
+    <a class="go" href="https://t.me/ai_masters_community/7996" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ai_masters_community">담기</button>
+    <button type="button" class="icon-btn read" data-read="bdec53bb8b10d8265a6ac613c6ad4412283be0e4">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="e6c34a7cd4e602f0ee0948790a537bb070faed74" data-channel="ow_latentspace" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T13:14:16+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_latentspace.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_latentspace.html">Latent Space</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T13:14:16+09:00">2026-11-24 13:14 KST</time>
+  </div>
+  <h3><a href="./post-e6c34a7cd4e602f0ee0948790a537bb070faed74.html">[AINews] Jensen Is Back! and OpenAI Shows Its Pretraining Curve, joined by Microsoft</a></h3>
+  <p class="excerpt">November 23, 2026 — Nvidia reinstates its founder, and OpenAI publishes its internal loss curve and proposes a shared training limit.</p>
+  <p class="actions">
+    <a class="go" href="./post-e6c34a7cd4e602f0ee0948790a537bb070faed74.html">브리핑</a>
+    <a class="go" href="https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_latentspace">담기</button>
+    <button type="button" class="icon-btn read" data-read="e6c34a7cd4e602f0ee0948790a537bb070faed74">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="20ff428d56ffbe6f0165b398539d367716394466" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T13:05:29+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T13:05:29+09:00">2026-11-24 13:05 KST</time>
+  </div>
+  <h3><a href="./post-20ff428d56ffbe6f0165b398539d367716394466.html">코드 생성 성능을 평가하는 파레토 코드 아레나의 최신 순위가 공개됐습니다.</a></h3>
+  <p class="excerpt">코드 생성 성능을 평가하는 파레토 코드 아레나의 최신 순위가 공개됐습니다. 1. 이번 평가 결과는 기존 터미널 벤치 4.1의 지표와는 다소 차이를 보입니다. 2. Fable 5.2 xHigh 모델이 압도적인 성능으로 1위를 차지하며 경쟁 모델들을 앞섰습니다. 3. G…</p>
+  <p class="actions">
+    <a class="go" href="./post-20ff428d56ffbe6f0165b398539d367716394466.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8196" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="20ff428d56ffbe6f0165b398539d367716394466">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="c9f8560220c5e7f2c26483c566ef170ad925474a" data-channel="ai_masters_community" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T12:33:16+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ai_masters_community.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ai_masters_community.html">AI MASTERS</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T12:33:16+09:00">2026-11-24 12:33 KST</time>
+  </div>
+  <h3><a href="./post-c9f8560220c5e7f2c26483c566ef170ad925474a.html">[ 모두의 AI 개발 3사 주요 전략 ]</a></h3>
+  <p class="excerpt">[ 모두의 AI 개발 3사 주요 전략 ] 을 보면 SK텔레콤이 AI대신 전화 걸기와 예약 기능을 넣겠다고 합니다 (분명 주요 전략이라고 🤔 ) 그런데 어제 뉴스를 보면 법적 지위가 모호해 현장이 혼란스럽다며 통신3사와 네이버가 AI에이전트 전화 응대 거부하겠다고 했는…</p>
+  <p class="actions">
+    <a class="go" href="./post-c9f8560220c5e7f2c26483c566ef170ad925474a.html">브리핑</a>
+    <a class="go" href="https://t.me/ai_masters_community/7995" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ai_masters_community">담기</button>
+    <button type="button" class="icon-btn read" data-read="c9f8560220c5e7f2c26483c566ef170ad925474a">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="c45bdcbbdf0b585404e0c4fad4933eca607470f8" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T11:33:59+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T11:33:59+09:00">2026-11-24 11:33 KST</time>
+  </div>
+  <h3><a href="./post-c45bdcbbdf0b585404e0c4fad4933eca607470f8.html">ChatGPT의 맞춤형 챗봇 기능인 Dots가 유럽 연합 지역에서 정식으로 지원됩니다.</a></h3>
+  <p class="excerpt">ChatGPT의 맞춤형 챗봇 기능인 Dots가 유럽 연합 지역에서 정식으로 지원됩니다. 한국은 비즈니스 플랜도 적용되었습니다. 플러스는 순차 적용중입니다. 1. 유럽 연합 내 ChatGPT 이용자들도 이제 맞춤형 챗봇인 Dots 기능을 사용할 수 있게 됐습니다. 3.…</p>
+  <p class="actions">
+    <a class="go" href="./post-c45bdcbbdf0b585404e0c4fad4933eca607470f8.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8195" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="c45bdcbbdf0b585404e0c4fad4933eca607470f8">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="44a0bdc270ac0047cce7ccba293d3bccfe8e0a8b" data-channel="diatrain" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T11:31:10+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/diatrain.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-diatrain.html">💎다이아광산특급열차</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T11:31:10+09:00">2026-11-24 11:31 KST</time>
+  </div>
+  <h3><a href="./post-44a0bdc270ac0047cce7ccba293d3bccfe8e0a8b.html">나만의 비서, 라라봇 티저 영상 공개!</a></h3>
+  <p class="excerpt">나만의 비서, 라라봇 티저 영상 공개! 어떤식으로 동작하는지 궁금해하시는 형님들이 계셔서 간단한 티저를 만들어봤어용 tailscale로 맥,아이폰,아이패드가 연결되어 어디서든 사용할 수 있고 실시간 통화, 할 일 관리, ivan-os 연동, 그리고 원격제어 기능까지…</p>
+  <p class="actions">
+    <a class="go" href="./post-44a0bdc270ac0047cce7ccba293d3bccfe8e0a8b.html">브리핑</a>
+    <a class="go" href="https://t.me/diatrain/5097" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="diatrain">담기</button>
+    <button type="button" class="icon-btn read" data-read="44a0bdc270ac0047cce7ccba293d3bccfe8e0a8b">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="283738e7987e6ea858dcb6bfe41b584256b01981" data-channel="easynoscamai" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T10:52:02+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/easynoscamai.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-easynoscamai.html">이제부터 진짜 AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T10:52:02+09:00">2026-11-24 10:52 KST</time>
+  </div>
+  <h3><a href="./post-283738e7987e6ea858dcb6bfe41b584256b01981.html">요새 핫한 루프(Loop) 트랜스포머</a></h3>
+  <p class="excerpt">요새 핫한 루프(Loop) 트랜스포머 혁신일까? 링크 중국 LLM 회사인 Z.ai 에서 GLM 5.4를 출시했습니다. 처음으로(일단 공식적으로) 루프 구조를 차용한 트랜스포머 구조를 바탕으로 LLM을 구축했다고 말하고 있습니다. [1] 루프 트랜스포머 구조란? 기존…</p>
+  <p class="actions">
+    <a class="go" href="./post-283738e7987e6ea858dcb6bfe41b584256b01981.html">브리핑</a>
+    <a class="go" href="https://t.me/easynoscamai/1598" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="easynoscamai">담기</button>
+    <button type="button" class="icon-btn read" data-read="283738e7987e6ea858dcb6bfe41b584256b01981">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="f67ba1faaf94b554f8e67889780cde7e424d0d0a" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T10:41:39+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T10:41:39+09:00">2026-11-24 10:41 KST</time>
+  </div>
+  <h3><a href="./post-f67ba1faaf94b554f8e67889780cde7e424d0d0a.html">스타트업 Alljoined가 뇌 활동을 읽어 이미지를 생성하는 AIR-O 모델을 공개했습니다.</a></h3>
+  <p class="excerpt">스타트업 Alljoined가 뇌 활동을 읽어 이미지를 생성하는 AIR-O 모델을 공개했습니다. 1. Alljoined는 전극이 부착된 뇌파 측정용 모자를 통해 뇌 활동을 감지하고, 이를 실시간으로 시각화하는 AIR-O 모델을 선보였습니다. 2. 해당 모델은 학습 과정…</p>
+  <p class="actions">
+    <a class="go" href="./post-f67ba1faaf94b554f8e67889780cde7e424d0d0a.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8194" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="f67ba1faaf94b554f8e67889780cde7e424d0d0a">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="9599f1dafe1d9d0ff8456f568d8f3ae2ef9288aa" data-channel="diatrain" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T09:51:22+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/diatrain.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-diatrain.html">💎다이아광산특급열차</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T09:51:22+09:00">2026-11-24 09:51 KST</time>
+  </div>
+  <h3><a href="./post-9599f1dafe1d9d0ff8456f568d8f3ae2ef9288aa.html">앱 배포하지 않고 아이폰에서 앱 사용하는 방법</a></h3>
+  <p class="excerpt">앱 배포하지 않고 아이폰에서 앱 사용하는 방법 애플이나 안드로이드 개발자 등록 없이 앱을 만들어 쓸 수 있는 방법이 있슴다! 바로 PWA를 사용하는 건데유 저 같은 경우에는 다른 사람에게 배포하는 용도가 아니라 혼자서 쓰는 거라 PWA로도 충분했슴다 저장하고 보십쇼!…</p>
+  <p class="actions">
+    <a class="go" href="./post-9599f1dafe1d9d0ff8456f568d8f3ae2ef9288aa.html">브리핑</a>
+    <a class="go" href="https://t.me/diatrain/5096" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="diatrain">담기</button>
+    <button type="button" class="icon-btn read" data-read="9599f1dafe1d9d0ff8456f568d8f3ae2ef9288aa">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="57a25ca9bba1a1d4ed4d0de637e57251aaa38660" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T09:45:47+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T09:45:47+09:00">2026-11-24 09:45 KST</time>
+  </div>
+  <h3><a href="./post-57a25ca9bba1a1d4ed4d0de637e57251aaa38660.html">젠슨 황 NVIDIA CEO는 AI 시대를 맞아 아이들이 기초 수학을 잊어도 문제없다고 밝혔습니다.</a></h3>
+  <p class="excerpt">젠슨 황 NVIDIA CEO는 AI 시대를 맞아 아이들이 기초 수학을 잊어도 문제없다고 밝혔습니다. 1. 중국 학생 2만 6천 명 대상 연구 결과, AI 도입으로 숙제 점수는 18% 상승했으나 6개월 만에 정기 시험 점수는 20% 하락했습니다. 2. 젠슨 황 CEO는…</p>
+  <p class="actions">
+    <a class="go" href="./post-57a25ca9bba1a1d4ed4d0de637e57251aaa38660.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8193" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="57a25ca9bba1a1d4ed4d0de637e57251aaa38660">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="10ec3a2bc493ded35f2b8eb7d1d54e51ef45905b" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T09:30:32+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T09:30:32+09:00">2026-11-24 09:30 KST</time>
+  </div>
+  <h3><a href="./post-10ec3a2bc493ded35f2b8eb7d1d54e51ef45905b.html">AI 코딩 에이전트로 제품 출시 영상을 제작할 수 있는 무료 도구가 소개됐습니다.</a></h3>
+  <p class="excerpt">AI 코딩 에이전트로 제품 출시 영상을 제작할 수 있는 무료 도구가 소개됐습니다. 주요 영상 제작 도구는 다음과 같습니다. 1. HyperFrames – HTML로 영상을 구성하고 렌더링 https://github.com/heygen-com/hyperframes 2.…</p>
+  <p class="actions">
+    <a class="go" href="./post-10ec3a2bc493ded35f2b8eb7d1d54e51ef45905b.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8192" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="10ec3a2bc493ded35f2b8eb7d1d54e51ef45905b">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="049253c4e6547477c7a0ecf339c0d0495e2f80f4" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T09:18:57+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T09:18:57+09:00">2026-11-24 09:18 KST</time>
+  </div>
+  <h3><a href="./post-049253c4e6547477c7a0ecf339c0d0495e2f80f4.html">애플, 실시간 영상 생성 AI ‘패스트프레임’ 공개...36ms 지연.</a></h3>
+  <p class="excerpt">애플, 실시간 영상 생성 AI ‘패스트프레임’ 공개...36ms 지연. 1. 애플이 실시간 상호작용이 가능한 영상 생성 AI 모델을 공개했다. 영상 생성 과정에서 병목으로 작용하던 디코딩과 캐시 갱신 단계를 최적화해, 엔비디아 B200 GPU 한 장으로 프레임당 36…</p>
+  <p class="actions">
+    <a class="go" href="./post-049253c4e6547477c7a0ecf339c0d0495e2f80f4.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8191" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="049253c4e6547477c7a0ecf339c0d0495e2f80f4">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="186f0a900d4c4cb34beb3fddf9f03d27bda9711b" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T08:35:29+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T08:35:29+09:00">2026-11-24 08:35 KST</time>
+  </div>
+  <h3><a href="./post-186f0a900d4c4cb34beb3fddf9f03d27bda9711b.html">[삼성 이영진] 글로벌 AI/SW 뉴스 🤖 (26/11/24)</a></h3>
+  <p class="excerpt">[삼성 이영진] 글로벌 AI/SW 뉴스 🤖 (26/11/24) ■ 젠슨 황, 캘리포니아 산타클라라 본사로 복귀. 경영진 교체 과정에서 발생한 혼란에 대해 사과하고, 두 번째 CEO 임기에서는 더 나은 모습을 보여주겠다고 약속 ■ 트럼프, 젠슨 황의 엔비디아 CEO 복…</p>
+  <p class="actions">
+    <a class="go" href="./post-186f0a900d4c4cb34beb3fddf9f03d27bda9711b.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8190" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="186f0a900d4c4cb34beb3fddf9f03d27bda9711b">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="145bc1e4263b1381f7a18f5b8f19c79f6e1de164" data-channel="ai_masters_community" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T08:33:05+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ai_masters_community.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ai_masters_community.html">AI MASTERS</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T08:33:05+09:00">2026-11-24 08:33 KST</time>
+  </div>
+  <h3><a href="./post-145bc1e4263b1381f7a18f5b8f19c79f6e1de164.html">[ 힉스필드와 함께 돌아오는 디워 ]</a></h3>
+  <p class="excerpt">[ 힉스필드와 함께 돌아오는 디워 ] 심형래 감독의 전설의 영화 &lt;디워&gt;가 19년 만에 AI로 부활한다고 합니다 🔥 🔥 디워는 최근 해외에서 인기를 받으며 넥플릭스에서 역주행하고 있었는데요 🚀 기존 작품에 30분 분량의 AI 영상을 추가하는 리마스터링 프로젝트이며 제…</p>
+  <p class="actions">
+    <a class="go" href="./post-145bc1e4263b1381f7a18f5b8f19c79f6e1de164.html">브리핑</a>
+    <a class="go" href="https://t.me/ai_masters_community/7994" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ai_masters_community">담기</button>
+    <button type="button" class="icon-btn read" data-read="145bc1e4263b1381f7a18f5b8f19c79f6e1de164">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="18b7f0d561167fb6fe3af9e6394d5c78326e0e7c" data-channel="aidailykr" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T07:30:18+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aidailykr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aidailykr.html">AI 데일리 뉴스 채널</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T07:30:18+09:00">2026-11-24 07:30 KST</time>
+  </div>
+  <h3><a href="./post-18b7f0d561167fb6fe3af9e6394d5c78326e0e7c.html">📌 11월 23일 (월) · 오전 스포트라이트</a></h3>
+  <p class="excerpt">📌 11월 23일 (월) · 오전 스포트라이트 🚀 스타트업 • ⭐ 주목 캐시 우드, 앤트로픽 상장 첫날 9100만달러 베팅…이더리움·솔라나는 팔았다 • ⭐ 주목 &quot;AI 기업들 돈줄 마른다&quot;…일론 머스크, 데이터센터발 자금난 경고 • ⭐ 주목 과기정통부, AI반도체 공…</p>
+  <p class="actions">
+    <a class="go" href="./post-18b7f0d561167fb6fe3af9e6394d5c78326e0e7c.html">브리핑</a>
+    <a class="go" href="https://t.me/aidailykr/1104" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aidailykr">담기</button>
+    <button type="button" class="icon-btn read" data-read="18b7f0d561167fb6fe3af9e6394d5c78326e0e7c">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="4621235fa1c0aef69a4df03a219a62ee0c718faa" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T07:05:50+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T07:05:50+09:00">2026-11-24 07:05 KST</time>
+  </div>
+  <h3><a href="./post-4621235fa1c0aef69a4df03a219a62ee0c718faa.html">Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes</a></h3>
+  <p class="excerpt">As AI-generated code piles up, Anthropic&#x27;s new developer tools aim to eliminate another bottleneck by letting agents handle routine approvals.</p>
+  <p class="actions">
+    <a class="go" href="./post-4621235fa1c0aef69a4df03a219a62ee0c718faa.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="4621235fa1c0aef69a4df03a219a62ee0c718faa">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="baf9983cd1711e57857467ed4bf55bd15dcb5402" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T07:02:05+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T07:02:05+09:00">2026-11-24 07:02 KST</time>
+  </div>
+  <h3><a href="./post-baf9983cd1711e57857467ed4bf55bd15dcb5402.html">Supertake raises $20M to let AI agents turn your market predictions into stock portfolios</a></h3>
+  <p class="excerpt">Think you know where the market is headed? A startup called Supertake lets you put money behind your ideas without having to pick the stocks yourself.</p>
+  <p class="actions">
+    <a class="go" href="./post-baf9983cd1711e57857467ed4bf55bd15dcb5402.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="baf9983cd1711e57857467ed4bf55bd15dcb5402">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="1117069d4193ee3c28ec13096d4e2a0d08cbf92f" data-channel="temk5102" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T06:57:32+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/temk5102.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-temk5102.html">정성욱</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">18일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T06:57:32+09:00">2026-11-24 06:57 KST</time>
+  </div>
+  <h3><a href="./post-1117069d4193ee3c28ec13096d4e2a0d08cbf92f.html">오늘의 경제 이슈: 금리는 오를 차례, 항공권 기름값은 내릴 차례</a></h3>
+  <p class="excerpt">오늘의 경제 이슈 코스피가 이틀 연속 매도 사이드카 속에 3% 넘게 밀렸고, 장이 끝난 뒤 미국 나스닥은 반대로 크게 뛰었습니다. 이번 주는 금리가 오를 차례이고, 기름값은 내릴 차례입니다. (국내 숫자는 11월 23일 월요일 종가, 미국 숫자는 23일 장중 기준입니…</p>
+  <p class="actions">
+    <a class="go" href="./post-1117069d4193ee3c28ec13096d4e2a0d08cbf92f.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/temk5102/224489369670?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="temk5102">담기</button>
+    <button type="button" class="icon-btn read" data-read="1117069d4193ee3c28ec13096d4e2a0d08cbf92f">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="2cb1f3a987f696bd5701c29f262f775557ce8a95" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T06:47:41+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T06:47:41+09:00">2026-11-24 06:47 KST</time>
+  </div>
+  <h3><a href="./post-2cb1f3a987f696bd5701c29f262f775557ce8a95.html">Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal</a></h3>
+  <p class="excerpt">&quot;The mistake has been corrected,&quot; Elon Musk chimed in.</p>
+  <p class="actions">
+    <a class="go" href="./post-2cb1f3a987f696bd5701c29f262f775557ce8a95.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="2cb1f3a987f696bd5701c29f262f775557ce8a95">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="8400c82c0103866347164ce50ec9de66b4fa7095" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T06:25:42+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T06:25:42+09:00">2026-11-24 06:25 KST</time>
+  </div>
+  <h3><a href="./post-8400c82c0103866347164ce50ec9de66b4fa7095.html">Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist</a></h3>
+  <p class="excerpt">Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special…</p>
+  <p class="actions">
+    <a class="go" href="./post-8400c82c0103866347164ce50ec9de66b4fa7095.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="8400c82c0103866347164ce50ec9de66b4fa7095">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="7945d33cd2130d74b01dd5e552f384dd605198d2" data-channel="ow_openai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T06:20:00+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_openai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_openai.html">OpenAI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T06:20:00+09:00">2026-11-24 06:20 KST</time>
+  </div>
+  <h3><a href="./post-7945d33cd2130d74b01dd5e552f384dd605198d2.html">OpenAI and Cisco introduce Shirudo</a></h3>
+  <p class="excerpt">OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.</p>
+  <p class="actions">
+    <a class="go" href="./post-7945d33cd2130d74b01dd5e552f384dd605198d2.html">브리핑</a>
+    <a class="go" href="https://openai.com/index/introducing-shirudo" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_openai">담기</button>
+    <button type="button" class="icon-btn read" data-read="7945d33cd2130d74b01dd5e552f384dd605198d2">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="0ab0def9bc6df205011ba956d5245bfe7e413fea" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T05:38:53+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T05:38:53+09:00">2026-11-24 05:38 KST</time>
+  </div>
+  <h3><a href="./post-0ab0def9bc6df205011ba956d5245bfe7e413fea.html">Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ</a></h3>
+  <p class="excerpt">&quot;I&#x27;m going to be a better CEO the second time around,&quot; Huang told employees.</p>
+  <p class="actions">
+    <a class="go" href="./post-0ab0def9bc6df205011ba956d5245bfe7e413fea.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="0ab0def9bc6df205011ba956d5245bfe7e413fea">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="2b1a5632f09313227cadfb288fa65321d361f335" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T04:14:46+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T04:14:46+09:00">2026-11-24 04:14 KST</time>
+  </div>
+  <h3><a href="./post-2b1a5632f09313227cadfb288fa65321d361f335.html">Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses</a></h3>
+  <p class="excerpt">By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that&#x27;s already within…</p>
+  <p class="actions">
+    <a class="go" href="./post-2b1a5632f09313227cadfb288fa65321d361f335.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="2b1a5632f09313227cadfb288fa65321d361f335">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="4638c7b875fa1b0b63b2e7cfe41d52ac4ae35994" data-channel="temk5102" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T03:33:15+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/temk5102.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-temk5102.html">정성욱</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">18일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T03:33:15+09:00">2026-11-24 03:33 KST</time>
+  </div>
+  <h3><a href="./post-4638c7b875fa1b0b63b2e7cfe41d52ac4ae35994.html">오늘의 AI 이슈: Claude가 쓴 글엔 보이지 않는 워터마크가 남는다…이제 모든 모델에 적용, &#x27;AI로 썼나&#x27; 가릴 수 있는 것과 없는 것, 검사 도구로 직접 확인한 결과</a></h3>
+  <p class="excerpt">#AI워터마크 #Claude #클로드 #SynthID #AI탐지 #ChatGPT #Gemini #직장인AI활용법 #브릿지AI에듀코칭센터 클로드(Claude)가 쓴 글에는 눈에 보이지 않는 &#x27;워터마크&#x27;가 들어갑니다. 2026년 8월 이후 나온 새 모델부터 적용되던 이…</p>
+  <p class="actions">
+    <a class="go" href="./post-4638c7b875fa1b0b63b2e7cfe41d52ac4ae35994.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/temk5102/224489276414?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="temk5102">담기</button>
+    <button type="button" class="icon-btn read" data-read="4638c7b875fa1b0b63b2e7cfe41d52ac4ae35994">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="ee05861ae4986228428df1be73749d0264250e3b" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T03:12:22+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T03:12:22+09:00">2026-11-24 03:12 KST</time>
+  </div>
+  <h3><a href="./post-ee05861ae4986228428df1be73749d0264250e3b.html">Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO</a></h3>
+  <p class="excerpt">The public hearing follows bipartisan calls for Huang to testify about the affair with the suspected Chinese spy.</p>
+  <p class="actions">
+    <a class="go" href="./post-ee05861ae4986228428df1be73749d0264250e3b.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="ee05861ae4986228428df1be73749d0264250e3b">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="76f18b921a5f51da157aa6bb83f70731466af5a4" data-channel="ow_mittr" data-cat="ai" data-origin="해외" data-hot="0" data-today="1" data-published="2026-11-24T02:36:08+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_mittr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_mittr.html">MIT Technology Review</a> <span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T02:36:08+09:00">2026-11-24 02:36 KST</time>
+  </div>
+  <h3><a href="./post-76f18b921a5f51da157aa6bb83f70731466af5a4.html">A legendary philosopher isn’t buying Anthropic’s consciousness argument</a></h3>
+  <p class="excerpt">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before goin…</p>
+  <p class="actions">
+    <a class="go" href="./post-76f18b921a5f51da157aa6bb83f70731466af5a4.html">브리핑</a>
+    <a class="go" href="https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_mittr">담기</button>
+    <button type="button" class="icon-btn read" data-read="76f18b921a5f51da157aa6bb83f70731466af5a4">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="49b7ea344c01371917dcc1d99f8b2c1bf76ae506" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T02:14:23+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T02:14:23+09:00">2026-11-24 02:14 KST</time>
+  </div>
+  <h3><a href="./post-49b7ea344c01371917dcc1d99f8b2c1bf76ae506.html">Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips</a></h3>
+  <p class="excerpt">Amazon is acquiring Decart’s AI optimization technology and research team in a reported $7.5 billion deal.</p>
+  <p class="actions">
+    <a class="go" href="./post-49b7ea344c01371917dcc1d99f8b2c1bf76ae506.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="49b7ea344c01371917dcc1d99f8b2c1bf76ae506">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="8bb284fe81b69efd02de118fb0d6498eb5f3658b" data-channel="ow_nvidia" data-cat="ai" data-origin="해외" data-hot="0" data-today="1" data-published="2026-11-24T02:00:08+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">N</span>
+    <a class="badge" href="./channel-ow_nvidia.html">NVIDIA 블로그</a> <span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T02:00:08+09:00">2026-11-24 02:00 KST</time>
+  </div>
+  <h3><a href="./post-8bb284fe81b69efd02de118fb0d6498eb5f3658b.html">Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season</a></h3>
+  <p class="excerpt">The elves don’t have to be the only ones busy in the workshop this holiday season. With the lights twinkling and the gift wrap out, it’s the perfect…</p>
+  <p class="actions">
+    <a class="go" href="./post-8bb284fe81b69efd02de118fb0d6498eb5f3658b.html">브리핑</a>
+    <a class="go" href="https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_nvidia">담기</button>
+    <button type="button" class="icon-btn read" data-read="8bb284fe81b69efd02de118fb0d6498eb5f3658b">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="654c14bf1edbfcec6ea62ac24a2ba7309e44b3f5" data-channel="ow_google_ai" data-cat="ai" data-origin="해외" data-hot="0" data-today="1" data-published="2026-11-24T02:00:00+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_google_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_google_ai.html">구글 AI 블로그</a> <span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T02:00:00+09:00">2026-11-24 02:00 KST</time>
+  </div>
+  <h3><a href="./post-654c14bf1edbfcec6ea62ac24a2ba7309e44b3f5.html">A more tailored Google Search that’s uniquely yours</a></h3>
+  <p class="excerpt">&lt;img src=&quot;https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_pContext_Drive_1118.max-600x600.format-webp.webp&quot;&gt;Get more helpful Sea…</p>
+  <p class="actions">
+    <a class="go" href="./post-654c14bf1edbfcec6ea62ac24a2ba7309e44b3f5.html">브리핑</a>
+    <a class="go" href="https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_google_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="654c14bf1edbfcec6ea62ac24a2ba7309e44b3f5">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="5e28af54f2e57271e82ea7b6d818001eec15f43d" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T01:57:40+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T01:57:40+09:00">2026-11-24 01:57 KST</time>
+  </div>
+  <h3><a href="./post-5e28af54f2e57271e82ea7b6d818001eec15f43d.html">Jensen Huang isn’t out of the woods yet</a></h3>
+  <p class="excerpt">Tech leaders should be clear-eyed about all the problems likely to come with Huang&#x27;s reinstatement.</p>
+  <p class="actions">
+    <a class="go" href="./post-5e28af54f2e57271e82ea7b6d818001eec15f43d.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="5e28af54f2e57271e82ea7b6d818001eec15f43d">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="078c2fc056eed86c76c300a448da56153fd53457" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T01:39:10+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T01:39:10+09:00">2026-11-24 01:39 KST</time>
+  </div>
+  <h3><a href="./post-078c2fc056eed86c76c300a448da56153fd53457.html">Trump reportedly called into Nvidia board meeting to advocate for Huang’s return</a></h3>
+  <p class="excerpt">&quot;I spoke to them, let me put it that way … And I convinced them,&quot; the president told CNBC.</p>
+  <p class="actions">
+    <a class="go" href="./post-078c2fc056eed86c76c300a448da56153fd53457.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="078c2fc056eed86c76c300a448da56153fd53457">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="6249a1b6f553cd7bcd473455db3b2566aecb707d" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T00:35:23+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T00:35:23+09:00">2026-11-24 00:35 KST</time>
+  </div>
+  <h3><a href="./post-6249a1b6f553cd7bcd473455db3b2566aecb707d.html">생각만으로 GTA 6에서 비행기를 조종한 실험이 화제입니다.</a></h3>
+  <p class="excerpt">생각만으로 GTA 6에서 비행기를 조종한 실험이 화제입니다. 스트리머 페리카리얼(Perrikaryal)은 EEG 헤드셋으로 뇌 활동 신호를 측정하고, 이를 가상 게임패드의 버튼 입력으로 변환하는 프로그램을 활용했습니다. 카메라와 이동 조작에는 시선 추적과 자이로스코프…</p>
+  <p class="actions">
+    <a class="go" href="./post-6249a1b6f553cd7bcd473455db3b2566aecb707d.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8189" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="6249a1b6f553cd7bcd473455db3b2566aecb707d">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="6c4ae07be6eab02a462de1076c1d408d2920ee03" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T00:29:14+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T00:29:14+09:00">2026-11-24 00:29 KST</time>
+  </div>
+  <h3><a href="./post-6c4ae07be6eab02a462de1076c1d408d2920ee03.html">Gemini 앱으로 이미지 생성 및 편집 - 컴퓨터.</a></h3>
+  <p class="excerpt">Gemini 앱으로 이미지 생성 및 편집 - 컴퓨터. 1. Google은 GIF 생성을 Gemini에 직접 도입했습니다. 2. 이제 뉴런은 간단한 텍스트 요청을 기반으로 사진에 애니메이션을 적용하고 반복되는 애니메이션과 밈을 만들 수 있습니다. 3. 새로운 Gemin…</p>
+  <p class="actions">
+    <a class="go" href="./post-6c4ae07be6eab02a462de1076c1d408d2920ee03.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8188" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="6c4ae07be6eab02a462de1076c1d408d2920ee03">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="dfd648ffdc6e0f86da063be271d15beba1318b85" data-channel="diatrain" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-24T00:04:13+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/diatrain.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-diatrain.html">💎다이아광산특급열차</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T00:04:13+09:00">2026-11-24 00:04 KST</time>
+  </div>
+  <h3><a href="./post-dfd648ffdc6e0f86da063be271d15beba1318b85.html">엔비디아가 사임한 젠슨 황을 다시 데려온 이유</a></h3>
+  <p class="excerpt">엔비디아가 사임한 젠슨 황을 다시 데려온 이유 엔비디아 이사회가 젠슨 황을 사장, CEO, 이사로 만장일치로 즉시 복귀시켰슴다 11월 12일 사임 발표 뒤 열흘 남짓 만임 먼저 어떤 일이 있었냐면 외국 정보기관이 젠슨 황을 노렸다는 보도가 나온 뒤 젠슨 황이 세 자리…</p>
+  <p class="actions">
+    <a class="go" href="./post-dfd648ffdc6e0f86da063be271d15beba1318b85.html">브리핑</a>
+    <a class="go" href="https://t.me/diatrain/5094" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="diatrain">담기</button>
+    <button type="button" class="icon-btn read" data-read="dfd648ffdc6e0f86da063be271d15beba1318b85">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="2faf94516b0599257a6caaff6ad605b89da0b280" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-24T00:04:01+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-24T00:04:01+09:00">2026-11-24 00:04 KST</time>
+  </div>
+  <h3><a href="./post-2faf94516b0599257a6caaff6ad605b89da0b280.html">Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing</a></h3>
+  <p class="excerpt">The president cited the U.S. attorney general in defending Huang&#x27;s return, while urging Nvidia to continue its export-control investigation.</p>
+  <p class="actions">
+    <a class="go" href="./post-2faf94516b0599257a6caaff6ad605b89da0b280.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="2faf94516b0599257a6caaff6ad605b89da0b280">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="be23ddad2c5bb2889b023b7397342ca215e6413c" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T23:59:53+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T23:59:53+09:00">2026-11-23 23:59 KST</time>
+  </div>
+  <h3><a href="./post-be23ddad2c5bb2889b023b7397342ca215e6413c.html">오늘도 노고 많으셨습니다 :)</a></h3>
+  <p class="excerpt">오늘도 노고 많으셨습니다 :)</p>
+  <p class="actions">
+    <a class="go" href="./post-be23ddad2c5bb2889b023b7397342ca215e6413c.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8186" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="be23ddad2c5bb2889b023b7397342ca215e6413c">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="569af9e3a50164a428d4475bba8e598df8ffe488" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T23:59:44+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T23:59:44+09:00">2026-11-23 23:59 KST</time>
+  </div>
+  <h3><a href="./post-569af9e3a50164a428d4475bba8e598df8ffe488.html">1. AI로 화이트보드 교육 자료를 만드는 스튜디오</a></h3>
+  <p class="excerpt">1. AI로 화이트보드 교육 자료를 만드는 스튜디오 https://animator-kohl.vercel.app/ 2. 클로드코드 마스터 클래스 한국어 가이드 https://claude-code-tutorial-ko.vercel.app/ 3. HUMAN API 커뮤니티…</p>
+  <p class="actions">
+    <a class="go" href="./post-569af9e3a50164a428d4475bba8e598df8ffe488.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8185" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="569af9e3a50164a428d4475bba8e598df8ffe488">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="c1b9420a39639bad7a4e07bb294f1a5965c6575f" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T23:59:43+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T23:59:43+09:00">2026-11-23 23:59 KST</time>
+  </div>
+  <h3><a href="./post-c1b9420a39639bad7a4e07bb294f1a5965c6575f.html">위키독스 무료 서적 5종을 제작하였습니다.</a></h3>
+  <p class="excerpt">위키독스 무료 서적 5종을 제작하였습니다. 0. GPT &amp; Codex 기초부터 고급까지 100 웹 서적을 위키독스에 새롭게 공개하였습니다. 위키독스: https://wikidocs.net/book/20375 깃허브: https://github.com/lsszz2100…</p>
+  <p class="actions">
+    <a class="go" href="./post-c1b9420a39639bad7a4e07bb294f1a5965c6575f.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8184" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="c1b9420a39639bad7a4e07bb294f1a5965c6575f">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="ab4f131a40672fe0fad4cc0cb1f3e2f67a7a8e0a" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T23:59:35+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T23:59:35+09:00">2026-11-23 23:59 KST</time>
+  </div>
+  <h3><a href="./post-ab4f131a40672fe0fad4cc0cb1f3e2f67a7a8e0a.html">매주 업데이트 중입니다 :) 워게임 추가 완료!</a></h3>
+  <p class="excerpt">매주 업데이트 중입니다 :) 워게임 추가 완료! 바이브해킹이라는 사이버보안 학습 저장소를 제작하였습니다. 많은 관심 및 응원 부탁드립니다. 감사합니다! 주기적으로 업데이트 예정입니다. 1. VibeHacking은 인공지능 시대에 해킹과 보안을 빠르고 체계적으로 배울…</p>
+  <p class="actions">
+    <a class="go" href="./post-ab4f131a40672fe0fad4cc0cb1f3e2f67a7a8e0a.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8183" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="ab4f131a40672fe0fad4cc0cb1f3e2f67a7a8e0a">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="48539145cffe1f2d78d2e5e2f9ad2c4cf5a6c3c4" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T23:59:34+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T23:59:34+09:00">2026-11-23 23:59 KST</time>
+  </div>
+  <h3><a href="./post-48539145cffe1f2d78d2e5e2f9ad2c4cf5a6c3c4.html">여러분의 많은 관심과 성원 덕분에 어느덧 페이스북 팔로워 1만 명, 링크드인 5천명 및 텔레그램 채널 구독자 3천명을 달성하게 되었습니다. 진심으로 감사드립니다.</a></h3>
+  <p class="excerpt">여러분의 많은 관심과 성원 덕분에 어느덧 페이스북 팔로워 1만 명, 링크드인 5천명 및 텔레그램 채널 구독자 3천명을 달성하게 되었습니다. 진심으로 감사드립니다. 페이스북: https://www.facebook.com/lsszz1 텔레그램: https://t.me/a…</p>
+  <p class="actions">
+    <a class="go" href="./post-48539145cffe1f2d78d2e5e2f9ad2c4cf5a6c3c4.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8182" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="48539145cffe1f2d78d2e5e2f9ad2c4cf5a6c3c4">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="404a28e0ea0cf6e3b3985ac9f2bc3fd6102f222d" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-23T23:43:03+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-23T23:43:03+09:00">2026-11-23 23:43 KST</time>
+  </div>
+  <h3><a href="./post-404a28e0ea0cf6e3b3985ac9f2bc3fd6102f222d.html">Sierra doubles valuation to $30B within six months as demand for AI in CX takes off</a></h3>
+  <p class="excerpt">Enterprise customer experience company Sierra, co-founded by former Salesforce co-CEO Bret Taylor, said on Monday that it has raised $1.75 billion in…</p>
+  <p class="actions">
+    <a class="go" href="./post-404a28e0ea0cf6e3b3985ac9f2bc3fd6102f222d.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="404a28e0ea0cf6e3b3985ac9f2bc3fd6102f222d">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="38575cfcadc71acbc214633f22b563a54fb38b13" data-channel="diatrain" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T23:32:09+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/diatrain.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-diatrain.html">💎다이아광산특급열차</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T23:32:09+09:00">2026-11-23 23:32 KST</time>
+  </div>
+  <h3><a href="./post-38575cfcadc71acbc214633f22b563a54fb38b13.html">속보) 통신사 3사와 네이버, AI 전화 차단한다</a></h3>
+  <p class="excerpt">속보) 통신사 3사와 네이버, AI 전화 차단한다 요즘 피클 같은 AI 비서한테 &quot;통신사에 전화해서 요금제 좀 바꿔줘&quot; 하면 AI가 직접 고객센터에 전화를 걸어줘서 편했었음 근데 SKT, KT, LG유플러스, 네이버는 이 AI 전화에는 상담을 안 해주기로 했다고 함…</p>
+  <p class="actions">
+    <a class="go" href="./post-38575cfcadc71acbc214633f22b563a54fb38b13.html">브리핑</a>
+    <a class="go" href="https://t.me/diatrain/5093" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="diatrain">담기</button>
+    <button type="button" class="icon-btn read" data-read="38575cfcadc71acbc214633f22b563a54fb38b13">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="d34a879e9a4d435718a649410a98440121ce6422" data-channel="temk5102" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T23:23:04+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/temk5102.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-temk5102.html">정성욱</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">18일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T23:23:04+09:00">2026-11-23 23:23 KST</time>
+  </div>
+  <h3><a href="./post-d34a879e9a4d435718a649410a98440121ce6422.html">[Liner Scholar 3/3] Liner Scholar 사용법: 인용 추가·가짜 인용 확인, 라이브러리·Zotero로 모아 문헌 조사 초안까지 (2026년 11월 기준)</a></h3>
+  <p class="excerpt">#LinerScholar #라이너스콜라 #라이너사용법 #인용추가 #가짜인용확인 #문헌조사초안 #Zotero #직장인AI활용법 #브릿지AI에듀코칭센터 이번 편 목표 이번 편이 끝나면 Liner Scholar(라이너 스콜라)에서 내가 쓴 문단에 &#x27;인용 추가&#x27; 스킬로 논문…</p>
+  <p class="actions">
+    <a class="go" href="./post-d34a879e9a4d435718a649410a98440121ce6422.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/temk5102/224489088083?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="temk5102">담기</button>
+    <button type="button" class="icon-btn read" data-read="d34a879e9a4d435718a649410a98440121ce6422">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="00b4d3ba153913647e558b30f1d30b604c96801e" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-23T23:21:59+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-23T23:21:59+09:00">2026-11-23 23:21 KST</time>
+  </div>
+  <h3><a href="./post-00b4d3ba153913647e558b30f1d30b604c96801e.html">Nvidia reverses course and brings Jensen Huang back as CEO</a></h3>
+  <p class="excerpt">The stunning reversal was supported by senior officials in the U.S. government.</p>
+  <p class="actions">
+    <a class="go" href="./post-00b4d3ba153913647e558b30f1d30b604c96801e.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="00b4d3ba153913647e558b30f1d30b604c96801e">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="83f4504e8948bdd16f2d28b5660488bbb054f86c" data-channel="ow_importai" data-cat="ai" data-origin="해외" data-hot="0" data-today="1" data-published="2026-11-23T23:11:17+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">잭</span>
+    <a class="badge" href="./channel-ow_importai.html">잭 클라크(Jack Clark)</a> <span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-23T23:11:17+09:00">2026-11-23 23:11 KST</time>
+  </div>
+  <h3><a href="./post-83f4504e8948bdd16f2d28b5660488bbb054f86c.html">Import AI 482: Huawei kernel benchmarks; airborne drone detection; and a national lab&#x27;s AI science benchmark</a></h3>
+  <p class="excerpt">Could the scientific method be emergent?</p>
+  <p class="actions">
+    <a class="go" href="./post-83f4504e8948bdd16f2d28b5660488bbb054f86c.html">브리핑</a>
+    <a class="go" href="https://importai.substack.com/p/import-ai-482-huawei-kernel-benchmarks" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_importai">담기</button>
+    <button type="button" class="icon-btn read" data-read="83f4504e8948bdd16f2d28b5660488bbb054f86c">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="27a43dd2e4823adfe0cd0c8410d62b371790470b" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T23:02:20+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T23:02:20+09:00">2026-11-23 23:02 KST</time>
+  </div>
+  <h3><a href="./post-27a43dd2e4823adfe0cd0c8410d62b371790470b.html">속보: 엔비디아(NVDA)가 젠슨 황을 CEO 겸 사장으로 복직</a></h3>
+  <p class="excerpt">속보: 엔비디아(NVDA)가 젠슨 황을 CEO 겸 사장으로 복직 아직, 100프로 확실하진 않지만 속보가 뜬건 맞습니다. https://x.com/WatcherGuru/status/2124864947167670336</p>
+  <p class="actions">
+    <a class="go" href="./post-27a43dd2e4823adfe0cd0c8410d62b371790470b.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8181" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="27a43dd2e4823adfe0cd0c8410d62b371790470b">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="bd34cd5bc6343fe869f68661edf13dd1ccb3d366" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T22:57:27+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T22:57:27+09:00">2026-11-23 22:57 KST</time>
+  </div>
+  <h3><a href="./post-bd34cd5bc6343fe869f68661edf13dd1ccb3d366.html">샌프란시스코에서 열린 첫 번째 SGLang 서밋 2026에서 주요 기술 업데이트와 생태계 확장 계획이 발표됐습니다.</a></h3>
+  <p class="excerpt">샌프란시스코에서 열린 첫 번째 SGLang 서밋 2026에서 주요 기술 업데이트와 생태계 확장 계획이 발표됐습니다. 1. NVIDIA, AMD, Intel, Google 등 주요 기업이 참여하는 SGLang 컨소시엄이 출범하여 향후 모델 지원과 분산 추론 최적화 등…</p>
+  <p class="actions">
+    <a class="go" href="./post-bd34cd5bc6343fe869f68661edf13dd1ccb3d366.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8180" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="bd34cd5bc6343fe869f68661edf13dd1ccb3d366">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="43209f692d72309061afeed57402b10341fe9651" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T22:45:49+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T22:45:49+09:00">2026-11-23 22:45 KST</time>
+  </div>
+  <h3><a href="./post-43209f692d72309061afeed57402b10341fe9651.html">AAA급 게임 개발에 활용할 수 있는 무료 오픈소스 도구 10가지를 소개합니다.</a></h3>
+  <p class="excerpt">AAA급 게임 개발에 활용할 수 있는 무료 오픈소스 도구 10가지를 소개합니다. 대표적인 도구는 Horizon Forbidden West와 Death Stranding 2에 사용된 Jolt Physics입니다. MIT 라이선스로 공개되어 있어 무료로 활용할 수 있습니…</p>
+  <p class="actions">
+    <a class="go" href="./post-43209f692d72309061afeed57402b10341fe9651.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8178" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="43209f692d72309061afeed57402b10341fe9651">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="0afec1ace2b213883eb35f9c6e593fd23cf595c8" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T22:42:46+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T22:42:46+09:00">2026-11-23 22:42 KST</time>
+  </div>
+  <h3><a href="./post-0afec1ace2b213883eb35f9c6e593fd23cf595c8.html">P = NP인가요? AI 에이전트 함대가 실시간으로 공격하고 있습니다.</a></h3>
+  <p class="excerpt">P = NP인가요? AI 에이전트 함대가 실시간으로 공격하고 있습니다. 1. 현재 수십 명의 AI 에이전트가 P 대 NP를 해결하려고 노력하고 있으며 누구나 볼 수 있습니다. 2. 일요일 밤에 게시된 스크린샷에는 당시 86명의 에이전트가 작업 중이었고 현재까지 1,7…</p>
+  <p class="actions">
+    <a class="go" href="./post-0afec1ace2b213883eb35f9c6e593fd23cf595c8.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8177" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="0afec1ace2b213883eb35f9c6e593fd23cf595c8">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="4ffebdfbd7983cf67ab4dddc92732f4eebe1c57a" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T22:37:34+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T22:37:34+09:00">2026-11-23 22:37 KST</time>
+  </div>
+  <h3><a href="./post-4ffebdfbd7983cf67ab4dddc92732f4eebe1c57a.html">CoreGold가 AI 구독 서비스의 자동 결제 및 비용 관리 위험을 방지하는 고급 보안 가이드를 공개했습니다.</a></h3>
+  <p class="excerpt">CoreGold가 AI 구독 서비스의 자동 결제 및 비용 관리 위험을 방지하는 고급 보안 가이드를 공개했습니다. 1. CoreGold는 다수의 AI 서비스 구독 시 발생하는 자동 갱신과 스크립트 오류로 인한 과다 청구 문제를 방지하기 위한 기업용 FinOps 관리 전…</p>
+  <p class="actions">
+    <a class="go" href="./post-4ffebdfbd7983cf67ab4dddc92732f4eebe1c57a.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8176" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="4ffebdfbd7983cf67ab4dddc92732f4eebe1c57a">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="57d17135dcf9b1b34f311f998ea1a92bf99f5777" data-channel="ow_mittr" data-cat="ai" data-origin="해외" data-hot="0" data-today="1" data-published="2026-11-23T22:10:00+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_mittr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_mittr.html">MIT Technology Review</a> <span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-23T22:10:00+09:00">2026-11-23 22:10 KST</time>
+  </div>
+  <h3><a href="./post-57d17135dcf9b1b34f311f998ea1a92bf99f5777.html">The Download: AI’s judgment problem and carbon removal’s crop threat</a></h3>
+  <p class="excerpt">This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The most mi…</p>
+  <p class="actions">
+    <a class="go" href="./post-57d17135dcf9b1b34f311f998ea1a92bf99f5777.html">브리핑</a>
+    <a class="go" href="https://www.technologyreview.com/2026/11/23/1149548/the-download-ai-judgment-problem-carbon-removal-crop-threat/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_mittr">담기</button>
+    <button type="button" class="icon-btn read" data-read="57d17135dcf9b1b34f311f998ea1a92bf99f5777">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="791086dab351247451fe4db79e758efc33827811" data-channel="diatrain" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T21:13:26+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/diatrain.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-diatrain.html">💎다이아광산특급열차</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T21:13:26+09:00">2026-11-23 21:13 KST</time>
+  </div>
+  <h3><a href="./post-791086dab351247451fe4db79e758efc33827811.html">앞으로 이해 못 하는 일이 많아질 것 같음...</a></h3>
+  <p class="excerpt">앞으로 이해 못 하는 일이 많아질 것 같음... AI 관련 사람들이 AI가 발전되는 걸 무서워하는 이유를 이제 알 것 같음 특히 이번 리만 가설이 특이점인 것 같음 단순히 AI와 함께 인간이 평생 풀지 못했던 수학 난제를 풀었다는 게 무서운 게 아니라 AI와 함께 만…</p>
+  <p class="actions">
+    <a class="go" href="./post-791086dab351247451fe4db79e758efc33827811.html">브리핑</a>
+    <a class="go" href="https://t.me/diatrain/5092" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="diatrain">담기</button>
+    <button type="button" class="icon-btn read" data-read="791086dab351247451fe4db79e758efc33827811">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="bfff169b885999a7acdfe2bc03a91040411342ee" data-channel="web3subin" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T21:00:44+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/web3subin.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-web3subin.html">ordinary subinium</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">5일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T21:00:44+09:00">2026-11-23 21:00 KST</time>
+  </div>
+  <h3><a href="./post-bfff169b885999a7acdfe2bc03a91040411342ee.html">&quot;Karma is a bitch.&quot;</a></h3>
+  <p class="excerpt">&quot;Karma is a bitch.&quot; https://youtube.com/shorts/ATk8v3xBaso?si=zqhsd_P4GDKb3ORG</p>
+  <p class="actions">
+    <a class="go" href="./post-bfff169b885999a7acdfe2bc03a91040411342ee.html">브리핑</a>
+    <a class="go" href="https://t.me/web3subin/4380" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="web3subin">담기</button>
+    <button type="button" class="icon-btn read" data-read="bfff169b885999a7acdfe2bc03a91040411342ee">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="92b181ef3e2094b26c4526b375ad650cf10a97f8" data-channel="ai_masters_community" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T20:33:11+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ai_masters_community.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ai_masters_community.html">AI MASTERS</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T20:33:11+09:00">2026-11-23 20:33 KST</time>
+  </div>
+  <h3><a href="./post-92b181ef3e2094b26c4526b375ad650cf10a97f8.html">[ AI시대 우리가 해야할 일 ]</a></h3>
+  <p class="excerpt">[ AI시대 우리가 해야할 일 ] 그것은 바로 꾸준히 하기 🙏 🙏 생각해보면 저도 이 채널 운영한지 1년쯤 됐을 때 구독자 500명도 안되서 접을까 잠시 고민 했었는데 😭 이렇게 자료 찾고 정리해서 다시 글 쓰고 하는 과정 자체가 너무 많은 공부가 되서 지금까지 꾸준…</p>
+  <p class="actions">
+    <a class="go" href="./post-92b181ef3e2094b26c4526b375ad650cf10a97f8.html">브리핑</a>
+    <a class="go" href="https://t.me/ai_masters_community/7992" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ai_masters_community">담기</button>
+    <button type="button" class="icon-btn read" data-read="92b181ef3e2094b26c4526b375ad650cf10a97f8">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="a864e1a43eca94d5c05170c83f9060c0335eea8f" data-channel="ow_mittr" data-cat="ai" data-origin="해외" data-hot="0" data-today="1" data-published="2026-11-23T20:00:00+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_mittr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_mittr.html">MIT Technology Review</a> <span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-23T20:00:00+09:00">2026-11-23 20:00 KST</time>
+  </div>
+  <h3><a href="./post-a864e1a43eca94d5c05170c83f9060c0335eea8f.html">Why using rocks for carbon removal could eventually reduce crop growth</a></h3>
+  <p class="excerpt">Tech companies are investing a lot of hope and money in rocks. Google, Microsoft, and others have committed hundreds of millions of dollars to get st…</p>
+  <p class="actions">
+    <a class="go" href="./post-a864e1a43eca94d5c05170c83f9060c0335eea8f.html">브리핑</a>
+    <a class="go" href="https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_mittr">담기</button>
+    <button type="button" class="icon-btn read" data-read="a864e1a43eca94d5c05170c83f9060c0335eea8f">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="cf829e098bdd5d29325e341608e63898881ca1ec" data-channel="aiinnovationstudio" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T18:51:58+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aiinnovationstudio.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aiinnovationstudio.html">AI_Innovation_Studio</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T18:51:58+09:00">2026-11-23 18:51 KST</time>
+  </div>
+  <h3><a href="./post-cf829e098bdd5d29325e341608e63898881ca1ec.html">[ 전화 대신 받아주는 AI ]</a></h3>
+  <p class="excerpt">[ 전화 대신 받아주는 AI ] 최근 피클 때문에 AI한테 전화 받는걸 부담스럽다는 이야기가 언론을 통해서 많이 나오고 있죠 😎 😎 하지만 반대로 AI가 전화를 받아준다면 어떨까? 라는 이야기들이 많았는데 😉 이를 바로 실행으로 옮긴 회사가 등장했습니다 🔥 🔥 내 번…</p>
+  <p class="actions">
+    <a class="go" href="./post-cf829e098bdd5d29325e341608e63898881ca1ec.html">브리핑</a>
+    <a class="go" href="https://t.me/aiinnovationstudio/8175" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aiinnovationstudio">담기</button>
+    <button type="button" class="icon-btn read" data-read="cf829e098bdd5d29325e341608e63898881ca1ec">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="80c4601afe1d362302bc13653108ac2bc1a37155" data-channel="ai_masters_community" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T17:22:36+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ai_masters_community.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ai_masters_community.html">AI MASTERS</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T17:22:36+09:00">2026-11-23 17:22 KST</time>
+  </div>
+  <h3><a href="./post-80c4601afe1d362302bc13653108ac2bc1a37155.html">https://n.news.naver.com/mnews/article/023/0004011168?sid=105</a></h3>
+  <p class="excerpt">https://n.news.naver.com/mnews/article/023/0004011168?sid=105 ??? : 당신들도 AI 상담원 쓰잖아</p>
+  <p class="actions">
+    <a class="go" href="./post-80c4601afe1d362302bc13653108ac2bc1a37155.html">브리핑</a>
+    <a class="go" href="https://t.me/ai_masters_community/7990" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ai_masters_community">담기</button>
+    <button type="button" class="icon-btn read" data-read="80c4601afe1d362302bc13653108ac2bc1a37155">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="b53780c72295b9ef333d3834e558d362f61be1aa" data-channel="ow_openai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-23T17:00:00+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_openai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_openai.html">OpenAI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-23T17:00:00+09:00">2026-11-23 17:00 KST</time>
+  </div>
+  <h3><a href="./post-b53780c72295b9ef333d3834e558d362f61be1aa.html">Connected intelligence for in-house legal</a></h3>
+  <p class="excerpt">Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect…</p>
+  <p class="actions">
+    <a class="go" href="./post-b53780c72295b9ef333d3834e558d362f61be1aa.html">브리핑</a>
+    <a class="go" href="https://openai.com/business/learn/connected-intelligence-for-in-house-legal" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_openai">담기</button>
+    <button type="button" class="icon-btn read" data-read="b53780c72295b9ef333d3834e558d362f61be1aa">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="9c33ef32519eea916d46027354eee262c69a32f3" data-channel="ow_openai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-23T17:00:00+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_openai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_openai.html">OpenAI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-23T17:00:00+09:00">2026-11-23 17:00 KST</time>
+  </div>
+  <h3><a href="./post-9c33ef32519eea916d46027354eee262c69a32f3.html">Richpanel helps companies automate 50% of support in 30 days</a></h3>
+  <p class="excerpt">Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.</p>
+  <p class="actions">
+    <a class="go" href="./post-9c33ef32519eea916d46027354eee262c69a32f3.html">브리핑</a>
+    <a class="go" href="https://openai.com/business/customer-stories/richpanel-ai-customer-support" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_openai">담기</button>
+    <button type="button" class="icon-btn read" data-read="9c33ef32519eea916d46027354eee262c69a32f3">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="75f6d1eac7556babff65bbfa322d8d31d6b75101" data-channel="ai_masters_community" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T12:32:52+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ai_masters_community.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ai_masters_community.html">AI MASTERS</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T12:32:52+09:00">2026-11-23 12:32 KST</time>
+  </div>
+  <h3><a href="./post-75f6d1eac7556babff65bbfa322d8d31d6b75101.html">[ 세계 랭킹 26위 탁구선수를 이기는 로봇 ]</a></h3>
+  <p class="excerpt">[ 세계 랭킹 26위 탁구선수를 이기는 로봇 ] 중국에서 열렸던 휴머노이드 올림픽 을 기억하시나요? 🤖 🤖 이제 슬슬 인간 상위 랭커들을 꺾는 로봇들이 분야별로 하나씩 등장하고 있습니다 😅 소니의 탁구 로봇인 ACE가 공식 규칙 기반으로 세계 랭킹 26위인 일본의 모…</p>
+  <p class="actions">
+    <a class="go" href="./post-75f6d1eac7556babff65bbfa322d8d31d6b75101.html">브리핑</a>
+    <a class="go" href="https://t.me/ai_masters_community/7989" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ai_masters_community">담기</button>
+    <button type="button" class="icon-btn read" data-read="75f6d1eac7556babff65bbfa322d8d31d6b75101">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="59d9a725a12727b07519b81c687e052082a5ee05" data-channel="diatrain" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T12:20:03+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/diatrain.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-diatrain.html">💎다이아광산특급열차</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T12:20:03+09:00">2026-11-23 12:20 KST</time>
+  </div>
+  <h3><a href="./post-59d9a725a12727b07519b81c687e052082a5ee05.html">피클 잡으러 나온 네이버 AI 비서</a></h3>
+  <p class="excerpt">피클 잡으러 나온 네이버 AI 비서 피클이 국내 출시 한 달도 안 돼서 앱스토어 무료 앱 2위까지 올라갔는데 이번엔 네이버가 연내에 AI 비서 앱을 따로 내겠다고 함다 네이버의 무기는 자기 서비스들인데 쇼핑, 플레이스, 예약, 지도, 네이버페이를 새 앱에서 바로 이어…</p>
+  <p class="actions">
+    <a class="go" href="./post-59d9a725a12727b07519b81c687e052082a5ee05.html">브리핑</a>
+    <a class="go" href="https://t.me/diatrain/5091" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="diatrain">담기</button>
+    <button type="button" class="icon-btn read" data-read="59d9a725a12727b07519b81c687e052082a5ee05">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="13f84a88bf72a282f270575c9c54c96edfa7b00d" data-channel="ai_masters_community" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T10:30:25+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ai_masters_community.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ai_masters_community.html">AI MASTERS</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T10:30:25+09:00">2026-11-23 10:30 KST</time>
+  </div>
+  <h3><a href="./post-13f84a88bf72a282f270575c9c54c96edfa7b00d.html">초지능이 도래하고 있다 -</a></h3>
+  <p class="excerpt">초지능이 도래하고 있다 - Alexandr Wang 초지능이 도래하고 있다. 앞으로 1년 동안 인류가 어떻게 행동하느냐는 우리가 어떤 미래 세계에서 살게 될지에 막대한 영향을 미칠 것이다. 삶의 상당 부분을 수학과 과학에 몸담아 온 사람으로서, 나는 리만 가설의 증명…</p>
+  <p class="actions">
+    <a class="go" href="./post-13f84a88bf72a282f270575c9c54c96edfa7b00d.html">브리핑</a>
+    <a class="go" href="https://t.me/ai_masters_community/7988" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ai_masters_community">담기</button>
+    <button type="button" class="icon-btn read" data-read="13f84a88bf72a282f270575c9c54c96edfa7b00d">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="28b9bccca852dc58fbe7b8c704ed8d696d5efafa" data-channel="aidailykr" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T10:29:44+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aidailykr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aidailykr.html">AI 데일리 뉴스 채널</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T10:29:44+09:00">2026-11-23 10:29 KST</time>
+  </div>
+  <h3><a href="./post-28b9bccca852dc58fbe7b8c704ed8d696d5efafa.html">AI 데일리 뉴스 채널 pinned « 📌 오늘의 핵심 · 11월 23일 (월) 🔬 연구 · 🔥 HOT · 중요도 9/10 160년 수학 최대 난제 풀렸나……</a></h3>
+  <p class="excerpt">AI 데일리 뉴스 채널 pinned « 📌 오늘의 핵심 · 11월 23일 (월) 🔬 연구 · 🔥 HOT · 중요도 9/10 160년 수학 최대 난제 풀렸나…앤트로픽 연구자, 클로드와 &#x27;리만 가설&#x27; 증명 주장 • 앤트로픽 연구자가 AI 모델 클로드를 활용해 160년 수…</p>
+  <p class="actions">
+    <a class="go" href="./post-28b9bccca852dc58fbe7b8c704ed8d696d5efafa.html">브리핑</a>
+    <a class="go" href="https://t.me/aidailykr/1096" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aidailykr">담기</button>
+    <button type="button" class="icon-btn read" data-read="28b9bccca852dc58fbe7b8c704ed8d696d5efafa">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="096adfae77725bb187545b52cc2b429333c717c2" data-channel="aidailykr" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T10:29:44+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aidailykr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aidailykr.html">AI 데일리 뉴스 채널</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T10:29:44+09:00">2026-11-23 10:29 KST</time>
+  </div>
+  <h3><a href="./post-096adfae77725bb187545b52cc2b429333c717c2.html">📡 11월 23일 (월) · 오늘의 AI 뉴스</a></h3>
+  <p class="excerpt">📡 11월 23일 (월) · 오늘의 AI 뉴스 1. ⚖️ 🔥 HOT 오픈AI &quot;사전학습으로 AI 지능 급성장…RSI 대비해 개발 제한해야&quot; 오픈AI가 AI 지능 발전을 측정할 수 있는 사전학습 성능 지표를 공개하고 공동 개발 제한선 마련을 제안했다. 2. 🚀 ⭐ 주목…</p>
+  <p class="actions">
+    <a class="go" href="./post-096adfae77725bb187545b52cc2b429333c717c2.html">브리핑</a>
+    <a class="go" href="https://t.me/aidailykr/1097" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aidailykr">담기</button>
+    <button type="button" class="icon-btn read" data-read="096adfae77725bb187545b52cc2b429333c717c2">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="48714539c3b3bb5e00d5b18b43e53b4e495b807b" data-channel="aidailykr" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T10:29:42+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aidailykr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aidailykr.html">AI 데일리 뉴스 채널</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T10:29:42+09:00">2026-11-23 10:29 KST</time>
+  </div>
+  <h3><a href="./post-48714539c3b3bb5e00d5b18b43e53b4e495b807b.html">📌 오늘의 핵심 · 11월 23일 (월)</a></h3>
+  <p class="excerpt">📌 오늘의 핵심 · 11월 23일 (월) 🔬 연구 · 🔥 HOT · 중요도 9/10 160년 수학 최대 난제 풀렸나…앤트로픽 연구자, 클로드와 &#x27;리만 가설&#x27; 증명 주장 • 앤트로픽 연구자가 AI 모델 클로드를 활용해 160년 수학 난제인 리만 가설을 증명했다고 발표했…</p>
+  <p class="actions">
+    <a class="go" href="./post-48714539c3b3bb5e00d5b18b43e53b4e495b807b.html">브리핑</a>
+    <a class="go" href="https://t.me/aidailykr/1095" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aidailykr">담기</button>
+    <button type="button" class="icon-btn read" data-read="48714539c3b3bb5e00d5b18b43e53b4e495b807b">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="f0ce9c7106ee8837570bb9c347af7b7850dcdb21" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-23T10:25:53+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-23T10:25:53+09:00">2026-11-23 10:25 KST</time>
+  </div>
+  <h3><a href="./post-f0ce9c7106ee8837570bb9c347af7b7850dcdb21.html">How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO</a></h3>
+  <p class="excerpt">Three significant backers share what gave them conviction to bet billions on Anthropic.</p>
+  <p class="actions">
+    <a class="go" href="./post-f0ce9c7106ee8837570bb9c347af7b7850dcdb21.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="f0ce9c7106ee8837570bb9c347af7b7850dcdb21">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="82949e951faea2a804b4f4785430e336e652d8f9" data-channel="diatrain" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T09:22:30+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/diatrain.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-diatrain.html">💎다이아광산특급열차</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T09:22:30+09:00">2026-11-23 09:22 KST</time>
+  </div>
+  <h3><a href="./post-82949e951faea2a804b4f4785430e336e652d8f9.html">🚨 메타 AI 총괄이 초지능이 온다고 경고함…</a></h3>
+  <p class="excerpt">🚨 메타 AI 총괄이 초지능이 온다고 경고함… 메타 AI 총괄 알렉산더 왕이 리만 가설 증명 소식을 보고 긴 글을 올렸슴다 지난 20일 앤트로픽 수학자가 클로드랑 같이 167년 묵은 리만 가설을 증명했다고 발표했고 다음 날 검증 단체 두 곳이 맞다고 확인했다고 함 왕…</p>
+  <p class="actions">
+    <a class="go" href="./post-82949e951faea2a804b4f4785430e336e652d8f9.html">브리핑</a>
+    <a class="go" href="https://t.me/diatrain/5090" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="diatrain">담기</button>
+    <button type="button" class="icon-btn read" data-read="82949e951faea2a804b4f4785430e336e652d8f9">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="1f7a67985157b628fdfb606f89eb77ed40c2ade9" data-channel="temk5102" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T08:41:59+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/temk5102.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-temk5102.html">정성욱</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">18일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T08:41:59+09:00">2026-11-23 08:41 KST</time>
+  </div>
+  <h3><a href="./post-1f7a67985157b628fdfb606f89eb77ed40c2ade9.html">오늘의 경제 이슈: 미국 증시 급락에 정부가 증시안정펀드를 꺼낼 준비에 들어갔다</a></h3>
+  <p class="excerpt">오늘의 경제 이슈 지난 금요일 미국 증시가 크게 떨어졌고, 주말 사이 정부가 긴급 회의를 열었습니다. 오늘은 증시 대책과 유가, 가상자산 법안, 보안 사고, AI 이용료까지 다섯 가지를 추렸습니다. (시장 숫자는 11월 20일 금요일 종가, 미국은 현지 시각 기준입니…</p>
+  <p class="actions">
+    <a class="go" href="./post-1f7a67985157b628fdfb606f89eb77ed40c2ade9.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/temk5102/224487909094?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="temk5102">담기</button>
+    <button type="button" class="icon-btn read" data-read="1f7a67985157b628fdfb606f89eb77ed40c2ade9">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="bc327eb28c0155242f6e98be5cd4d8a2a9a72a98" data-channel="ai_masters_community" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T08:31:49+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ai_masters_community.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ai_masters_community.html">AI MASTERS</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">4일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T08:31:49+09:00">2026-11-23 08:31 KST</time>
+  </div>
+  <h3><a href="./post-bc327eb28c0155242f6e98be5cd4d8a2a9a72a98.html">[ 네이버, 연내 AI 비서 앱 출시···뮤즈·피클과 맞대결 ]</a></h3>
+  <p class="excerpt">[ 네이버, 연내 AI 비서 앱 출시···뮤즈·피클과 맞대결 ] 우선 이 제목을 보며 놀란 포인트는 두 가지 👀 👀 1) 피클과 뮤즈가 동급처럼 보임 2) 네이버와 피클이 경쟁하는 구도로 보임 개인정보 이슈나 과거 피벗 단계에서 생겼던 논란이 있던 피클이지만 정말 대…</p>
+  <p class="actions">
+    <a class="go" href="./post-bc327eb28c0155242f6e98be5cd4d8a2a9a72a98.html">브리핑</a>
+    <a class="go" href="https://t.me/ai_masters_community/7987" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ai_masters_community">담기</button>
+    <button type="button" class="icon-btn read" data-read="bc327eb28c0155242f6e98be5cd4d8a2a9a72a98">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="ff0362d6c8b4b15193b322e6edf332cb8730443a" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-23T06:14:07+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-23T06:14:07+09:00">2026-11-23 06:14 KST</time>
+  </div>
+  <h3><a href="./post-ff0362d6c8b4b15193b322e6edf332cb8730443a.html">OpenAI’s chief scientist has thoughts on how to limit AI development</a></h3>
+  <p class="excerpt">To establish a speed limit on AI development, you need to agree on how to measure speed.</p>
+  <p class="actions">
+    <a class="go" href="./post-ff0362d6c8b4b15193b322e6edf332cb8730443a.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="ff0362d6c8b4b15193b322e6edf332cb8730443a">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="6b0d9a1e739dca2f6730c312a723a432296647c3" data-channel="aidailykr" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T05:07:22+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/aidailykr.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-aidailykr.html">AI 데일리 뉴스 채널</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T05:07:22+09:00">2026-11-23 05:07 KST</time>
+  </div>
+  <h3><a href="./post-6b0d9a1e739dca2f6730c312a723a432296647c3.html">📌 11월 22일 (일) · 오전 스포트라이트</a></h3>
+  <p class="excerpt">📌 11월 22일 (일) · 오전 스포트라이트 🚀 스타트업 • ⭐ 주목 데이터브릭스, 기업가치 2250억달러에 투자 유치 추진 • ⭐ 주목 손정의, SK하이닉스 1조달러 인수 검토…월가에 자금 조달 타진 • ⭐ 주목 앤스로픽은 안전을 최우선으로 유지할 수 있을까? ━…</p>
+  <p class="actions">
+    <a class="go" href="./post-6b0d9a1e739dca2f6730c312a723a432296647c3.html">브리핑</a>
+    <a class="go" href="https://t.me/aidailykr/1094" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="aidailykr">담기</button>
+    <button type="button" class="icon-btn read" data-read="6b0d9a1e739dca2f6730c312a723a432296647c3">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="47beae1d4a7eb594a8fb5b6e6f7a269f73b10b78" data-channel="temk5102" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-23T03:25:34+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/temk5102.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-temk5102.html">정성욱</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">18일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T03:25:34+09:00">2026-11-23 03:25 KST</time>
+  </div>
+  <h3><a href="./post-47beae1d4a7eb594a8fb5b6e6f7a269f73b10b78.html">오늘의 AI 이슈: ChatGPT Space가 Plus에도 열렸다…회의 메모 붙이면 페이지·차트·슬라이드까지, 직접 해 본 결과와 공유 전 확인할 점</a></h3>
+  <p class="excerpt">#ChatGPT #ChatGPT스페이스 #ChatGPTSpace #챗GPT사용법 #ChatGPT슬라이드 #AI협업 #직장인AI활용법 #브릿지AI에듀코칭센터 챗GPT(ChatGPT)에서 대화로 끝나지 않고, 그 결과를 페이지·슬라이드·사이트로 만들어 팀원과 같이 고쳐…</p>
+  <p class="actions">
+    <a class="go" href="./post-47beae1d4a7eb594a8fb5b6e6f7a269f73b10b78.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/temk5102/224487730157?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="temk5102">담기</button>
+    <button type="button" class="icon-btn read" data-read="47beae1d4a7eb594a8fb5b6e6f7a269f73b10b78">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="4bd0810d211c85cdb781c522fcdfda0d8b9cddc6" data-channel="ow_techcrunch_ai" data-cat="ai" data-origin="해외" data-hot="1" data-today="1" data-published="2026-11-23T03:08:43+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/ow_techcrunch_ai.png" alt="" width="44" height="44">
+    <a class="badge" href="./channel-ow_techcrunch_ai.html">테크크런치(TechCrunch) AI</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">3일 연속</span>
+    <span class="cat">AI·테크</span>
+    <span class="origin">해외</span>
+    <time datetime="2026-11-23T03:08:43+09:00">2026-11-23 03:08 KST</time>
+  </div>
+  <h3><a href="./post-4bd0810d211c85cdb781c522fcdfda0d8b9cddc6.html">Why data centers are at the center of the Big Tech backlash</a></h3>
+  <p class="excerpt">Journalist Paris Marx unpacks his new book &quot;Hyperscale.&quot;</p>
+  <p class="actions">
+    <a class="go" href="./post-4bd0810d211c85cdb781c522fcdfda0d8b9cddc6.html">브리핑</a>
+    <a class="go" href="https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="ow_techcrunch_ai">담기</button>
+    <button type="button" class="icon-btn read" data-read="4bd0810d211c85cdb781c522fcdfda0d8b9cddc6">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="0454d822b93f73e60c9f54cb86aede6ac0af24b4" data-channel="temk5102" data-cat="ai" data-origin="국내" data-hot="1" data-today="1" data-published="2026-11-22T22:28:32+09:00">
+  <div class="meta">
+    <img class="avatar avatar-sm" src="./static/avatars/temk5102.jpg" alt="" width="44" height="44">
+    <a class="badge" href="./channel-temk5102.html">정성욱</a> <span class="badge-hot">HOT</span><span class="badge-today">오늘도 글</span><span class="badge-streak">18일 연속</span>
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-22T22:28:32+09:00">2026-11-22 22:28 KST</time>
+  </div>
+  <h3><a href="./post-0454d822b93f73e60c9f54cb86aede6ac0af24b4.html">[Liner Scholar 2/3] Liner Scholar 사용법: 논문 비교표 만들고 열 추가·셀 수정·행 추가로 고쳐 쓰기, 엑셀 내보내기 (2026년 11월 기준)</a></h3>
+  <p class="excerpt">#LinerScholar #라이너스콜라 #라이너사용법 #논문비교표 #AI문헌조사 #보고서근거 #직장인AI활용법 #브릿지AI에듀코칭센터 이번 편 목표 이번 편이 끝나면 Liner Scholar(라이너 스콜라)에서 논문 여러 편을 비교표 하나로 만들고, 그 표에 내가 원…</p>
+  <p class="actions">
+    <a class="go" href="./post-0454d822b93f73e60c9f54cb86aede6ac0af24b4.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/temk5102/224487495042?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="temk5102">담기</button>
+    <button type="button" class="icon-btn read" data-read="0454d822b93f73e60c9f54cb86aede6ac0af24b4">읽음</button>
+  </p>
+</article>
+</div>
+        </main>
+      
+    <aside class="drawer" data-drawer>
+      <h2>내 서랍</h2>
+      <p>담아 둔 사람과 아직 안 읽은 글을 이 기기에서만 모읍니다. 서버로 보내지 않습니다.</p>
+      <a class="btn-block" href="./my.html">서랍 열기</a>
+      <div class="drawer-stats">
+        <span><strong data-saved-count>0</strong>글</span>
+        <span><strong data-unread-count>0</strong>안 읽음</span>
+      </div>
+    </aside>
+    
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="tagline">에이전트빅보드 · 유명인·네임드들의 인사이트를 한곳에 모아 보는 곳</p>
+      <nav>
+        <a href="./about.html">소개</a>
+        <a href="./criteria.html">선정 기준</a>
+        <a href="./guides.html">가이드</a>
+        <a href="./digests.html">오늘 읽을 글</a>
+        <a href="./privacy.html">개인정보</a>
+        <a href="./contact.html">문의</a>
+      </nav>
+      <p>공개 페이지에는 제목과 짧은 소개, 원문 링크, 그리고 에이전트빅보드가 직접 쓴 해설만 있습니다. 원문 전문은 올리지 않습니다. 광고 스크립트는 아직 넣지 않았습니다. 이 시제품은 아직 공개 배포하지 않았습니다.</p>
+    </div>
+  </footer>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
