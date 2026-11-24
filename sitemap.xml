@@ -16,4 +16,8 @@
 <loc>https://agentbigboard.com/sitemap-images.xml</loc>
 <lastmod>2026-11-24</lastmod>
 </sitemap>
+<sitemap>
+<loc>https://agentbigboard.com/sitemap-articles.xml</loc>
+<lastmod>2026-11-24</lastmod>
+</sitemap>
 </sitemapindex>

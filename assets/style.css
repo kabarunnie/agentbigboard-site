@@ -823,3 +823,22 @@ figure.shot figcaption {
   font-size: 0.88rem;
   color: var(--ink-2, #4b5563);
 }
+
+/* ---- x-article shot size + short underline nowrap ---- */
+/* Public pages do not use .article-body figure.shot; keep global figure.shot as-is. */
+.article-body figure.shot {
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-body figure.shot img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.article-body u.u-nowrap,
+.prose u.u-nowrap {
+  white-space: nowrap;
+}
