@@ -1,3 +1,0 @@
-# 시제품. 실제 AdSense 발행인 ID가 생기면 아래 형식으로 채운다.
-# 다른 사이트의 pub ID를 복사하지 않는다. 광고 스크립트는 아직 넣지 않는다.
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

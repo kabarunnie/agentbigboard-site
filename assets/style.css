@@ -238,12 +238,11 @@ h1, h2, h3 { letter-spacing: -0.03em; color: var(--ink); line-height: 1.3; }
   background: var(--bg); border-radius: 16px; padding: 18px 20px; margin: 0 0 20px;
 }
 .briefing h2 { margin: 0 0 10px; font-size: 1rem; }
+/* 광고 자리는 layout.ADS_ENABLED=True 일 때만 HTML에 출력. 승인 전에는 숨김·여백 없음. */
 .ad-slot {
-  margin: 20px 0;
-  min-height: 90px; border-radius: 16px;
-  background: var(--chip); color: var(--muted);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 13px; font-weight: 600;
+  display: none;
+  margin: 0;
+  min-height: 0;
 }
 
 .footer {
@@ -562,4 +561,192 @@ a { overflow-wrap: anywhere; }
 
 @media (prefers-reduced-motion: reduce) {
   .ticker-track a { white-space: normal; }
+}
+
+/* ---- readability: digest & briefing ---- */
+.article .answer-lead,
+.prose .answer-lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #191F28;
+  margin: 0 0 1.25rem;
+}
+.article .prose p,
+.prose p {
+  max-width: 40rem;
+  line-height: 1.7;
+  margin: 0 0 0.85rem;
+}
+.key-box,
+section.briefing {
+  background: #F2F4F6;
+  border: 1px solid #E5E8EB;
+  border-radius: 16px;
+  padding: 1rem 1.1rem 1.05rem;
+  margin: 0 0 1.5rem;
+}
+.key-box h2,
+section.briefing h2 {
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: #4E5968;
+  margin: 0 0 0.7rem;
+  font-weight: 700;
+}
+ol.takeaways {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+ol.takeaways li {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  line-height: 1.55;
+  font-size: 0.98rem;
+  color: #191F28;
+}
+ol.takeaways .n {
+  flex: 0 0 1.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 999px;
+  background: #3182F6;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.1rem;
+}
+section.briefing p {
+  margin: 0 0 0.55rem;
+  line-height: 1.55;
+}
+section.briefing p:last-child { margin-bottom: 0; }
+.toc {
+  border: 1px solid #E5E8EB;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin: 0 0 1.5rem;
+  background: #fff;
+}
+.toc h2 {
+  font-size: 0.82rem;
+  color: #4E5968;
+  margin: 0 0 0.5rem;
+}
+.toc ol {
+  margin: 0;
+  padding: 0 0 0 1.15rem;
+  display: grid;
+  gap: 0.3rem;
+}
+.toc a { color: #191F28; text-decoration: none; }
+.toc a:hover { color: #3182F6; text-decoration: underline; }
+.article .prose h2,
+.prose h2 {
+  font-size: 1.2rem;
+  margin: 1.8rem 0 0.7rem;
+  padding-top: 0.2rem;
+  border-top: 1px solid #E5E8EB;
+  scroll-margin-top: 4.5rem;
+}
+.article .prose h2:first-child { border-top: 0; padding-top: 0; }
+.article .prose h3,
+.prose h3 {
+  font-size: 1.02rem;
+  margin: 1.2rem 0 0.45rem;
+  color: #191F28;
+  scroll-margin-top: 4.5rem;
+}
+.label-verified,
+.label-unverified,
+.sec-verified,
+.sec-unverified {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.22rem 0.45rem;
+  border-radius: 6px;
+  vertical-align: 0.1em;
+  margin-left: 0.2rem;
+}
+.label-verified,
+.sec-verified {
+  background: #E8F3FF;
+  color: #1B64DA;
+}
+.label-unverified,
+.sec-unverified {
+  background: #F2F4F6;
+  color: #4E5968;
+  border: 1px solid #D1D6DB;
+}
+.faq-block {
+  background: #F9FAFB;
+  border-radius: 16px;
+  padding: 0.2rem 1rem 1rem;
+  margin: 1.2rem 0 1.6rem;
+  border: 1px solid #E5E8EB;
+}
+.faq-block h2 { border-top: 0; margin-top: 1rem; }
+.callout {
+  border-left: 3px solid #3182F6;
+  padding: 0.2rem 0 0.2rem 0.9rem;
+  margin: 0.8rem 0 1rem;
+  color: #333D4B;
+}
+.updated {
+  font-size: 0.82rem;
+  color: #8B95A1;
+  margin: 1.4rem 0 0;
+}
+.excerpt-block {
+  margin: 0 0 1.5rem;
+}
+.excerpt-block h2 { font-size: 0.9rem; color: #4E5968; }
+.article .prose table,
+.table-scroll table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.8rem 0 1.2rem;
+  border: 1px solid #E5E8EB;
+  border-radius: 12px;
+}
+.table-scroll table th,
+.table-scroll table td {
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid #E5E8EB;
+  text-align: left;
+  vertical-align: top;
+}
+.table-scroll table th {
+  background: #F2F4F6;
+  font-weight: 700;
+}
+.article .prose strong,
+.prose strong,
+.key-box strong {
+  font-weight: 700;
+  color: #191F28;
+}
+.article .prose ul.source-list,
+ul.source-list {
+  padding-left: 1.1rem;
+}
+.closing-q { margin-top: 1.4rem; font-size: 1.05rem; }
+@media (max-width: 720px) {
+  .key-box, section.briefing, .toc, .faq-block { border-radius: 12px; }
+  .article .prose h2, .prose h2 { font-size: 1.1rem; }
 }

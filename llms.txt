@@ -1,0 +1,42 @@
+# 에이전트빅보드
+
+> 유명인·네임드들의 인사이트를 한곳에 모아 보는 곳
+
+에이전트빅보드(AgentBigBoard)는 유명인·네임드 블로그와 공개 채널의 글을 한곳에서 고르고, 짧은 소개와 원문 링크로 안내하는 한국어 큐레이션 사이트입니다.
+공개 페이지에는 제목, 약 150자 소개, 원문 링크, 그리고 이 사이트가 직접 쓴 해설만 있습니다. 원문 전문은 올리지 않습니다.
+확인되지 않은 실명·약력·수치·수익률은 「미확인」으로 적으며, 지어내지 않습니다.
+편집 주체는 「에이전트빅보드 편집부」이며, 매수·매도 지시나 투자 자문을 하지 않습니다.
+공식 주소: https://agentbigboard.com/  언어: 한국어(ko).
+
+## 주요 페이지
+- [소개](https://agentbigboard.com/about.html): 이 사이트가 무엇을 모으고 무엇을 올리지 않는지
+- [선정 기준](https://agentbigboard.com/criteria.html): 채널을 고르는 기준
+- [오늘 읽을 글](https://agentbigboard.com/digests.html): 분야별 당일 해설
+- [선정 채널](https://agentbigboard.com/channels.html): 고른 사람과 채널 목록
+- [가이드](https://agentbigboard.com/guides.html): 분류별 상시 안내
+- [개인정보](https://agentbigboard.com/privacy.html)
+- [문의](https://agentbigboard.com/contact.html)
+
+## 분류
+- [주식·산업분석](https://agentbigboard.com/cat-stocks.html): 국내외 기업과 업종을 해설하는 글
+- [거시경제](https://agentbigboard.com/cat-macro.html): 금리·환율·경기 흐름을 읽는 글
+- [부동산](https://agentbigboard.com/cat-realestate.html): 입지와 시장 흐름을 읽는 글
+- [코인·가상자산](https://agentbigboard.com/cat-crypto.html): 미디어 속보와 거래소 공지
+- [AI·테크](https://agentbigboard.com/cat-ai.html): 도구·모델·활용 기록
+- [창업·부업](https://agentbigboard.com/cat-startup.html): 실제 운영 경험과 비용 이야기
+- [생활·소비](https://agentbigboard.com/cat-life.html): 생활 정보와 실사용 후기
+
+## 오늘 읽을 글 (2026-11-24)
+- [주식·산업분석 — 주식 블로그, 시황과 가치평가를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-24-stocks.html)
+- [거시경제 — 거시경제 글, 공식 자료와 개인 해설을 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-24-macro.html)
+- [부동산 — 부동산 글, 국내 현장과 해외 지표를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-24-realestate.html)
+- [코인·가상자산 — 가상자산 글, 창립자·데이터·공지를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-24-crypto.html)
+- [AI·테크 — AI 글, 공식 발표와 개인 해설을 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-24-ai.html)
+- [창업·부업 — 창업 글, 방법론과 업계 뉴스를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-24-startup.html)
+- [생활·소비 — 생활·소비 글, 실사용 후기와 전문 매체를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-24-life.html)
+
+## 피드와 지도
+- RSS: https://agentbigboard.com/feed-digests.xml
+- 사이트맵 색인: https://agentbigboard.com/sitemap.xml
+
+마지막 갱신: 2026-11-24 (Asia/Seoul, KST)
