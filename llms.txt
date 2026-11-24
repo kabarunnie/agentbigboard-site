@@ -15,6 +15,7 @@
 - [선정 채널](https://agentbigboard.com/channels.html): 고른 사람과 채널 목록
 - [가이드](https://agentbigboard.com/guides.html): 분류별 상시 안내
 - [개인정보](https://agentbigboard.com/privacy.html)
+- [이용약관](https://agentbigboard.com/terms.html)
 - [문의](https://agentbigboard.com/contact.html)
 
 ## 분류
