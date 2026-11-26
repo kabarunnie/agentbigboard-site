@@ -31,17 +31,17 @@
 - [여행](https://agentbigboard.com/cat-travel.html): 일정·동선·현장 정보를 적는 여행 블로그
 - [육아](https://agentbigboard.com/cat-parenting.html): 육아 경험과 준비물·제도 안내 블로그
 
-## 오늘 읽을 글 (2026-11-26)
-- [주식·산업분석 — 주식 블로그, 시황과 가치평가를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-26-stocks.html)
-- [거시경제 — 거시경제 글, 공식 자료와 개인 해설을 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-26-macro.html)
-- [부동산 — 부동산 글, 국내 현장과 해외 지표를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-26-realestate.html)
-- [코인·가상자산 — 가상자산 글, 창립자·데이터·공지를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-26-crypto.html)
-- [AI·테크 — AI 글, 공식 발표와 개인 해설을 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-26-ai.html)
-- [창업·부업 — 창업 글, 방법론과 업계 뉴스를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-26-startup.html)
-- [생활·소비 — 생활·소비 글, 실사용 후기와 전문 매체를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-26-life.html)
+## 오늘 읽을 글 (2026-11-27)
+- [주식·산업분석 — 주식 블로그, 시황과 가치평가를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-27-stocks.html)
+- [거시경제 — 거시경제 글, 공식 자료와 개인 해설을 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-27-macro.html)
+- [부동산 — 부동산 글, 국내 현장과 해외 지표를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-27-realestate.html)
+- [코인·가상자산 — 가상자산 글, 창립자·데이터·공지를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-27-crypto.html)
+- [AI·테크 — AI 글, 공식 발표와 개인 해설을 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-27-ai.html)
+- [창업·부업 — 창업 글, 방법론과 업계 뉴스를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-27-startup.html)
+- [생활·소비 — 생활·소비 글, 실사용 후기와 전문 매체를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-27-life.html)
 
 ## 피드와 지도
 - RSS: https://agentbigboard.com/feed-digests.xml
 - 사이트맵 색인: https://agentbigboard.com/sitemap.xml
 
-마지막 갱신: 2026-11-26 (Asia/Seoul, KST)
+마지막 갱신: 2026-11-27 (Asia/Seoul, KST)
