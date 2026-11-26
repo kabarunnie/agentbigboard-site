@@ -1655,3 +1655,40 @@ body.post-page .post-rich .key-box { margin: 0 0 22px; }
 .news-side { margin: 28px 0 0; }
 .news-side .read-next li { word-break: keep-all; overflow-wrap: anywhere; }
 .post-rich .post-meta a.cat { text-decoration: none; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+
+/* 2026-11-26 e: 자체 해설 소개, 법안 단계 표, 편집·검토 블록 (고정 원칙) */
+.own-intro { margin: 2px 0 12px; font-size: 0.86rem; line-height: 1.55; color: var(--muted-2); }
+.own-intro a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+.law-box, .article-trust {
+  margin: 22px 0; padding: 18px 20px; border: 1px solid var(--line); border-radius: var(--radius-s);
+  background: var(--bg-elev); min-width: 0;
+}
+.law-box h2, .article-trust h2 { margin: 0 0 10px; font-size: 1.05rem; }
+.law-box .law-name { margin: 0 0 10px; line-height: 1.55; }
+.law-box .law-name strong { display: inline-block; margin-right: 6px; color: var(--blue); }
+.law-box .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.law-stages { width: 100%; border-collapse: collapse; font-size: 0.88rem; line-height: 1.5; }
+.law-stages th, .law-stages td { padding: 8px 8px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+.law-stages thead th { color: var(--muted-2); font-weight: 600; border-top: 0; }
+.law-stages tbody th { white-space: nowrap; }
+.law-stages a { color: var(--blue); word-break: keep-all; }
+.law-box .note { margin: 10px 0 0; font-size: 0.82rem; color: var(--muted-2); }
+.trust-list { display: grid; grid-template-columns: max-content 1fr; gap: 8px 14px; margin: 0; font-size: 0.9rem; line-height: 1.55; }
+.trust-list dt { font-weight: 600; color: var(--ink-2); }
+.trust-list dd { margin: 0; min-width: 0; }
+.trust-list a { color: var(--blue); }
+.trust-list .corrections { margin: 0; padding-left: 18px; }
+.trust-list .corrections li { margin: 0 0 4px; }
+.trust-list .corrections time { font-weight: 600; margin-right: 4px; }
+.feed-item { content-visibility: auto; contain-intrinsic-size: auto 180px; }
+@media (max-width: 600px) {
+  .law-box, .article-trust { padding: 14px 14px; }
+  .law-stages thead { display: none; }
+  .law-stages, .law-stages tbody, .law-stages tr, .law-stages th, .law-stages td { display: block; width: auto; }
+  .law-stages tr { padding: 10px 0; border-top: 1px solid var(--line); }
+  .law-stages th, .law-stages td { border-top: 0; padding: 2px 0; }
+  .law-stages tbody th { white-space: normal; font-size: 0.95rem; }
+  .law-stages td::before { content: attr(data-label); display: inline-block; min-width: 34px; margin-right: 8px; color: var(--muted-2); font-size: 0.8rem; font-weight: 600; }
+  .trust-list { grid-template-columns: 1fr; gap: 2px; }
+  .trust-list dd { margin-bottom: 8px; }
+}

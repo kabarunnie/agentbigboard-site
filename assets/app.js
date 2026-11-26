@@ -134,7 +134,7 @@
         document.body.dataset.hotFilter = "1";
         btn.classList.add("is-soft");
       }
-      $(".pill[href='./index.html']")?.classList.toggle("is-on", kind === "all");
+      $(".pill[href='/'], .pill[href='./index.html']")?.classList.toggle("is-on", kind === "all");
       filter();
     });
   });
