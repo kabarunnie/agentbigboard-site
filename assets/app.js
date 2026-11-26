@@ -491,3 +491,30 @@
   window.addEventListener("hashchange", applyHash);
   if (/^#brief-|^#channel-/.test(location.hash)) applyHash();
 })();
+
+/* Home feed: 「더 보기」 — 처음 120건 뒤의 글을 data/home-feed-more.html 에서 한 번만 불러와 붙인다. 실패하면 분류 링크가 대신한다. */
+(() => {
+  const btn = document.querySelector("[data-feed-more-btn]");
+  if (!btn) return;
+  const wrap = btn.closest("[data-feed-more]");
+  btn.addEventListener("click", async () => {
+    if (btn.disabled) return;
+    btn.disabled = true;
+    const label = btn.textContent;
+    btn.textContent = "불러오는 중…";
+    try {
+      const res = await fetch(btn.dataset.src, { credentials: "same-origin" });
+      if (!res.ok) throw new Error(String(res.status));
+      const html = await res.text();
+      const tpl = document.createElement("template");
+      tpl.innerHTML = html;
+      wrap.parentNode.insertBefore(tpl.content, wrap);
+      wrap.querySelector(".feed-more-btn")?.remove();
+      const note = wrap.querySelector(".feed-more-note");
+      if (note) note.textContent = "최근 글을 모두 불러왔습니다.";
+    } catch (e) {
+      btn.disabled = false;
+      btn.textContent = label;
+    }
+  });
+})();

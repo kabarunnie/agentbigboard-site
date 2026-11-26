@@ -6,12 +6,12 @@
 <atom:link href="https://agentbigboard.com/rss.xml" rel="self" type="application/rss+xml"/>
 <description>에이전트빅보드 편집부가 직접 쓴 해설과 분류별 상시 가이드입니다. 검색 노출 대상 페이지만 담습니다.</description>
 <language>ko</language>
-<lastBuildDate>Thu, 26 Nov 2026 13:59:56 +0900</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 18:00:00 +0900</lastBuildDate>
 <item>
 <title>AI·테크 글 추천과 고른 이유</title>
 <link>https://agentbigboard.com/guide-ai.html</link>
 <guid isPermaLink="true">https://agentbigboard.com/guide-ai.html</guid>
-<pubDate>Thu, 26 Nov 2026 13:59:56 +0900</pubDate>
+<pubDate>Thu, 26 Nov 2026 18:00:00 +0900</pubDate>
 <category>가이드</category>
 <description>AI 글은 제목이 서로 닮기 쉽습니다. 그래서 발표 소식을 전하는 채널과, 실제로 써 본 기록을 남기는 채널을 한 세트로 고릅니다.</description>
 </item>
@@ -19,7 +19,7 @@
 <title>코인·가상자산 글 추천과 고른 이유</title>
 <link>https://agentbigboard.com/guide-crypto.html</link>
 <guid isPermaLink="true">https://agentbigboard.com/guide-crypto.html</guid>
-<pubDate>Thu, 26 Nov 2026 13:59:56 +0900</pubDate>
+<pubDate>Thu, 26 Nov 2026 18:00:00 +0900</pubDate>
 <category>가이드</category>
 <description>이 분류에서 가장 피한 것은 리딩방과, 거래소 공지를 그대로 옮겨 적는 일입니다. 에이전트빅보드 공개 페이지는 공지 문장을 복제하지 않습니다. 업비트·빗썸 공식 채널은 ‘사실 확인’ 창구로만 두고, 오늘 읽을 글 해설에도 공지 원문을 붙여 넣지 않습니다.</description>
 </item>
@@ -27,7 +27,7 @@
 <title>생활·소비 글 추천과 고른 이유</title>
 <link>https://agentbigboard.com/guide-life.html</link>
 <guid isPermaLink="true">https://agentbigboard.com/guide-life.html</guid>
-<pubDate>Thu, 26 Nov 2026 13:59:56 +0900</pubDate>
+<pubDate>Thu, 26 Nov 2026 18:00:00 +0900</pubDate>
 <category>가이드</category>
 <description>생활·소비는 시즌과 실사용이 보이느냐를 먼저 봅니다. 체리오렌지의 생활 글, 어디갓츄의 설정·가전 후기, 하품의 장기 가전 사용기를 국내 축으로 두었습니다. 하품은 협찬·제공 문구 비중이 높아, 선정은 하되 제공 표시가 있으면 추천과 구분해 읽으라고 밝힙니다.</description>
 </item>
@@ -35,7 +35,7 @@
 <title>거시경제 글 추천과 고른 이유</title>
 <link>https://agentbigboard.com/guide-macro.html</link>
 <guid isPermaLink="true">https://agentbigboard.com/guide-macro.html</guid>
-<pubDate>Thu, 26 Nov 2026 13:59:56 +0900</pubDate>
+<pubDate>Thu, 26 Nov 2026 18:00:00 +0900</pubDate>
 <category>가이드</category>
 <description>거시 글은 속보 헤드라인과 지표 해설이 쉽게 섞입니다. 에이전트빅보드는 지표를 자기 논리로 풀어 온 국내 블로그를 축으로 두고, 해외 연구·논평을 대조 창구로 붙입니다.</description>
 </item>
@@ -43,7 +43,7 @@
 <title>부동산 글 추천과 고른 이유</title>
 <link>https://agentbigboard.com/guide-realestate.html</link>
 <guid isPermaLink="true">https://agentbigboard.com/guide-realestate.html</guid>
-<pubDate>Thu, 26 Nov 2026 13:59:56 +0900</pubDate>
+<pubDate>Thu, 26 Nov 2026 18:00:00 +0900</pubDate>
 <category>가이드</category>
 <description>국내 부동산 네임드 가운데 공개 RSS로 최근 글이 확인된 곳은 이번 조사에서 빠숑과 아기곰이 중심입니다. 채상욱 블로그는 2022년 이후 공개 RSS가 멈춰 있어 선정하지 않았고, 부읽남은 알려진 아이디의 RSS에 글이 없어 미확인으로 뺐습니다. 유명하다는 이유만으로 빈.</description>
 </item>
@@ -51,7 +51,7 @@
 <title>창업·부업 글 추천과 고른 이유</title>
 <link>https://agentbigboard.com/guide-startup.html</link>
 <guid isPermaLink="true">https://agentbigboard.com/guide-startup.html</guid>
-<pubDate>Thu, 26 Nov 2026 13:59:56 +0900</pubDate>
+<pubDate>Thu, 26 Nov 2026 18:00:00 +0900</pubDate>
 <category>가이드</category>
 <description>창업·부업 글은 ‘월 얼마’ 제목이 많아, 선별 기준을 수익 액수가 아니라 비용·실패·운영 경험에 둡니다.</description>
 </item>
@@ -59,7 +59,7 @@
 <title>주식 블로그 추천과 고른 이유</title>
 <link>https://agentbigboard.com/guide-stocks.html</link>
 <guid isPermaLink="true">https://agentbigboard.com/guide-stocks.html</guid>
-<pubDate>Thu, 26 Nov 2026 13:59:56 +0900</pubDate>
+<pubDate>Thu, 26 Nov 2026 18:00:00 +0900</pubDate>
 <category>가이드</category>
 <description>주식 글을 많이 모아 두는 일과, 누구의 글을 왜 먼저 읽을지를 정하는 일은 다릅니다. 에이전트빅보드는 후자를 상품으로 봅니다.</description>
 </item>
