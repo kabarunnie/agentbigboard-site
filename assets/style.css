@@ -1692,3 +1692,149 @@ body.post-page .post-rich .key-box { margin: 0 0 22px; }
   .trust-list { grid-template-columns: 1fr; gap: 2px; }
   .trust-list dd { margin-bottom: 8px; }
 }
+
+/* 2026-11-26 f: 줄 간격·문단 여백 (한국어 가독성). 매시 빌드가 이 파일을 site/assets/style.css로 복사한다. */
+
+body {
+  line-height: 1.8;
+}
+
+/* 본문·자체 글·가이드·소개·정책 페이지 */
+.prose p,
+.article .prose p,
+.page.prose p,
+.article .answer-lead,
+.prose .answer-lead {
+  line-height: 1.85;
+}
+.prose p,
+.article .prose p,
+.page.prose p {
+  margin: 0 0 1.15em;
+}
+.lead,
+.feed-lead {
+  line-height: 1.7;
+}
+.lead { margin: 0 0 1.25em; }
+.feed-lead { margin: 0 0 1.15em; }
+.article .answer-lead,
+.prose .answer-lead {
+  margin: 0 0 1.4em;
+}
+
+.prose h2,
+.article .prose h2 {
+  margin: 2.15em 0 0.95em;
+  line-height: 1.45;
+}
+.prose h3,
+.article .prose h3 {
+  margin: 1.6em 0 0.8em;
+  line-height: 1.45;
+}
+.article h1,
+.post-rich > h1 {
+  line-height: 1.4;
+  margin-bottom: 0.55em;
+}
+.article .byline {
+  margin: 0 0 1.6em;
+  line-height: 1.65;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0 0 1.2em;
+}
+.prose li {
+  margin: 0 0 0.55em;
+  line-height: 1.85;
+}
+
+/* 홈·카테고리 피드 카드 요약 */
+.excerpt,
+.card .excerpt,
+.feed-item .excerpt,
+.own-card-desc {
+  line-height: 1.7;
+}
+.excerpt,
+.card .excerpt {
+  margin: 0 0 1em;
+}
+.feed-item .excerpt {
+  margin: 0 0 0.85em;
+}
+.feed-item h3 {
+  line-height: 1.5;
+  margin: 8px 0 10px;
+}
+.feed-item {
+  padding: 20px 0 19px;
+  contain-intrinsic-size: auto 240px;
+}
+@media (max-width: 860px) {
+  .feed-item { padding: 18px 0 17px; }
+}
+
+.own-card-title { line-height: 1.45; }
+.own-card-body { gap: 8px; }
+.own-intro { line-height: 1.7; margin: 4px 0 14px; }
+.feed-h1 { line-height: 1.4; margin: 2px 0 10px; }
+
+ol.takeaways { gap: 0.85rem; }
+ol.takeaways li { line-height: 1.7; }
+section.briefing p {
+  margin: 0 0 0.9em;
+  line-height: 1.7;
+}
+.toc ol { gap: 0.55rem; }
+.toc a { line-height: 1.65; }
+
+.person-card .who,
+.person-card .why,
+.reason,
+.channel-head .who {
+  line-height: 1.7;
+}
+.reason { margin: 0 0 1.1em; }
+.reason strong { margin-bottom: 0.45em; }
+.channel-head .who { margin-bottom: 0.75em; }
+
+.footer { line-height: 1.7; }
+.footer p { margin: 0.5em 0 0; line-height: 1.7; }
+.footer .tagline { margin: 0 0 10px; }
+
+.law-box .law-name,
+.law-stages,
+.trust-list,
+.law-box .note {
+  line-height: 1.7;
+}
+.trust-list { gap: 10px 14px; }
+.trust-list .corrections li { margin: 0 0 0.5em; }
+
+.site-modal-summary { line-height: 1.8; margin: 0 0 1.1em; }
+.site-modal-kps { gap: 10px; }
+.site-modal-kps li { line-height: 1.7; }
+.site-modal-blogger .who { line-height: 1.7; margin-top: 6px; }
+
+.post-rich .post-meta { margin: 0 0 1.25em; }
+.post-rich .three-lines { margin: 0 0 1.4em; }
+.post-rich .three-lines p {
+  margin: 0 0 1em;
+  line-height: 1.85;
+}
+
+.news-side .note { line-height: 1.7; margin: 0 0 1em; }
+.read-next li {
+  line-height: 1.7;
+  padding: 0.35em 0;
+}
+
+.prose th,
+.prose td {
+  line-height: 1.7;
+  padding: 12px 12px;
+}
