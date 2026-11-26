@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="sATEfTNDdsAA3GR6Jzs2jaLGeAOemjr-Lnn2Npl2b-c">
+  <title>파이썬 개발자 로드맵 8주 2일차 04 브랜치와 병합 · 부딪히면 사람이 고른다 — 에이전트빅보드</title>
+  <meta name="description" content="대협이의 생활공간의 글을 세 줄로 안내합니다. 전문은 원문 링크에서 확인합니다.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://agentbigboard.com/post-2861adb01bf27665867e282215202d95790306c3.html">
+  <link rel="alternate" hreflang="ko" href="https://agentbigboard.com/post-2861adb01bf27665867e282215202d95790306c3.html">
+  <link rel="alternate" hreflang="x-default" href="https://agentbigboard.com/post-2861adb01bf27665867e282215202d95790306c3.html">
+  <link rel="alternate" type="application/rss+xml" title="오늘 읽을 글" href="https://agentbigboard.com/feed-digests.xml">
+  <meta property="og:title" content="파이썬 개발자 로드맵 8주 2일차 04 브랜치와 병합 · 부딪히면 사람이 고른다 — 에이전트빅보드">
+  <meta property="og:description" content="대협이의 생활공간의 글을 세 줄로 안내합니다. 전문은 원문 링크에서 확인합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="에이전트빅보드">
+  <meta property="og:url" content="https://agentbigboard.com/post-2861adb01bf27665867e282215202d95790306c3.html">
+  <meta property="og:image" content="https://agentbigboard.com/assets/og.png">
+  <meta property="og:image:alt" content="에이전트빅보드">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="파이썬 개발자 로드맵 8주 2일차 04 브랜치와 병합 · 부딪히면 사람이 고른다 — 에이전트빅보드">
+  <meta name="twitter:description" content="대협이의 생활공간의 글을 세 줄로 안내합니다. 전문은 원문 링크에서 확인합니다.">
+  <meta name="twitter:image" content="https://agentbigboard.com/assets/og.png">
+  <link rel="icon" href="https://agentbigboard.com/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="apple-touch-icon" href="https://agentbigboard.com/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script type="application/ld+json">[{"@type":"Organization","@id":"https://agentbigboard.com/#organization","name":"에이전트빅보드","alternateName":"AgentBigBoard","url":"https://agentbigboard.com/","logo":{"@type":"ImageObject","url":"https://agentbigboard.com/favicon-512.png","width":512,"height":512},"description":"네이버 블로그·텔레그램·해외 뉴스레터에서 고른 사람의 글을 제목·소개·원문 링크로 모았습니다. 누구를 왜 골랐는지도 공개합니다.","inLanguage":"ko"},{"@type":"WebSite","@id":"https://agentbigboard.com/#website","name":"에이전트빅보드","alternateName":"agentbigboard","url":"https://agentbigboard.com/","description":"네이버 블로그·텔레그램·해외 뉴스레터에서 고른 사람의 글을 제목·소개·원문 링크로 모았습니다. 누구를 왜 골랐는지도 공개합니다.","inLanguage":"ko","publisher":{"@id":"https://agentbigboard.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://agentbigboard.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"에이전트빅보드","item":"https://agentbigboard.com/"},{"@type":"ListItem","position":2,"name":"AI·테크","item":"https://agentbigboard.com/cat-ai.html"},{"@type":"ListItem","position":3,"name":"대협이의 생활공간","item":"https://agentbigboard.com/channel-dayhyub.html"},{"@type":"ListItem","position":4,"name":"파이썬 개발자 로드맵 8주 2일차 04 브랜치와 병합 · 부딪히면 사람이 고른다","item":"https://agentbigboard.com/post-2861adb01bf27665867e282215202d95790306c3.html"}]}]</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFBK8J322P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GFBK8J322P');
+  </script>
+</head>
+<body class="home-feed post-page">
+  <header class="top">
+    <a class="logo" href="./index.html" aria-label="에이전트빅보드"><span class="wordmark">에이전트<span class="wm-accent">빅보드</span></span></a>
+    <div class="top-actions">
+      <a class="top-link" href="./articles.html">자체 글</a>
+      <button type="button" class="icon-btn" id="searchBtn">검색</button>
+      <button type="button" class="icon-btn" id="themeBtn">어둡게</button>
+    </div>
+  </header>
+  <div class="search-panel" id="searchPanel" hidden>
+    <form id="searchForm" class="search" role="search" action="./index.html" method="get">
+      <label class="sr-only" for="q">검색</label>
+      <input id="q" name="q" type="search" placeholder="사람이나 글 제목을 찾습니다" autocomplete="off">
+    </form>
+  </div>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="./index.html">에이전트빅보드</a> <span>/</span> <a href="./cat-ai.html">AI·테크</a> <span>/</span> <a href="./channel-dayhyub.html">대협이의 생활공간</a></nav>
+    <div class="layout-one">
+      <main class="main"><article class="page post post-rich"><p class="post-meta"><a class="feed-name" href="./channel-dayhyub.html">대협이의 생활공간</a> <a class="cat cat-ai no-modal" href="./cat-ai.html">AI·테크</a> <time datetime="2026-11-18T19:55:11+09:00">2026년 11월 18일 오후 7:55</time></p><h1>파이썬 개발자 로드맵 8주 2일차 04 브랜치와 병합 · 부딪히면 사람이 고른다</h1><section class="blogger-card" aria-label="작성자"><span class="avatar-fallback" aria-hidden="true">대</span><div><p class="nm"><a class="feed-name" href="./channel-dayhyub.html">대협이의 생활공간</a></p><p class="who">작성자 실명과 약력은 미확인입니다. 공개 피드와 선정 이유로만 소개합니다.</p><p class="why">파이썬 로드맵과 깃허브 AI 도구를 직접 시연해, 새 AI 도구를 써 보기 전 볼 때 쓴다.</p></div></section><section class="three-lines" aria-labelledby="three-title"><h2 id="three-title">세 줄로 읽기</h2><p><strong class="ul-em">파이썬</strong> 개발자 로드맵 8주」 1주차 둘째 날의 네 번째 글입니다.</p><p>지난 글에서는 .<strong class="ul-em">gitignore</strong>로 올리면 안 되는 파일을 빼고, 실수를 상황에 맞게 되돌렸습니다.</p><p><strong class="ul-em">이번에</strong>는 갈래를 칩니다.</p><p class="note">원문 문장에서 고른 요약입니다. 숫자와 사실은 원문에서 다시 확인하세요.</p></section><section class="key-box" aria-labelledby="kp-title"><h2 id="kp-title">핵심 포인트</h2><ol class="takeaways"><li><span class="n">1</span><span>본 줄기(main)는 실행 가능한 상태로 유지하는 원칙을 따르고, 새 기능은 <strong class="ul-em">브랜치</strong>에서 따로 만든 뒤 합칩니다.</span></li><li><span class="n">2</span><span>합치는 방법 두 가지(fast-forward · 3-way <strong class="ul-em">병합</strong>)를 실제로 보고, 일부러 충돌을 일으켜 직접 풀어 봅니다.</span></li><li><span class="n">3</span><span><strong class="ul-em">브랜치</strong> — 커밋을 가리키는 이름표 브랜치(branch)는 나뭇가지라는 뜻입니다.</span></li><li><span class="n">4</span><span>이름은 거창하지만, <strong class="ul-em">브랜치</strong>를 만들어도 파일이 복사되지 않습니다.</span></li></ol></section><a class="src-btn" href="https://blog.naver.com/dayhyub/224482423008?fromRss=true&amp;trackingCode=rss" rel="noopener">원문 보기</a><h2>이 블로거의 최근 글</h2><ul class="read-next"><li><a href="./post-9823310ae57dec2a10ae5af73e000dae29da6d54.html">파이썬 개발자 로드맵 8주 3일차 05 프로세스 메모리와 파이썬 객체 · 변수는 상자가 아니라 이름표</a></li><li><a href="./post-92e7bb4ba40e538d3005ae0cde5c0f31a1501db4.html">파이썬 개발자 로드맵 8주 3일차 06 동시성 · 병렬성 · 파일 · 계산은 프로세스, 기다림은 스레드</a></li><li><a href="./post-417c22d5431e6ac99d455786d3f321c549f39c81.html">이번 주 깃허브 AI 스타 15위 안 8곳 설치 시연 — 1위 REA 는 버튼 하나의 흐름을 줄 번호로 짚었다</a></li><li><a href="./post-3301813ec77e7c99e165347c0aa22e9049360680.html">파이썬 개발자 로드맵 8주 3일차 04 운영체제와 프로세스 · 수백 개의 프로그램이 부딪치지 않는 이유</a></li><li><a href="./post-9866b10904a4af773d93d32a2f83fbb350485abf.html">깃허브 AI 트렌드 주간 동향 5회 + 트렌드 레이더 — 코딩 에이전트에게 무엇을 쥐여 줄까, 웹 지식 스킬과 관제 화면</a></li></ul><h2>같은 분류의 다른 글</h2><ul class="read-next"><li><a href="./post-32147f24434b985fb8b82877d732555e99435d98.html">🗓️ Codex reset expected time to be announced</a> <span class="meta">AI MASTERS</span></li><li><a href="./post-fbd3f7871861d3066d51329d9f7f9b12825ddcb4.html">* 중국 내부에서 증류 차단의 역풍이 심각할 것을 우려하기 시작 (The Information, 11월 25일자)</a> <span class="meta">AI_Innovation_Studio</span></li><li><a href="./post-9de03d2fb360453244666840172a67f0a8f03505.html">Anthropic의 연구를 통해 상위 1% 사용자들이 인공지능을 활용하는 차별화된 방식이 공개됐습니다.</a> <span class="meta">AI_Innovation_Studio</span></li><li><a href="./post-306ee51ec9151c4c61e535343534bdc129315685.html">AI를 활용해 가구 제작 계획을 수립하는 7가지 프롬프트가 공개됐습니다.</a> <span class="meta">AI_Innovation_Studio</span></li><li><a href="./post-d3396c51b3a56f5d91e883bfb4896b17544a4537.html">[ 실시간으로 모든걸 바꿔주는 Lucy ] 채널에 꾸준히 업데이트 소식을 전해드리고 있는 Decart의 Lucy에서 2.5버전을 공개했어요 🤜 간단히 리마인…</a> <span class="meta">AI MASTERS</span></li></ul><p class="actions"><button type="button" class="icon-btn fav" data-fav="dayhyub">채널 즐겨찾기</button> <button type="button" class="icon-btn read" data-read="2861adb01bf27665867e282215202d95790306c3">읽음</button></p><p class="note">공개 페이지에는 짧은 소개와 원문 링크만 있습니다. 원문 전문은 올리지 않습니다.</p></article></main>
+      
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="tagline">에이전트빅보드 · 네임드 블로거 글, 고른 이유와 함께</p>
+      <nav>
+        <a href="./about.html">소개</a>
+        <a href="./criteria.html">선정 기준</a>
+        <a href="./guides.html">가이드</a>
+        <a href="./digests.html">오늘 읽을 글</a>
+        <a href="./articles.html">자체 글</a>
+        <a href="./privacy.html">개인정보</a>
+        <a href="./terms.html">이용약관</a>
+        <a href="./contact.html">문의</a>
+      </nav>
+      <p>공개 페이지에는 제목과 짧은 소개, 원문 링크, 그리고 에이전트빅보드가 직접 쓴 해설만 있습니다. 원문 전문은 올리지 않습니다. 광고는 싣지 않습니다.</p>
+    </div>
+  </footer>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

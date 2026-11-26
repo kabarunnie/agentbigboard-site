@@ -1,7 +1,7 @@
 {
   "name": "에이전트빅보드",
   "short_name": "에이전트빅보드",
-  "description": "유명인·네임드들의 인사이트를 한곳에 모아 보는 곳",
+  "description": "네임드 블로거 글, 고른 이유와 함께",
   "start_url": "/",
   "scope": "/",
   "display": "browser",

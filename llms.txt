@@ -1,6 +1,6 @@
 # 에이전트빅보드
 
-> 유명인·네임드들의 인사이트를 한곳에 모아 보는 곳
+> 네임드 블로거 글, 고른 이유와 함께
 
 에이전트빅보드(AgentBigBoard)는 유명인·네임드 블로그와 공개 채널의 글을 한곳에서 고르고, 짧은 소개와 원문 링크로 안내하는 한국어 큐레이션 사이트입니다.
 공개 페이지에는 제목, 약 150자 소개, 원문 링크, 그리고 이 사이트가 직접 쓴 해설만 있습니다. 원문 전문은 올리지 않습니다.
@@ -27,6 +27,9 @@
 - [AI·테크](https://agentbigboard.com/cat-ai.html): 도구·모델·활용 기록
 - [창업·부업](https://agentbigboard.com/cat-startup.html): 실제 운영 경험과 비용 이야기
 - [생활·소비](https://agentbigboard.com/cat-life.html): 생활 정보와 실사용 후기
+- [뷰티](https://agentbigboard.com/cat-beauty.html): 스킨케어·색조를 기준을 나눠 쓰는 블로거 글
+- [여행](https://agentbigboard.com/cat-travel.html): 일정·동선·현장 정보를 적는 여행 블로그
+- [육아](https://agentbigboard.com/cat-parenting.html): 육아 경험과 준비물·제도 안내 블로그
 
 ## 오늘 읽을 글 (2026-11-26)
 - [주식·산업분석 — 주식 블로그, 시황과 가치평가를 나눠 읽는 법](https://agentbigboard.com/digest-2026-11-26-stocks.html)

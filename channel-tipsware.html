@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="sATEfTNDdsAA3GR6Jzs2jaLGeAOemjr-Lnn2Npl2b-c">
+  <title>김성엽 (팁스웨어) 최근 글과 선정 이유 — 에이전트빅보드</title>
+  <meta name="description" content="GPU·셰이더 같은 그래픽스 실습을 자세히 풀어, AI 연산의 바탕을 공부할 때 쓴다. 네이버 블로그의 최근 글 제목과 원문 링크를 모았습니다.">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+  <link rel="canonical" href="https://agentbigboard.com/channel-tipsware.html">
+  <link rel="alternate" hreflang="ko" href="https://agentbigboard.com/channel-tipsware.html">
+  <link rel="alternate" hreflang="x-default" href="https://agentbigboard.com/channel-tipsware.html">
+  <link rel="alternate" type="application/rss+xml" title="오늘 읽을 글" href="https://agentbigboard.com/feed-digests.xml">
+  <meta property="og:title" content="김성엽 (팁스웨어) 최근 글과 선정 이유 — 에이전트빅보드">
+  <meta property="og:description" content="GPU·셰이더 같은 그래픽스 실습을 자세히 풀어, AI 연산의 바탕을 공부할 때 쓴다. 네이버 블로그의 최근 글 제목과 원문 링크를 모았습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="에이전트빅보드">
+  <meta property="og:url" content="https://agentbigboard.com/channel-tipsware.html">
+  <meta property="og:image" content="https://agentbigboard.com/assets/og.png">
+  <meta property="og:image:alt" content="에이전트빅보드">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="김성엽 (팁스웨어) 최근 글과 선정 이유 — 에이전트빅보드">
+  <meta name="twitter:description" content="GPU·셰이더 같은 그래픽스 실습을 자세히 풀어, AI 연산의 바탕을 공부할 때 쓴다. 네이버 블로그의 최근 글 제목과 원문 링크를 모았습니다.">
+  <meta name="twitter:image" content="https://agentbigboard.com/assets/og.png">
+  <link rel="icon" href="https://agentbigboard.com/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="apple-touch-icon" href="https://agentbigboard.com/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script type="application/ld+json">[{"@type":"Organization","@id":"https://agentbigboard.com/#organization","name":"에이전트빅보드","alternateName":"AgentBigBoard","url":"https://agentbigboard.com/","logo":{"@type":"ImageObject","url":"https://agentbigboard.com/favicon-512.png","width":512,"height":512},"description":"네이버 블로그·텔레그램·해외 뉴스레터에서 고른 사람의 글을 제목·소개·원문 링크로 모았습니다. 누구를 왜 골랐는지도 공개합니다.","inLanguage":"ko"},{"@type":"WebSite","@id":"https://agentbigboard.com/#website","name":"에이전트빅보드","alternateName":"agentbigboard","url":"https://agentbigboard.com/","description":"네이버 블로그·텔레그램·해외 뉴스레터에서 고른 사람의 글을 제목·소개·원문 링크로 모았습니다. 누구를 왜 골랐는지도 공개합니다.","inLanguage":"ko","publisher":{"@id":"https://agentbigboard.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://agentbigboard.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"에이전트빅보드","item":"https://agentbigboard.com/"},{"@type":"ListItem","position":2,"name":"채널","item":"https://agentbigboard.com/channels.html"},{"@type":"ListItem","position":3,"name":"김성엽 (팁스웨어)","item":"https://agentbigboard.com/channel-tipsware.html"}]}]</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFBK8J322P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GFBK8J322P');
+  </script>
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="./index.html" aria-label="에이전트빅보드"><span class="wordmark">에이전트<span class="wm-accent">빅보드</span></span></a>
+    <div class="top-actions">
+      <a class="top-link" href="./articles.html">자체 글</a>
+      <button type="button" class="icon-btn" id="searchBtn">검색</button>
+      <button type="button" class="icon-btn" id="themeBtn">어둡게</button>
+    </div>
+  </header>
+  <div class="search-panel" id="searchPanel" hidden>
+    <form id="searchForm" class="search" role="search" action="./index.html" method="get">
+      <label class="sr-only" for="q">검색</label>
+      <input id="q" name="q" type="search" placeholder="사람이나 글 제목을 찾습니다" autocomplete="off">
+    </form>
+  </div>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="./index.html">에이전트빅보드</a> <span>/</span> <a href="./channels.html">채널</a> <span>/</span> <a href="./channel-tipsware.html">김성엽 (팁스웨어)</a></nav>
+    <div class="layout">
+      <main class="main">
+        <div class="channel-head">
+          <div class="who-row"><span class="avatar-fallback" aria-hidden="true">김</span> </div>
+          <h1>김성엽 (팁스웨어)</h1>
+          <p class="who">작성자 실명과 약력은 미확인입니다. 공개 피드와 선정 이유로만 소개합니다.</p>
+          <div class="meta">
+            <span class="plat">네이버 블로그</span>
+            <span class="chip">AI·테크</span>
+            
+            <span class="chip">합계 18 / 25</span>
+            <span class="chip">마지막 글 2026-11-25 01:36 KST</span>
+          </div>
+        </div>
+        <div class="reason"><strong>선정 이유</strong>GPU·셰이더 같은 그래픽스 실습을 자세히 풀어, AI 연산의 바탕을 공부할 때 쓴다.</div>
+        <div class="score-row">
+          <span class="chip">전문성 3</span>
+          <span class="chip">꾸준함 5</span>
+          <span class="chip">광고 낮음 5</span>
+          <span class="chip">출처 2</span>
+          <span class="chip">독자성 3</span>
+        </div>
+        <p class="note">마지막 2026-11-25 (KST), 30일 30건 최근 12건에서 협찬·원고료 문구 없음</p>
+        <p><a class="btn-primary" href="https://blog.naver.com/tipsware" rel="noopener">채널에서 이어 보기</a></p>
+        
+        <h2 class="section-title">최근 글</h2>
+        <div class="cards"><article class="card" data-id="26022b7a645946b36eba0381be43645ddef294d9" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-25T01:36:23+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-25T01:36:23+09:00">2026-11-25 01:36 KST</time>
+  </div>
+  <h3><a href="./post-26022b7a645946b36eba0381be43645ddef294d9.html">[LxMFC] 3차원 좌표로 구성된 점의 가중치를 시각화하기 - Step 2</a></h3>
+  <p class="excerpt">[Step 1]을 실습하지 않았다면 [Step 1]부터 실습을 진행하세요. [Step 1]에서는 가중치를 계산할 때 CPU 연산을 사용했습니다. [Step 2]에서는 가중치를 계산할 때 GPU 연산을 사용하도록 변경해서 CPU를 사용했을 때와 얼마나 성능 차이가 나는지 비교해 보겠습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-26022b7a645946b36eba0381be43645ddef294d9.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224490720502?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="26022b7a645946b36eba0381be43645ddef294d9">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="a57f91b81c3af0c5fd642b6d536afd569a5b6129" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-24T16:09:40+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-24T16:09:40+09:00">2026-11-24 16:09 KST</time>
+  </div>
+  <h3><a href="./post-a57f91b81c3af0c5fd642b6d536afd569a5b6129.html">GPU에서 돌아가는 프로그램: 셰이더(Shader)란 무엇인가?</a></h3>
+  <p class="excerpt">3D 프로그래밍이나 GPU 연산을 사용하는 프로그래밍에서 셰이더(Shader)라는 용어를 자주 마주치게 됩니다. 이름만 보면 화면의 명암이나 그림자를 다루는 그래픽 용어 같지만 프로그래밍에서는 GPU에서 병렬로 실행되는 연산 프로그램을 의미합니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-a57f91b81c3af0c5fd642b6d536afd569a5b6129.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224490089859?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="a57f91b81c3af0c5fd642b6d536afd569a5b6129">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="4e54945613d0d672b2ff01ccd5e49eb9c4c9292d" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-23T23:53:06+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-23T23:53:06+09:00">2026-11-23 23:53 KST</time>
+  </div>
+  <h3><a href="./post-4e54945613d0d672b2ff01ccd5e49eb9c4c9292d.html">CUDA를 쓸 수 없는 상황에서 GPU 연산을 원한다면?</a></h3>
+  <p class="excerpt">GPU를 활용한 대량 연산 이야기를 하다 보면 CUDA가 워낙 자주 등장합니다. 보니 &quot;GPU 연산을 하려면 CUDA를 써야 하는 것 아닌가?&quot;라는 이야기로 자연스럽게 넘어갑니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-4e54945613d0d672b2ff01ccd5e49eb9c4c9292d.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224489119708?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="4e54945613d0d672b2ff01ccd5e49eb9c4c9292d">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="06b360fea34d3539c1a32bdfc3b318916bd49cfb" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-22T22:07:21+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-22T22:07:21+09:00">2026-11-22 22:07 KST</time>
+  </div>
+  <h3><a href="./post-06b360fea34d3539c1a32bdfc3b318916bd49cfb.html">[LxMFC] 3차원 좌표로 구성된 점의 가중치를 시각화하기 - Step 1</a></h3>
+  <p class="excerpt">이 예제는 CPU와 GPU 연산의 성능 비교를 위해 만든 예제입니다. 실수 연산을 다루는 예제를 만들다 보면 계산 결과의 숫자만 확인해서는 수식이 어떤 의미를 갖는지 직관적으로 와닿지 않을 때가 많습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-06b360fea34d3539c1a32bdfc3b318916bd49cfb.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224487470350?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="06b360fea34d3539c1a32bdfc3b318916bd49cfb">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="a0a4c2bd4f5b1ce108c61c8e614ac39ded8e76ea" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-21T18:39:38+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-21T18:39:38+09:00">2026-11-21 18:39 KST</time>
+  </div>
+  <h3><a href="./post-a0a4c2bd4f5b1ce108c61c8e614ac39ded8e76ea.html">GPU 연산은 언제 이용하는 것이 좋을까?</a></h3>
+  <p class="excerpt">예전에는 프로그래밍을 할 때 멀티 스레드를 사용할 것인지를 두고 고민하는 경우가 많았는데 이제는 CPU의 코어 특성상 웬만하면 멀티 스레드를 사용하는 것이 좋다고 생각합니다. 그리고 요즘에는 새로운 작업을 할 때 특정 상황에 GPU를 사용할 것인지 아니면 CPU를 사용할 것인지 고민하는 경우가 많아지고 있습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-a0a4c2bd4f5b1ce108c61c8e614ac39ded8e76ea.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224486203111?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="a0a4c2bd4f5b1ce108c61c8e614ac39ded8e76ea">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="dff93096733ec5caacbb19ff9c68313ffaaa22eb" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-20T21:27:18+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-20T21:27:18+09:00">2026-11-20 21:27 KST</time>
+  </div>
+  <h3><a href="./post-dff93096733ec5caacbb19ff9c68313ffaaa22eb.html">Fallback과 Wrap에 대하여</a></h3>
+  <p class="excerpt">프로그래밍에서 Fallback(대체)과 Wrap(감싸기)은 자주 쓰이지만 역할과 목적이 서로 다릅니다. 제대로 이해하지 못한 상태로 대화하다 보면 오해가 쌓이기 때문에 간단한 용어라도 정확히 짚고 넘어가는 것이 중요합니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-dff93096733ec5caacbb19ff9c68313ffaaa22eb.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224485227717?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="dff93096733ec5caacbb19ff9c68313ffaaa22eb">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="5fe0414e2386f0bf2f89854f0ee639034bb3d7b4" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-19T21:14:56+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-19T21:14:56+09:00">2026-11-19 21:14 KST</time>
+  </div>
+  <h3><a href="./post-5fe0414e2386f0bf2f89854f0ee639034bb3d7b4.html">에뮬레이션과 시뮬레이션</a></h3>
+  <p class="excerpt">프로그래밍과 시스템 설계에서 에뮬레이션(Emulation)과 시뮬레이션(Simulation)은 모두 실제 대상을 직접 쓰기 어렵거나 테스트를 위한 비용이나 위험이 클 때 소프트웨어로 대체하는 방법입니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-5fe0414e2386f0bf2f89854f0ee639034bb3d7b4.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224483889810?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="5fe0414e2386f0bf2f89854f0ee639034bb3d7b4">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="c48a07f12e813772468863e88068931b2a4b6764" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-18T23:15:52+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-18T23:15:52+09:00">2026-11-18 23:15 KST</time>
+  </div>
+  <h3><a href="./post-c48a07f12e813772468863e88068931b2a4b6764.html">[AI vs 매크로] 반복된 작업을 AI한테 시키면 될 텐데 왜 직접 매크로를 만들어서 쓸까?</a></h3>
+  <p class="excerpt">이제는 AI가 많은 일을 대신해 주는 시대가 되었습니다. 질문만 하면 문서도 요약해 주고 코드도 만들어주니 &quot;반복해서 해야 하는 작업도 그냥 AI한테 다 시키면 되는 거 아닌가?&quot;라고 생각하기 쉽습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-c48a07f12e813772468863e88068931b2a4b6764.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224482654504?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="c48a07f12e813772468863e88068931b2a4b6764">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="d7561a1edd3a750293e0e8fefb0f4af6505e95d7" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-17T21:34:23+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-17T21:34:23+09:00">2026-11-17 21:34 KST</time>
+  </div>
+  <h3><a href="./post-d7561a1edd3a750293e0e8fefb0f4af6505e95d7.html">[MFC:Q&amp;A] PIPE_TYPE_MESSAGE에 대하여</a></h3>
+  <p class="excerpt">제가 보고 있는 파이프 예제 코드에서 파이프를 생성할 때 CreateNamedPipe 함수에 PIPE_TYPE_MESSAGE 옵션을 사용하던데 이 옵션이 어떤 역할을 하는지 궁금합니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-d7561a1edd3a750293e0e8fefb0f4af6505e95d7.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224481075873?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="d7561a1edd3a750293e0e8fefb0f4af6505e95d7">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="f72e1ba448ccf70a2e8dc9ae67c98c52232b7a9a" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-16T22:21:06+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-16T22:21:06+09:00">2026-11-16 22:21 KST</time>
+  </div>
+  <h3><a href="./post-f72e1ba448ccf70a2e8dc9ae67c98c52232b7a9a.html">[Win32] PeekNamedPipe 함수에 대하여</a></h3>
+  <p class="excerpt">PeekNamedPipe 함수는 네임드 파이프나 파이프의 버퍼에 대기 중인 데이터를 꺼내지 않고 살펴보는(Peek) 함수입니다. ReadFile 함수는 데이터를 읽으면 읽은 만큼 파이프에서 사라지지만 이 함수는 데이터를 그대로 유지하면서 살펴볼 수 있습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-f72e1ba448ccf70a2e8dc9ae67c98c52232b7a9a.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224479701429?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="f72e1ba448ccf70a2e8dc9ae67c98c52232b7a9a">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="8665b6d461311f261deadffafe0fa06043a40216" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-15T12:24:21+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-15T12:24:21+09:00">2026-11-15 12:24 KST</time>
+  </div>
+  <h3><a href="./post-8665b6d461311f261deadffafe0fa06043a40216.html">[MFC/Q&amp;A] ConnectNamedPipe 함수를 사용하면 Thread가 블록 됩니다.</a></h3>
+  <p class="excerpt">Named Pipe를 사용하려고 ConnectNamePipe 함수를 호출하니 클라이언트가 접속할 때까지 프로그램이 응답 없음 상태가 되어서 문제를 해결하기 위해 Thread를 생성하고 해당 Thread에서 ConnectNamePipe 함수를 호출했습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-8665b6d461311f261deadffafe0fa06043a40216.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224477744736?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="8665b6d461311f261deadffafe0fa06043a40216">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="3f46efac800bbd91d59661fc2ca2a063e19be81b" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-14T21:13:12+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-14T21:13:12+09:00">2026-11-14 21:13 KST</time>
+  </div>
+  <h3><a href="./post-3f46efac800bbd91d59661fc2ca2a063e19be81b.html">Pipe와 Named Pipe</a></h3>
+  <p class="excerpt">아래에 링크한 글부터 먼저 보세요. 운영체제에서 프로세스는 각각 독립된 메모리 공간을 가지기 때문에 서로 다른 프로세스가 마음대로 상대방의 메모리를 읽거나 쓸 수 없습니다. 그래서 프로세스 간에 정보를 공유하거나 실행 시점을 동기화하기 위해 IPC(Inter-Process Communication)를 사용합니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-3f46efac800bbd91d59661fc2ca2a063e19be81b.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224477187758?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="3f46efac800bbd91d59661fc2ca2a063e19be81b">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="5993360d7941ed8c46edc704a4d082233c993424" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-13T22:15:16+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-13T22:15:16+09:00">2026-11-13 22:15 KST</time>
+  </div>
+  <h3><a href="./post-5993360d7941ed8c46edc704a4d082233c993424.html">프로세스 간 통신(IPC, Inter-Process Communication)</a></h3>
+  <p class="excerpt">대부분의 운영체제는 각 프로세스마다 독립적인 메모리 공간을 할당받아 동작합니다. 그래서 자신의 메모리 공간이 아닌 다른 프로세스의 메모리 공간에 접근을 시도하면 시스템의 안정성과 보안성을 유지하기 위해 이 시도를 오류로 처리합니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-5993360d7941ed8c46edc704a4d082233c993424.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224476205627?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="5993360d7941ed8c46edc704a4d082233c993424">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="dd829c10a425316143e3b3053c3c68a62e28c3f3" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-12T17:23:18+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-12T17:23:18+09:00">2026-11-12 17:23 KST</time>
+  </div>
+  <h3><a href="./post-dd829c10a425316143e3b3053c3c68a62e28c3f3.html">[MFC/Q&amp;A] 워크스페이스의 탭 이름을 변경했는데 정상적으로 반영이 되지 않습니다.</a></h3>
+  <p class="excerpt">MFC 애플리케이션에서 &#x27;여러 문서&#x27; 형식으로 &#x27;탭 문서&#x27; 및 &#x27;문서/뷰 아키텍처 지원&#x27;을 사용해서 프로그램하고 있습니다. 그리고 프로젝트 스타일을 &#x27;Visual Studio&#x27;를 사용했기 때문에 생성된 프로젝트를 빌드 해서 실행하면 아래와 같이 탭 이름이 출력됩니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-dd829c10a425316143e3b3053c3c68a62e28c3f3.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224474552386?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="dd829c10a425316143e3b3053c3c68a62e28c3f3">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="a0f71f010eb623db1fe0dd5a3944652f29491ea0" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-11T22:51:12+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-11T22:51:12+09:00">2026-11-11 22:51 KST</time>
+  </div>
+  <h3><a href="./post-a0f71f010eb623db1fe0dd5a3944652f29491ea0.html">[LxMFC] 16 * 12 크기의 24비트 이미지 편집기 만들기 - Step 2</a></h3>
+  <p class="excerpt">[Step 1]을 실습하지 않았다면 [Step 1]부터 실습을 진행하세요. [Step 1]을 사용하시는 분들이 두 가지 기능 개선에 대한 피드백을 주셨습니다. 색상 채우기 기능 넓은 영역을 색상으로 채울 때 필요</p>
+  <p class="actions">
+    <a class="go" href="./post-a0f71f010eb623db1fe0dd5a3944652f29491ea0.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224473541494?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="a0f71f010eb623db1fe0dd5a3944652f29491ea0">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="77feff356489cde151f3ec3dcaf2b3e4d86f08b7" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-10T23:19:55+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-10T23:19:55+09:00">2026-11-10 23:19 KST</time>
+  </div>
+  <h3><a href="./post-77feff356489cde151f3ec3dcaf2b3e4d86f08b7.html">[Q&amp;A] X5용 DLL에서 생성한 정보를 이미지로 출력하려면 어떻게 해야 하나요?</a></h3>
+  <p class="excerpt">X5를 사용해 간단한 매크로 프로그램을 만들고 있습니다. 제가 원하는 기능을 추가하기 위해 DLL을 만드는 중인데, DLL 내부에서 처리하고 있는 작업 내용을 텍스트가 아닌 이미지로 출력해서 확인하고 싶은데 방법이 없을까요? 지금 제공되는 예제들을 살펴봤는데 DLL 내부 상태나 결과는 모두 텍스트로 출력하는 것 같습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-77feff356489cde151f3ec3dcaf2b3e4d86f08b7.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224472258855?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="77feff356489cde151f3ec3dcaf2b3e4d86f08b7">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="579177a28805d65f073a244028dd16530e405e3a" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-09T16:59:33+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-09T16:59:33+09:00">2026-11-09 16:59 KST</time>
+  </div>
+  <h3><a href="./post-579177a28805d65f073a244028dd16530e405e3a.html">[버튼: MouseLeftBtnClick.dll] 특정 위치에 마우스 왼쪽 버튼 계속 클릭하기 - Step 1</a></h3>
+  <p class="excerpt">이 DLL은 &#x27;반복 모니터링&#x27;용으로 사용됩니다. 따라서 버튼 쪽에 DLL로 연결하지 마시고 &#x27;반복 모니터링에 사용할 DLL&#x27;에 연결해서 사용하세요. 예전에 특정 위치에 마우스를 빠르게 클릭하는 프로그램들 많이 사용하셨죠?</p>
+  <p class="actions">
+    <a class="go" href="./post-579177a28805d65f073a244028dd16530e405e3a.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224470516366?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="579177a28805d65f073a244028dd16530e405e3a">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="f380824eae8ef59a4a992d0e500588baedf5cea1" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-09T14:56:55+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-09T14:56:55+09:00">2026-11-09 14:56 KST</time>
+  </div>
+  <h3><a href="./post-f380824eae8ef59a4a992d0e500588baedf5cea1.html">[LxMFC/표준코드] 이벤트 로그용 추가 컨트롤 예시 - Step 1</a></h3>
+  <p class="excerpt">현재 LxMFC에서는 아래의 그림처럼 이벤트 로그를 남길 수 있는 LxEventListBox 클래스가 이미 제공되고 있습니다. 제가 제공하는 기본 예제들을 보면 대부분 이 클래스를 사용해서 이벤트를 남기고 있습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-f380824eae8ef59a4a992d0e500588baedf5cea1.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224470342458?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="f380824eae8ef59a4a992d0e500588baedf5cea1">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="6f1fe0f665eb05cc07f41d6af92e00d12021f883" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-08T19:11:38+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-08T19:11:38+09:00">2026-11-08 19:11 KST</time>
+  </div>
+  <h3><a href="./post-6f1fe0f665eb05cc07f41d6af92e00d12021f883.html">이제 ChatGPT로 애니메이션 GIF 파일 생성도 가능하네요.</a></h3>
+  <p class="excerpt">당연히 무료 버전은 사용량과 수정에 제한이 있습니다. ChatGPT에 애니메이션 GIF 파일 만드는 기능이 추가되었다고 해서 사용해 봤습니다. 먼저 존박 맥도날드 광고를 아는지 물어고 아래의 그림을 주고 이 캐릭터로 맥도날드에서 버거를 주문하는 애니메이션 GIF 파일을 만들어 달라고 했습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-6f1fe0f665eb05cc07f41d6af92e00d12021f883.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224469387668?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="6f1fe0f665eb05cc07f41d6af92e00d12021f883">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="ac921d870ecfbf7201119c9882584c70e0ba2e77" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-07T23:29:33+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-07T23:29:33+09:00">2026-11-07 23:29 KST</time>
+  </div>
+  <h3><a href="./post-ac921d870ecfbf7201119c9882584c70e0ba2e77.html">[LxMFC/Q&amp;A] CImage 객체에 저장된 이미지 패턴을 다른 CImage 객체에 복사하려면 어떻게 해야 하나요?</a></h3>
+  <p class="excerpt">아래와 같이 &#x27;tips.png&#x27; 파일을 읽어서 사용하고 있습니다. image 객체에 저장된 이미지 패턴을 새로운 CImage 객체를 만들고 복사하고 싶은데 어떻게 해야 하나요?</p>
+  <p class="actions">
+    <a class="go" href="./post-ac921d870ecfbf7201119c9882584c70e0ba2e77.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224468677006?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="ac921d870ecfbf7201119c9882584c70e0ba2e77">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="374aa4fd9e61f295d0eb6229f470f8ea37c19208" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-06T15:08:17+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-06T15:08:17+09:00">2026-11-06 15:08 KST</time>
+  </div>
+  <h3><a href="./post-374aa4fd9e61f295d0eb6229f470f8ea37c19208.html">[LxMFC/실습과제] 이미지에서 가까운 점들을 그룹으로 묶는 방법 - Step 6</a></h3>
+  <p class="excerpt">[Step 5]를 실습하지 않았다면 [Step 5]부터 실습을 진행하세요. [Step 5]를 실습했다면 마우스로 슬라이드 컨트롤을 빠르게 움직였을 때 슬라이더 컨트롤의 반응 속도보다 그림이 그려지는 속도가 느리다는 것을 느끼셨을 겁니다. 왜냐하면 슬라이드 컨트롤이 이동될 때마다</p>
+  <p class="actions">
+    <a class="go" href="./post-374aa4fd9e61f295d0eb6229f470f8ea37c19208.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224467254968?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="374aa4fd9e61f295d0eb6229f470f8ea37c19208">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="4178c94cbb73d7b6f0977f45a948abb27bda29c3" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-06T14:46:27+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-06T14:46:27+09:00">2026-11-06 14:46 KST</time>
+  </div>
+  <h3><a href="./post-4178c94cbb73d7b6f0977f45a948abb27bda29c3.html">[LxMFC Q&amp;A] LxSliderCtrl 객체의 반응이 느려졌습니다.</a></h3>
+  <p class="excerpt">아래에 링크한 글을 보고 LxMFC에서 제공하는 LxSliderCtrl을 사용하고 있습니다. 저는 슬라이더 컨트롤에서 Thumb가 이동하면 바로 작업을 수행해야 해서 위 예제 코드에서 OnCommand 함수에 처리 코드를 추가했습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-4178c94cbb73d7b6f0977f45a948abb27bda29c3.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224467225605?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="4178c94cbb73d7b6f0977f45a948abb27bda29c3">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="8d859809cf411cb18a34a766839183049b6971ef" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-06T13:27:42+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-06T13:27:42+09:00">2026-11-06 13:27 KST</time>
+  </div>
+  <h3><a href="./post-8d859809cf411cb18a34a766839183049b6971ef.html">X5 프로그램 사용하기</a></h3>
+  <p class="excerpt">X5 프로그램은 아두이노를 컴퓨터에 연결해서 전역 단축키(키보드 또는 마우스)를 추가로 사용하려고 만들었습니다. 그리고 단순히 정해진 기능만 사용하는 것이 아니라 각 버튼의 기능을 DLL(기본 제공 또는 직접 만들어서 사용)을 지정해서 사용하기 때문에 버튼을 눌렀을 때 원하는 작업을 사용하게 만들 수 있습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-8d859809cf411cb18a34a766839183049b6971ef.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224467119607?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="8d859809cf411cb18a34a766839183049b6971ef">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="606f90860164460f757733a4b8198d9a5e9eb967" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-05T22:18:00+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-05T22:18:00+09:00">2026-11-05 22:18 KST</time>
+  </div>
+  <h3><a href="./post-606f90860164460f757733a4b8198d9a5e9eb967.html">&#x27;딸깍&#x27; 몇 번으로 만들어지는 결과물?</a></h3>
+  <p class="excerpt">요즘 인터넷 광고를 보면 눈에 띄는 문구들이 참 많습니다. &quot;아무것도 몰라도 됩니다.&quot; &quot;클릭 몇 번으로 문서도 웹사이트도 프로그램도 뚝딱 완성됩니다.&quot; 광고에서는 AI와 자동화 툴이 발전하면서 클릭 몇 번 명령어 몇 줄로 결과물을 쏟아내는 것이 마치 정답인 것처럼 말하곤 합니다. 기술의 편리함을 부정하는 것은 아닙니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-606f90860164460f757733a4b8198d9a5e9eb967.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224466483040?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="606f90860164460f757733a4b8198d9a5e9eb967">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="204fc54ecd80dbc271d099dd5f6e9853a8c51ee4" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-04T21:43:19+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-04T21:43:19+09:00">2026-11-04 21:43 KST</time>
+  </div>
+  <h3><a href="./post-204fc54ecd80dbc271d099dd5f6e9853a8c51ee4.html">[LxMFC/실습과제] 이미지에서 가까운 점들을 그룹으로 묶는 방법 - Step 5</a></h3>
+  <p class="excerpt">[Step 4]를 실습하지 않았다면 [Step 4]부터 실습을 진행하세요. [Step 4]를 실습하면서 외곽선 정보를 후처리로 보정하지 않고 각의 범위를 넓혀서 보정하는 방법도 있습니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-204fc54ecd80dbc271d099dd5f6e9853a8c51ee4.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224465175033?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="204fc54ecd80dbc271d099dd5f6e9853a8c51ee4">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="63bc1dfae980c2fcec2d3743564f4623c2814254" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-03T16:52:59+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-03T16:52:59+09:00">2026-11-03 16:52 KST</time>
+  </div>
+  <h3><a href="./post-63bc1dfae980c2fcec2d3743564f4623c2814254.html">[LxMFC/실습과제] 이미지에서 가까운 점들을 그룹으로 묶는 방법 - Step 4</a></h3>
+  <p class="excerpt">[Step 3]을 실습하지 않았다면 [Step 3]부터 실습을 진행하세요. [Step 3] 실습을 완료했다면 그룹에 포함된 점의 좌표를 얻을 수 있을 겁니다. 하지만 그룹에 포함된 점의 좌표가 그룹의 영역을 의미하는 정보는 아닙니다.</p>
+  <p class="actions">
+    <a class="go" href="./post-63bc1dfae980c2fcec2d3743564f4623c2814254.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224463667399?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="63bc1dfae980c2fcec2d3743564f4623c2814254">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="0c178a021cfd4e556a299da5a8e712cb9f069b61" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-02T22:14:50+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-02T22:14:50+09:00">2026-11-02 22:14 KST</time>
+  </div>
+  <h3><a href="./post-0c178a021cfd4e556a299da5a8e712cb9f069b61.html">[LxMFC/실습과제] 이미지에서 가까운 점들을 그룹으로 묶는 방법 - Step 3</a></h3>
+  <p class="excerpt">[Step 2]를 실습하지 않았다면 [Step 2]부터 실습을 진행하세요. 이제 임의의 위치에 점의 그룹을 출력하는 실습을 진행했으니 해당 코드에서 생성된 점의 위치를 기억하는 변수를 지우고 아래와 같이 CImage에 점을 직접 출력하는 방식으로 변경하세요.</p>
+  <p class="actions">
+    <a class="go" href="./post-0c178a021cfd4e556a299da5a8e712cb9f069b61.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224462756758?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="0c178a021cfd4e556a299da5a8e712cb9f069b61">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="80d7de0edeb8f0bfd49bc6a391ab79d85e75c2f4" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-11-01T21:43:56+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-11-01T21:43:56+09:00">2026-11-01 21:43 KST</time>
+  </div>
+  <h3><a href="./post-80d7de0edeb8f0bfd49bc6a391ab79d85e75c2f4.html">[C++] for 반복문에 사용된 i++ 또는 ++i 표현에 대한 진실과 기술적 배경</a></h3>
+  <p class="excerpt">요즘 인터넷이랑 AI가 생성한 C, C++ 코드를 보면 이런 생각이 들 때가 있습니다. &quot;예전 C 언어에서는 for (int i = 0; i</p>
+  <p class="actions">
+    <a class="go" href="./post-80d7de0edeb8f0bfd49bc6a391ab79d85e75c2f4.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224461489419?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="80d7de0edeb8f0bfd49bc6a391ab79d85e75c2f4">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="1225f92e387b7f0ce4c1f6c57aed1519cdf89593" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-10-31T23:25:43+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-10-31T23:25:43+09:00">2026-10-31 23:25 KST</time>
+  </div>
+  <h3><a href="./post-1225f92e387b7f0ce4c1f6c57aed1519cdf89593.html">[오프라인 모임] AI 시대를 슬기롭게 살아갈 프로그래머들 모이세요!</a></h3>
+  <p class="excerpt">저는 오랜 기간 사람들에게 프로그래밍의 재미를 전하고 직접 프로그램을 만드는 기쁨을 알려온 선배 프로그래머입니다. AI 시대가 도래하면서 &quot;프로그래밍을 제대로 몰라도 원하는 프로그램을 쉽게 만들 수 있다&quot;는 이야기가 많아졌습니다. 상황이 이렇다</p>
+  <p class="actions">
+    <a class="go" href="./post-1225f92e387b7f0ce4c1f6c57aed1519cdf89593.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224460555614?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="1225f92e387b7f0ce4c1f6c57aed1519cdf89593">읽음</button>
+  </p>
+</article>
+<article class="card" data-id="37061a5a7f813a6571442d839a655bbb3a5b15a6" data-channel="tipsware" data-cat="ai" data-origin="국내" data-hot="0" data-today="0" data-published="2026-10-30T15:23:28+09:00">
+  <div class="meta">
+    <span class="avatar-fallback sm" aria-hidden="true">김</span>
+    <a class="badge" href="./channel-tipsware.html">김성엽 (팁스웨어)</a> 
+    <span class="cat">AI·테크</span>
+    
+    <time datetime="2026-10-30T15:23:28+09:00">2026-10-30 15:23 KST</time>
+  </div>
+  <h3><a href="./post-37061a5a7f813a6571442d839a655bbb3a5b15a6.html">[LxMFC/실습과제] 지정된 영역에 점 2500개 출력하기 - Step 2</a></h3>
+  <p class="excerpt">[Step 1]을 실습하지 않았다면 [Step 1]부터 실습을 진행하세요. 위에 링크한 예제를 실습했다면 아래와 같이 출력되도록 코드를 변경해 보세요. 동일하게 점은 2500개를 출력하고 중복도 허락하지만 각 점들이 7개의 영역에 구분되어 출력되도록 변경하면 됩니다. 당연한 이야기겠지만 프로그램이 실행할 때마다</p>
+  <p class="actions">
+    <a class="go" href="./post-37061a5a7f813a6571442d839a655bbb3a5b15a6.html">브리핑</a>
+    <a class="go" href="https://blog.naver.com/tipsware/224459110600?fromRss=true&amp;trackingCode=rss" rel="noopener">채널에서 이어 보기</a>
+    <button type="button" class="icon-btn fav" data-fav="tipsware">담기</button>
+    <button type="button" class="icon-btn read" data-read="37061a5a7f813a6571442d839a655bbb3a5b15a6">읽음</button>
+  </p>
+</article>
+</div>
+        </main>
+      
+    <aside class="drawer" data-drawer>
+      <h2>내 서랍</h2>
+      <p>담아 둔 사람과 아직 안 읽은 글을 이 기기에서만 모읍니다. 서버로 보내지 않습니다.</p>
+      <a class="btn-block" href="./my.html">서랍 열기</a>
+      <div class="drawer-stats">
+        <span><strong data-saved-count>0</strong>글</span>
+        <span><strong data-unread-count>0</strong>안 읽음</span>
+      </div>
+    </aside>
+    
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="tagline">에이전트빅보드 · 네임드 블로거 글, 고른 이유와 함께</p>
+      <nav>
+        <a href="./about.html">소개</a>
+        <a href="./criteria.html">선정 기준</a>
+        <a href="./guides.html">가이드</a>
+        <a href="./digests.html">오늘 읽을 글</a>
+        <a href="./articles.html">자체 글</a>
+        <a href="./privacy.html">개인정보</a>
+        <a href="./terms.html">이용약관</a>
+        <a href="./contact.html">문의</a>
+      </nav>
+      <p>공개 페이지에는 제목과 짧은 소개, 원문 링크, 그리고 에이전트빅보드가 직접 쓴 해설만 있습니다. 원문 전문은 올리지 않습니다. 광고는 싣지 않습니다.</p>
+    </div>
+  </footer>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

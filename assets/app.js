@@ -228,3 +228,262 @@
     });
   }
 })();
+
+/* Home/category feed (2026-11-26). Progressive enhancement: chips and items keep real hrefs. */
+
+(() => {
+  const feed = document.getElementById("neighbor-feed");
+  const chips = [...document.querySelectorAll("[data-cat-filter]")];
+  const items = () => [...(feed ? feed.querySelectorAll(".feed-item[data-cat]") : [])];
+  const days = () => [...(feed ? feed.querySelectorAll(".feed-day") : [])];
+  const empty = document.querySelector("[data-empty]");
+
+  const apply = (slug) => {
+    if (!feed || !chips.length) return;
+    chips.forEach((c) => c.classList.toggle("is-on", c.dataset.catFilter === slug));
+    let visible = 0;
+    items().forEach((it) => {
+      const show = slug === "all" || it.dataset.cat === slug;
+      it.hidden = !show;
+      if (show) visible += 1;
+    });
+    days().forEach((day) => {
+      const n = day.querySelectorAll(".feed-item:not([hidden])").length;
+      day.hidden = n === 0;
+      const count = day.querySelector(".count");
+      if (count) {
+        const total = day.querySelectorAll(".feed-item").length;
+        count.textContent = slug === "all" ? `${total}건` : `${n}건`;
+      }
+    });
+    if (empty) empty.hidden = visible > 0;
+    document.querySelectorAll(".ticker a[data-cat]").forEach((a) => {
+      a.hidden = slug !== "all" && a.dataset.cat !== slug;
+    });
+  };
+
+  chips.forEach((chip) => {
+    chip.addEventListener("click", (e) => {
+      e.preventDefault();
+      const slug = chip.dataset.catFilter || "all";
+      apply(slug);
+      const url = new URL(location.href);
+      if (slug === "all") url.searchParams.delete("cat");
+      else url.searchParams.set("cat", slug);
+      history.replaceState(null, "", url.pathname + url.search + url.hash);
+      feed && feed.scrollIntoView({ block: "start" });
+    });
+  });
+
+  const start = new URLSearchParams(location.search).get("cat") || "all";
+  if (start !== "all" && chips.some((c) => c.dataset.catFilter === start)) apply(start);
+})();
+
+/* Ticker: set duration from actual track width so it moves ~20px/s (slower than the 96s default). */
+(() => {
+  const PX_PER_SEC = 20;
+  const tune = () => {
+    const track = document.querySelector(".ticker-track");
+    const ticker = track && track.closest(".ticker");
+    if (!track || !ticker) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const half = track.scrollWidth / 2;
+    if (!half) return;
+    const dur = Math.max(half / PX_PER_SEC, 180);
+    ticker.style.setProperty("--ticker-duration", `${dur}s`);
+    ticker.dataset.tickerHalf = String(Math.round(half));
+    ticker.dataset.tickerSeconds = String(Math.round(dur));
+    ticker.dataset.tickerPxPerSec = String(PX_PER_SEC);
+  };
+  if (document.readyState === "complete") tune();
+  else window.addEventListener("load", tune);
+  window.addEventListener("resize", tune);
+})();
+
+/* In-page modal for channel and briefing links. Real hrefs stay for no-JS and crawlers. */
+(() => {
+  const dataUrl = (() => {
+    const link = document.querySelector('link[rel="stylesheet"][href*="style.css"]');
+    try {
+      return new URL("modal-data.json", link ? link.href : new URL("./assets/style.css", location.href)).href;
+    } catch (e) {
+      return "./assets/modal-data.json";
+    }
+  })();
+
+  let dataPromise = null;
+  const loadData = () => {
+    if (!dataPromise) {
+      dataPromise = fetch(dataUrl, { cache: "no-store" }).then((r) => {
+        if (!r.ok) throw new Error("modal data");
+        return r.json();
+      });
+    }
+    return dataPromise;
+  };
+
+  const esc = (s) => String(s || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
+  const catClass = (slug) => (slug ? `cat cat-${slug}` : "cat");
+
+  const ensureModal = () => {
+    let root = document.getElementById("site-modal");
+    if (root) return root;
+    root = document.createElement("div");
+    root.id = "site-modal";
+    root.className = "site-modal";
+    root.hidden = true;
+    root.innerHTML = `
+      <div class="site-modal-backdrop" data-close="1"></div>
+      <div class="site-modal-sheet" role="dialog" aria-modal="true" aria-labelledby="site-modal-title" tabindex="-1">
+        <button type="button" class="site-modal-close" data-close="1" aria-label="닫기">×</button>
+        <div class="site-modal-body"></div>
+      </div>`;
+    document.body.appendChild(root);
+    return root;
+  };
+
+  const fmtTime = (iso) => {
+    if (!iso) return "";
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return iso;
+    const ap = d.getHours() < 12 ? "오전" : "오후";
+    const h = d.getHours() % 12 || 12;
+    const m = String(d.getMinutes()).padStart(2, "0");
+    return `${d.getMonth() + 1}월 ${d.getDate()}일 ${ap} ${h}:${m}`;
+  };
+
+  const bloggerBlock = (ch) => {
+    if (!ch) return "";
+    const av = ch.avatar
+      ? `<img class="avatar" src="${esc(ch.avatar)}" alt="${esc(ch.display)}" width="48" height="48">`
+      : `<span class="avatar-fallback" aria-hidden="true">${esc((ch.display || "?").slice(0, 1))}</span>`;
+    return `<div class="site-modal-blogger">
+      ${av}
+      <div>
+        <div class="nm">${esc(ch.display || "")} <span class="${catClass(ch.slug)}">${esc(ch.category || "")}</span></div>
+        <p class="who">${esc(ch.who || "")}</p>
+      </div>
+    </div>`;
+  };
+
+  const recentList = (ids, posts, title) => {
+    const rows = (ids || []).map((id) => posts[id]).filter(Boolean);
+    if (!rows.length) return "";
+    return `<p class="section-label">${esc(title)}</p><ul class="more-list">${rows.map((p) =>
+      `<li><a href="./post-${esc(p.id)}.html">${esc(p.title)}</a></li>`
+    ).join("")}</ul>`;
+  };
+
+  const renderPost = (data, id) => {
+    const p = data.posts[id];
+    if (!p) return null;
+    const ch = data.channels[p.channel_id] || {};
+    // *_html fields are escaped server-side; only <strong class="ul-em"> is added.
+    const kpsHtml = p.keypoints_html || (p.keypoints || []).map(esc);
+    const kps = kpsHtml.map((k) => `<li>${k}</li>`).join("");
+    const src = p.url || ch.url || "#";
+    return `${bloggerBlock(ch)}
+      <h2 id="site-modal-title">${esc(p.title)}</h2>
+      <p class="section-label">${esc(fmtTime(p.published))}</p>
+      <div class="site-modal-summary">${p.summary_html || esc(p.summary || p.excerpt || "")}</div>
+      ${kps ? `<p class="section-label">핵심 포인트</p><ul class="site-modal-kps">${kps}</ul>` : ""}
+      <a class="btn-primary" href="${esc(src)}" rel="noopener">원문 보기</a>
+      ${recentList(ch.recent, data.posts, "이 블로거의 최근 글")}
+      <p><a class="full-ch no-modal" href="./channel-${esc(p.channel_id)}.html">채널 페이지 열기</a></p>`;
+  };
+
+  const renderChannel = (data, id) => {
+    const ch = data.channels[id];
+    if (!ch) return null;
+    return `${bloggerBlock(ch)}
+      <h2 id="site-modal-title">${esc(ch.display || "")}</h2>
+      <div class="site-modal-summary">${esc(ch.reason || ch.who || "")}</div>
+      ${recentList(ch.recent, data.posts, "최근 글 5건")}
+      <a class="btn-primary" href="${esc(ch.url || "#")}" rel="noopener">원문 보기</a>
+      <p><a class="full-ch no-modal" href="./channel-${esc(id)}.html">채널 페이지 열기</a></p>`;
+  };
+
+  let lastFocus = null;
+  const open = (hash, html) => {
+    const root = ensureModal();
+    const body = root.querySelector(".site-modal-body");
+    const sheet = root.querySelector(".site-modal-sheet");
+    body.innerHTML = html;
+    lastFocus = document.activeElement;
+    root.hidden = false;
+    document.body.style.overflow = "hidden";
+    sheet.focus();
+    if (location.hash !== hash) history.pushState({ modal: hash }, "", hash);
+  };
+
+  const close = ({ fromPop } = {}) => {
+    const root = document.getElementById("site-modal");
+    if (!root || root.hidden) return;
+    root.hidden = true;
+    document.body.style.overflow = "";
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+    if (!fromPop && location.hash && (location.hash.startsWith("#brief-") || location.hash.startsWith("#channel-"))) {
+      history.pushState({ modal: "" }, "", location.pathname + location.search);
+    }
+  };
+
+  const openPost = (id) => loadData().then((data) => {
+    const html = renderPost(data, id);
+    if (html === null) { location.href = `./post-${id}.html`; return; }
+    open(`#brief-${id}`, html);
+  }).catch(() => {
+    location.href = `./post-${id}.html`;
+  });
+  const openChannel = (id) => loadData().then((data) => {
+    const html = renderChannel(data, id);
+    if (html === null) { location.href = `./channel-${id}.html`; return; }
+    open(`#channel-${id}`, html);
+  }).catch(() => {
+    location.href = `./channel-${id}.html`;
+  });
+
+  const applyHash = () => {
+    const h = location.hash || "";
+    if (h.startsWith("#brief-")) openPost(h.slice(7));
+    else if (h.startsWith("#channel-")) openChannel(h.slice(9));
+    else close({ fromPop: true });
+  };
+
+  document.addEventListener("click", (e) => {
+    const closeBtn = e.target.closest("[data-close]");
+    if (closeBtn && closeBtn.closest("#site-modal")) {
+      e.preventDefault();
+      close();
+      return;
+    }
+    const a = e.target.closest("a[href]");
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (a.classList.contains("no-modal") || a.dataset.fullPage === "1") return;
+    if (a.classList.contains("is-src")) return;
+    // Only feed surfaces open the popup; everything else navigates normally.
+    if (!a.closest(".feed-item, .ticker, .people-strip, #site-modal")) return;
+    const href = a.getAttribute("href") || "";
+    if (/^https?:/i.test(href) && !href.includes("/post-") && !href.includes("/channel-")) return;
+    const post = href.match(/(?:^\.\/|(?:https?:\/\/[^/]+\/))post-([a-f0-9]+)\.html(?:#.*)?$/i);
+    const ch = href.match(/(?:^\.\/|(?:https?:\/\/[^/]+\/))channel-([^./]+)\.html(?:#.*)?$/i);
+    if (post) {
+      e.preventDefault();
+      openPost(post[1]);
+    } else if (ch) {
+      e.preventDefault();
+      openChannel(ch[1]);
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+  window.addEventListener("popstate", applyHash);
+  window.addEventListener("hashchange", applyHash);
+  if (/^#brief-|^#channel-/.test(location.hash)) applyHash();
+})();
