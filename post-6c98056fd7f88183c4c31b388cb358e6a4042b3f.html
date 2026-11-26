@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="sATEfTNDdsAA3GR6Jzs2jaLGeAOemjr-Lnn2Npl2b-c">
+  <meta name="naver-site-verification" content="8513fb49a41ecbf1fe2b807b5bea7cb23cbbb227">
+  <title>A tiny payment can expose the IP address behind a bitcoin wallet, developer finds — 에이전트빅보드</title>
+  <meta name="description" content="해외 원문을 우리말로 먼저 가늠해 보는 짧은 안내입니다. 출처는 CoinDesk이고, 전문은 원문 링크에서 읽습니다.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://agentbigboard.com/post-6c98056fd7f88183c4c31b388cb358e6a4042b3f.html">
+  <link rel="alternate" hreflang="ko" href="https://agentbigboard.com/post-6c98056fd7f88183c4c31b388cb358e6a4042b3f.html">
+  <link rel="alternate" hreflang="x-default" href="https://agentbigboard.com/post-6c98056fd7f88183c4c31b388cb358e6a4042b3f.html">
+  <link rel="alternate" type="application/rss+xml" title="에이전트빅보드 자체 해설" href="https://agentbigboard.com/rss.xml">
+  <meta property="og:title" content="A tiny payment can expose the IP address behind a bitcoin wallet, developer finds — 에이전트빅보드">
+  <meta property="og:description" content="해외 원문을 우리말로 먼저 가늠해 보는 짧은 안내입니다. 출처는 CoinDesk이고, 전문은 원문 링크에서 읽습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="에이전트빅보드">
+  <meta property="og:url" content="https://agentbigboard.com/post-6c98056fd7f88183c4c31b388cb358e6a4042b3f.html">
+  <meta property="og:image" content="https://agentbigboard.com/assets/og.png">
+  <meta property="og:image:alt" content="에이전트빅보드">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A tiny payment can expose the IP address behind a bitcoin wallet, developer finds — 에이전트빅보드">
+  <meta name="twitter:description" content="해외 원문을 우리말로 먼저 가늠해 보는 짧은 안내입니다. 출처는 CoinDesk이고, 전문은 원문 링크에서 읽습니다.">
+  <meta name="twitter:image" content="https://agentbigboard.com/assets/og.png">
+  <link rel="icon" href="https://agentbigboard.com/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="apple-touch-icon" href="https://agentbigboard.com/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="./assets/style.css">
+  <script type="application/ld+json">[{"@type":"Organization","@id":"https://agentbigboard.com/#organization","name":"에이전트빅보드","alternateName":"AgentBigBoard","url":"https://agentbigboard.com/","logo":{"@type":"ImageObject","url":"https://agentbigboard.com/favicon-512.png","width":512,"height":512},"description":"네이버 블로그와 해외 개인·공식 블로그에서 고른 사람의 글을 제목·소개·원문 링크로 모았습니다. 누구를 왜 골랐는지도 공개합니다.","inLanguage":"ko"},{"@type":"WebSite","@id":"https://agentbigboard.com/#website","name":"에이전트빅보드","alternateName":"agentbigboard","url":"https://agentbigboard.com/","description":"네이버 블로그와 해외 개인·공식 블로그에서 고른 사람의 글을 제목·소개·원문 링크로 모았습니다. 누구를 왜 골랐는지도 공개합니다.","inLanguage":"ko","publisher":{"@id":"https://agentbigboard.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://agentbigboard.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"에이전트빅보드","item":"https://agentbigboard.com/"},{"@type":"ListItem","position":2,"name":"코인·가상자산","item":"https://agentbigboard.com/cat-crypto.html"},{"@type":"ListItem","position":3,"name":"CoinDesk","item":"https://agentbigboard.com/channel-ow_coindesk.html"},{"@type":"ListItem","position":4,"name":"A tiny payment can expose the IP address behind a bitcoin wallet, developer finds","item":"https://agentbigboard.com/post-6c98056fd7f88183c4c31b388cb358e6a4042b3f.html"}]}]</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFBK8J322P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GFBK8J322P');
+  </script>
+</head>
+<body class="home-feed post-page">
+  
+  <header class="top">
+    <a class="logo" href="/" aria-label="에이전트빅보드"><span class="wordmark">에이전트<span class="wm-accent">빅보드</span></span></a>
+    <div class="top-actions">
+      <a class="top-link" href="./articles.html">자체 해설</a>
+      <button type="button" class="icon-btn" id="searchBtn">검색</button>
+      <button type="button" class="icon-btn" id="themeBtn">어둡게</button>
+    </div>
+  </header>
+  <div class="search-panel" id="searchPanel" hidden>
+    <form id="searchForm" class="search" role="search" action="/" method="get">
+      <label class="sr-only" for="q">검색</label>
+      <input id="q" name="q" type="search" placeholder="사람이나 글 제목을 찾습니다" autocomplete="off">
+    </form>
+  </div>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">에이전트빅보드</a> <span>/</span> <a href="./cat-crypto.html">코인·가상자산</a> <span>/</span> <a href="./channel-ow_coindesk.html">CoinDesk</a></nav>
+    <div class="layout-one">
+      <main class="main"><article class="page post post-rich"><p class="post-meta"><a class="feed-name" href="./channel-ow_coindesk.html">코인데스크(CoinDesk)</a> <a class="cat cat-crypto no-modal" href="./cat-crypto.html">코인·가상자산</a> <time datetime="2026-11-27T02:30:00+09:00">2026년 11월 27일 오전 2:30</time></p><h1>A tiny payment can expose the IP address behind a bitcoin wallet, developer finds</h1><section class="blogger-card" aria-label="작성자"><span class="avatar-fallback" aria-hidden="true">코</span><div><p class="nm"><a class="feed-name" href="./channel-ow_coindesk.html">코인데스크(CoinDesk)</a></p><p class="who">해외 가상자산 전문 매체입니다.</p><p class="why">글로벌 크립토 미디어. 국내 속보와 같은 이슈를 영어로 어떻게 쓰는지 대조할 때 쓴다.</p></div></section><section class="three-lines" aria-labelledby="three-title"><h2 id="three-title">세 줄로 읽기</h2><p>A Bitcoin Core contributor found that the wallet&#x27;s habit of resending stuck payments lets anyone link an <strong class="ul-em">address</strong> to the computer watching it, for under 35 cents.</p><p class="note">원문 문장에서 고른 요약입니다. 숫자와 사실은 원문에서 다시 확인하세요.</p></section><a class="src-btn" href="https://www.coindesk.com/tech/2026/11/26/a-tiny-payment-can-expose-the-ip-address-behind-a-bitcoin-wallet-developer-finds" rel="noopener">원문 보기</a><h2>이 블로거의 최근 글</h2><ul class="read-next"><li><a href="./post-1840f8d981b0c7d3cdc52beb7c743eacadcae410.html">Bitcoin’s dormant supply rises, a behavior seen during previous bear-market bottoming phases</a></li><li><a href="./post-a8b2be6521f79b8bb78156467756f71039f7a3f5.html">Crypto for Advisors: Four questions to ask before trusting a crypto exchange</a></li><li><a href="./post-cea00aae6676193efd2d6f694e843fd8fb8cb9a8.html">Spain gives anti-laundering unit power to freeze crypto accounts without a judge</a></li><li><a href="./post-1e4030ed082bb17fa2a7286b26abad94c24428bb.html">Standard Chartered&#x27;s Zodia Custody suffers data breach, exposing client information</a></li><li><a href="./post-2d90ae56743da7a8acaf0193ef12111b0d19bcd7.html">Bitcoin ETFs are bleeding cash and the Fed is unlikely to help</a></li></ul><h2>같은 분류의 다른 글</h2><ul class="read-next"><li><a href="./post-862ed696953f1e934dc780ebbf76598d0c8d42d8.html">스택스랩스, 비트코인 맡기지 않는 담보대출 연구</a> <span class="meta">토큰포스트</span></li><li><a href="./post-8bb76201f497d6082956acc3c4bce34401047788.html">[뉴욕 코인시황] 비트코인 6만달러 회복…고래 떠났지만 160억달러 숏 청산 기대</a> <span class="meta">블록미디어</span></li><li><a href="./post-8332c72c0e4dd2e367479c81490dce0e68cdb93a.html">[&quot;암호화폐 마켓메이커 업계 양극화...중견 업체 도태될 것&quot;]</a> <span class="meta">코인니스</span></li><li><a href="./post-9f129e80065dad83e04ff2d05df46dde69a7f108.html">美 지니어스법, 외국 스테이블코인 유통에 단계별 요건</a> <span class="meta">토큰포스트</span></li><li><a href="./post-df8147fdd00fac9ab087c9cb828d9417099a0dc2.html">[일본 금융청, 디파이 월렛 규제 추진 검토]</a> <span class="meta">코인니스</span></li></ul><p class="actions"><button type="button" class="icon-btn fav" data-fav="ow_coindesk">채널 즐겨찾기</button> <button type="button" class="icon-btn read" data-read="6c98056fd7f88183c4c31b388cb358e6a4042b3f">읽음</button></p><p class="note">공개 페이지에는 짧은 소개와 원문 링크만 있습니다. 원문 전문은 올리지 않습니다.</p></article></main>
+      
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="tagline">에이전트빅보드 · 네임드 블로거 글, 고른 이유와 함께</p>
+      <nav>
+        <a href="./about.html">소개</a>
+        <a href="./criteria.html">선정 기준</a>
+        <a href="./guides.html">가이드</a>
+        <a href="./digests.html">오늘 읽을 글</a>
+        <a href="./articles.html">자체 해설</a>
+        <a href="./privacy.html">개인정보</a>
+        <a href="./terms.html">이용약관</a>
+        <a href="./contact.html">문의</a>
+      </nav>
+      <p>공개 페이지에는 제목과 짧은 소개, 원문 링크, 그리고 에이전트빅보드가 직접 쓴 해설만 있습니다. 원문 전문은 올리지 않습니다. 현재 광고는 없으며, 향후 Google 애드센스 광고가 게재될 수 있습니다. 자세한 내용은 <a href="./privacy.html">개인정보처리방침</a>을 봅니다.</p>
+    </div>
+  </footer>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
