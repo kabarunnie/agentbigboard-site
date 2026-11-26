@@ -229,54 +229,58 @@
   }
 })();
 
-/* Home/category feed (2026-11-26). Progressive enhancement: chips and items keep real hrefs. */
-
+/* Home/category feed (2026-11-26). Chips and category links keep real hrefs
+   and navigate to cat-*.html / index.html so each view is only that category's
+   blog posts, shown from the top of the page. In-page filtering was removed
+   because it kept the previous scroll position and mixed other categories. */
 (() => {
-  const feed = document.getElementById("neighbor-feed");
-  const chips = [...document.querySelectorAll("[data-cat-filter]")];
-  const items = () => [...(feed ? feed.querySelectorAll(".feed-item[data-cat]") : [])];
-  const days = () => [...(feed ? feed.querySelectorAll(".feed-day") : [])];
-  const empty = document.querySelector("[data-empty]");
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
 
-  const apply = (slug) => {
-    if (!feed || !chips.length) return;
-    chips.forEach((c) => c.classList.toggle("is-on", c.dataset.catFilter === slug));
-    let visible = 0;
-    items().forEach((it) => {
-      const show = slug === "all" || it.dataset.cat === slug;
-      it.hidden = !show;
-      if (show) visible += 1;
-    });
-    days().forEach((day) => {
-      const n = day.querySelectorAll(".feed-item:not([hidden])").length;
-      day.hidden = n === 0;
-      const count = day.querySelector(".count");
-      if (count) {
-        const total = day.querySelectorAll(".feed-item").length;
-        count.textContent = slug === "all" ? `${total}건` : `${n}건`;
-      }
-    });
-    if (empty) empty.hidden = visible > 0;
-    document.querySelectorAll(".ticker a[data-cat]").forEach((a) => {
-      a.hidden = slug !== "all" && a.dataset.cat !== slug;
-    });
+  const toTop = () => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    if (document.body) document.body.scrollTop = 0;
   };
 
-  chips.forEach((chip) => {
-    chip.addEventListener("click", (e) => {
-      e.preventDefault();
-      const slug = chip.dataset.catFilter || "all";
-      apply(slug);
-      const url = new URL(location.href);
-      if (slug === "all") url.searchParams.delete("cat");
-      else url.searchParams.set("cat", slug);
-      history.replaceState(null, "", url.pathname + url.search + url.hash);
-      feed && feed.scrollIntoView({ block: "start" });
-    });
-  });
+  const destPath = (href) => {
+    try {
+      const u = new URL(href, location.href);
+      let p = u.pathname || "/";
+      if (p.endsWith("/index.html")) p = p.slice(0, -10) || "/";
+      if (p.length > 1 && p.endsWith("/")) p = p.slice(0, -1);
+      return p || "/";
+    } catch (e) {
+      return "";
+    }
+  };
 
-  const start = new URLSearchParams(location.search).get("cat") || "all";
-  if (start !== "all" && chips.some((c) => c.dataset.catFilter === start)) apply(start);
+  const isCategoryLink = (a) => {
+    if (!a) return false;
+    if (a.closest(".feed-nav") || a.hasAttribute("data-cat-filter")) return true;
+    if (a.classList.contains("cat") && /cat-[a-z]+\.html/i.test(a.getAttribute("href") || "")) return true;
+    const href = a.getAttribute("href") || "";
+    return /(?:^|\/)cat-[a-z]+\.html(?:[?#]|$)/i.test(href);
+  };
+
+  if (sessionStorage.getItem("abb-cat-top") === "1") {
+    sessionStorage.removeItem("abb-cat-top");
+    toTop();
+    window.addEventListener("load", toTop);
+  }
+
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("a[href]");
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (!isCategoryLink(a)) return;
+    history.scrollRestoration = "manual";
+    try { sessionStorage.setItem("abb-cat-top", "1"); } catch (err) {}
+    const href = a.getAttribute("href") || "";
+    if (destPath(href) === destPath(location.href)) {
+      e.preventDefault();
+      toTop();
+    }
+    // Otherwise let the browser navigate to the category (or home) page.
+  });
 })();
 
 /* Ticker: set duration from actual track width so it moves ~20px/s (slower than the 96s default). */
