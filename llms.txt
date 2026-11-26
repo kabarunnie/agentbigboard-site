@@ -27,7 +27,7 @@
 - [AI·테크](https://agentbigboard.com/cat-ai.html): 도구·모델·활용 기록
 - [창업·부업](https://agentbigboard.com/cat-startup.html): 실제 운영 경험과 비용 이야기
 - [생활·소비](https://agentbigboard.com/cat-life.html): 생활 정보와 실사용 후기
-- [뷰티](https://agentbigboard.com/cat-beauty.html): 스킨케어·색조를 기준을 나눠 쓰는 블로거 글
+- [뷰티](https://agentbigboard.com/cat-beauty.html): 스킨케어와 색조를 기준별로 나눠 쓰는 블로거 글
 - [여행](https://agentbigboard.com/cat-travel.html): 일정·동선·현장 정보를 적는 여행 블로그
 - [육아](https://agentbigboard.com/cat-parenting.html): 육아 경험과 준비물·제도 안내 블로그
 
