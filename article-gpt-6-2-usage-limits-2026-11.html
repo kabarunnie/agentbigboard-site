@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="sATEfTNDdsAA3GR6Jzs2jaLGeAOemjr-Lnn2Npl2b-c">
+  <meta name="naver-site-verification" content="8513fb49a41ecbf1fe2b807b5bea7cb23cbbb227">
+  <title>GPT-6.2 한도 더 빨리 소진, 요금제별 사용 가능량 추정 — 에이전트빅보드</title>
+  <meta name="description" content="오픈AI 책임자가 GPT-6.2 아스트라 40%·솔 25% 더 빨리 한도에 닿는다고 밝혔습니다. 공식 문서에는 아직 없습니다. 요금제별 사용 가능량 계산, 보상 리셋 효과, 제미나이·클로드 비교를 링크와 함께 정리했습니다.">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+  <link rel="canonical" href="https://agentbigboard.com/article-gpt-6-2-usage-limits-2026-11.html">
+  <link rel="alternate" hreflang="ko" href="https://agentbigboard.com/article-gpt-6-2-usage-limits-2026-11.html">
+  <link rel="alternate" hreflang="x-default" href="https://agentbigboard.com/article-gpt-6-2-usage-limits-2026-11.html">
+  <link rel="alternate" type="application/rss+xml" title="에이전트빅보드 자체 해설" href="https://agentbigboard.com/rss.xml">
+  <meta property="og:title" content="GPT-6.2 한도 더 빨리 소진, 요금제별 사용 가능량 추정 — 에이전트빅보드">
+  <meta property="og:description" content="오픈AI 책임자가 GPT-6.2 아스트라 40%·솔 25% 더 빨리 한도에 닿는다고 밝혔습니다. 공식 문서에는 아직 없습니다. 요금제별 사용 가능량 계산, 보상 리셋 효과, 제미나이·클로드 비교를 링크와 함께 정리했습니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="에이전트빅보드">
+  <meta property="og:url" content="https://agentbigboard.com/article-gpt-6-2-usage-limits-2026-11.html">
+  <meta property="og:image" content="https://agentbigboard.com/assets/og.png">
+  <meta property="og:image:alt" content="에이전트빅보드">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GPT-6.2 한도 더 빨리 소진, 요금제별 사용 가능량 추정 — 에이전트빅보드">
+  <meta name="twitter:description" content="오픈AI 책임자가 GPT-6.2 아스트라 40%·솔 25% 더 빨리 한도에 닿는다고 밝혔습니다. 공식 문서에는 아직 없습니다. 요금제별 사용 가능량 계산, 보상 리셋 효과, 제미나이·클로드 비교를 링크와 함께 정리했습니다.">
+  <meta name="twitter:image" content="https://agentbigboard.com/assets/og.png">
+  <link rel="icon" href="https://agentbigboard.com/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="apple-touch-icon" href="https://agentbigboard.com/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="./assets/style.css">
+  <script type="application/ld+json">[{"@type":"Organization","@id":"https://agentbigboard.com/#organization","name":"에이전트빅보드","alternateName":"AgentBigBoard","url":"https://agentbigboard.com/","logo":{"@type":"ImageObject","url":"https://agentbigboard.com/favicon-512.png","width":512,"height":512},"description":"네이버 블로그와 해외 개인·공식 블로그에서 고른 사람의 글을 제목·소개·원문 링크로 모았습니다. 누구를 왜 골랐는지도 공개합니다.","inLanguage":"ko"},{"@type":"WebSite","@id":"https://agentbigboard.com/#website","name":"에이전트빅보드","alternateName":"agentbigboard","url":"https://agentbigboard.com/","description":"네이버 블로그와 해외 개인·공식 블로그에서 고른 사람의 글을 제목·소개·원문 링크로 모았습니다. 누구를 왜 골랐는지도 공개합니다.","inLanguage":"ko","publisher":{"@id":"https://agentbigboard.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://agentbigboard.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"에이전트빅보드","item":"https://agentbigboard.com/"},{"@type":"ListItem","position":2,"name":"자체 해설","item":"https://agentbigboard.com/articles.html"},{"@type":"ListItem","position":3,"name":"GPT-6.2 한도 더 빨리 소진, 요금제별 사용 가능량 추정","item":"https://agentbigboard.com/article-gpt-6-2-usage-limits-2026-11.html"}]},{"@type":"NewsArticle","headline":"GPT-6.2 한도 더 빨리 소진, 요금제별 사용 가능량 추정","description":"오픈AI 책임자가 GPT-6.2 아스트라 40%·솔 25% 더 빨리 한도에 닿는다고 밝혔습니다. 공식 문서에는 아직 없습니다. 요금제별 사용 가능량 계산, 보상 리셋 효과, 제미나이·클로드 비교를 링크와 함께 정리했습니다.","url":"https://agentbigboard.com/article-gpt-6-2-usage-limits-2026-11.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://agentbigboard.com/article-gpt-6-2-usage-limits-2026-11.html"},"inLanguage":"ko","isAccessibleForFree":true,"author":{"@type":"Organization","name":"에이전트빅보드 편집부","url":"https://agentbigboard.com/about.html"},"publisher":{"@id":"https://agentbigboard.com/#organization"},"image":"https://agentbigboard.com/assets/og.png","datePublished":"2026-11-28T14:15:00+09:00","dateModified":"2026-11-28T14:14:00+09:00"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"구독료가 그대로인데 왜 사실상 오른 셈인가요?","acceptedAnswer":{"@type":"Answer","text":"값은 그대로지만 같은 아스트라 작업이 한도를 1.4배(해석 A) 쓰기 때문입니다. 변경 전과 같은 양을 하려면 한도당 값으로 따져 Plus 29,000원이 약 40,600원짜리 한도와 같아집니다. 편집부의 환산이고, 실제 청구액은 아닙니다."}},{"@type":"Question","name":"이미 쓴 사용분까지 소급해서 계산되나요?","acceptedAnswer":{"@type":"Answer","text":"소급 청구는 없습니다. 이미 쓴 양을 새 기준으로 다시 계산하는지는 소티오 게시물에 없습니다."}},{"@type":"Question","name":"이월 리셋은 어디서 쓰나요?","acceptedAnswer":{"@type":"Answer","text":"웹은 사용량(Usage) 설정, 데스크톱 앱은 설정의 사용량·결제(Usage & billing)에서 ‘리셋 1개 가능’을 눌러 확인합니다. 코덱스 CLI에서는 /usage로 쓸 수 있습니다."}},{"@type":"Question","name":"Go 요금제를 쓰는데 영향이 있나요?","acceptedAnswer":{"@type":"Answer","text":"Go는 아스트라·솔을 쓰지 못해 소모 속도는 그대로이고, 리셋은 월간 한도에 적용됩니다."}}]}]</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFBK8J322P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GFBK8J322P');
+  </script>
+</head>
+<body>
+  
+  <header class="top">
+    <a class="logo" href="/" aria-label="에이전트빅보드"><span class="wordmark">에이전트<span class="wm-accent">빅보드</span></span></a>
+    <div class="top-actions">
+      <a class="top-link" href="./articles.html">자체 해설</a>
+      <button type="button" class="icon-btn" id="searchBtn">검색</button>
+      <button type="button" class="icon-btn" id="themeBtn">어둡게</button>
+    </div>
+  </header>
+  <div class="search-panel" id="searchPanel" hidden>
+    <form id="searchForm" class="search" role="search" action="/" method="get">
+      <label class="sr-only" for="q">검색</label>
+      <input id="q" name="q" type="search" placeholder="사람이나 글 제목을 찾습니다" autocomplete="off">
+    </form>
+  </div>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="breadcrumb"><a href="/">에이전트빅보드</a> <span>/</span> <a href="./articles.html">자체 해설</a> <span>/</span> <a href="./article-gpt-6-2-usage-limits-2026-11.html">GPT-6.2 한도 더 빨리 소진, 요금제별 사용 가능량 추정</a></nav>
+    <div class="layout">
+      <main class="main"><article class="article page"><p class="meta"><span>에이전트빅보드 편집부</span> · <time datetime="2026-11-28T14:15:00+09:00">2026-11-28 14:15 KST</time> · AI·테크</p><h1>GPT-6.2 한도 더 빨리 소진, 요금제별 사용 가능량 추정</h1>
+    <div class="prose lead-block answer-lead"><p><strong>오픈AI는 GPT-6.2 아스트라가 지난주보다 <strong>40%</strong>, 솔이 <strong>25%</strong> 더 빨리 한도에 닿는다고 밝혔습니다.</strong> 오픈AI(OpenAI) 핵심 제품 총괄인 티보 소티오(Tibo Sottiaux, <a href="https://www.wired.com/story/model-behavior-interview-with-openai-codex-lead-tibo-sottiaux/" rel="noopener">와이어드</a>·<a href="https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/" rel="noopener">테크크런치</a> 인터뷰)가 <a href="https://x.com/thsottiaux/status/2125784147889393806" rel="noopener">2026년 11월 26일 엑스(X) 게시물</a>에서, 2026년 11월 17일 출시 때 아스트라(Astra)와 솔(Sol)의 사용량이 잘못 할인된 상태였다고 인정했고 비교 기준은 ‘지난주’로만 적었습니다.</p>
+<p>이 글은 그 말을 요금제별 사용 가능량 추정으로 바꿔 계산하고 제미나이·클로드와 나란히 놓으며, 적용 범위는 게시물에 없고 아스트라·솔은 요금 문서상 챗GPT(ChatGPT) Work와 코덱스(Codex)에서 쓰입니다.</p></div>
+    
+    <section class="key-box" aria-labelledby="key-box-title"><h2 id="key-box-title">세 줄로 읽기</h2><ol class="takeaways" aria-label="세 줄"><li><span class="n">1</span><span>공식 근거는 오픈AI 직원의 엑스 게시물 한 건이고, 도움말과 릴리스 노트에는 이 변경이 아직 없습니다.</span></li><li><span class="n">2</span><span>Go는 문서상 대상 모델이 없고, Plus는 요금 문서 표 기준 5시간당 6~50회·17~180회입니다.</span></li><li><span class="n">3</span><span>제미나이·클로드는 횟수 대신 배수를 쓰지만, 4배·5배의 기준이 서로 달라 가격표만으로 줄 세우면 틀립니다.</span></li></ol></section>
+    <nav class="toc" aria-label="목차"><p class="toc-label">이 글의 차례</p><ol><li><a href="#오픈AI가-말한-것은-정확히-무엇이고-어디에-적혀-있나">오픈AI가 말한 것은 정확히 무엇이고, 어디에 적혀 있나?</a></li><li><a href="#이-소식은-어디서-시작됐나">이 소식은 어디서 시작됐나?</a></li><li><a href="#40-와-25-는-쓸-수-있는-양을-얼마나-줄이나">40%와 25%는 쓸 수 있는 양을 얼마나 줄이나?</a></li><li><a href="#요금제별로-쓸-수-있는-양은-얼마나-줄었을까">요금제별로 쓸 수 있는 양은 얼마나 줄었을까?</a></li><li><a href="#보상-리셋은-얼마나-도움이-되나">보상 리셋은 얼마나 도움이 되나?</a></li><li><a href="#제미나이-클로드-요금제와-비교하면-어떤가">제미나이·클로드 요금제와 비교하면 어떤가?</a></li><li><a href="#현재까지-확인된-내용">현재까지 확인된 내용</a></li><li><a href="#아직-확인하지-못한-것">아직 확인하지 못한 것</a></li><li><a href="#누가-알렸나">누가 알렸나?</a></li><li><a href="#자주-묻는-질문">자주 묻는 질문</a></li><li><a href="#참고-자료">참고 자료</a></li><li><a href="#관련-글">관련 글</a></li></ol></nav>
+    <div class="prose article-body">
+      
+      <h2 id="오픈AI가-말한-것은-정확히-무엇이고-어디에-적혀-있나">오픈AI가 말한 것은 정확히 무엇이고, 어디에 적혀 있나?</h2>
+<p><strong>게시물 요지는 아스트라 <strong>40%</strong>·솔 <strong>25%</strong>, 과거 사용분 미청구, 이월 리셋 1회입니다.</strong> 게시 시각은 2026년 11월 26일 11:50(KST)이고, 대상은 ‘대부분의 이용자’입니다.</p>
+<p>편집부는 2026년 11월 28일 KST에 엑스 공개 페이지에서 전문을 읽고, <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/" rel="noopener">블리핑컴퓨터(BleepingComputer)의 인용</a>과 글자 단위로 대조했습니다.</p>
+<p>같은 게시물은 다른 모델은 영향이 없고, 지난 사용분의 차액은 청구하지 않으며, 그래도 이전 세대인 GPT-6 아스트라·GPT-6.1 솔보다는 한도가 더 멀리 간다고 적었습니다.</p>
+<p>2026년 11월 28일 13시대 KST에 연 <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" rel="noopener">챗GPT 릴리스 노트</a>의 최신 항목은 11월 23일이었고, 이 변경은 없었습니다.</p>
+<h2 id="이-소식은-어디서-시작됐나">이 소식은 어디서 시작됐나?</h2>
+<figure class="shot"><img src="./assets/x-shots/gpt-6-2-usage-limits-2026-11-1.png" alt="스탯츠와이어(@StatsWire)가 GPT-6.2 아스트라는 40%, 솔은 25% 더 빨리 한도에 닿는다고 알린 엑스 게시물 갈무리." width="1102" height="788" loading="lazy" decoding="async"><figcaption>스탯츠와이어(@StatsWire) 엑스(X) 게시물 · 게시 2026년 11월 26일 16:59 KST · 갈무리 2026년 11월 28일 13:39 KST. 본문은 ‘더 보기’ 뒤가 접혀 있습니다. · <a href="https://x.com/StatsWire/status/2125861866467688620" rel="noopener nofollow" target="_blank">원문 보기</a></figcaption></figure>
+<p><strong>스탯츠와이어는 오픈AI 게시물이 나온 지 약 5시간 뒤에 같은 숫자를 목록으로 옮겼습니다.</strong> 스탯츠와이어(Stats Wire)는 프로필에서 AI 엔지니어라고 밝힌 계정으로, 구글이 제미나이 4 네온(Gemini 4 Neon)을 더 빠르게 하면서 쿼터 소모량은 줄이고 있다는 취지의 문장을 덧붙였습니다.</p>
+<p>원문은 “REDUCING quota consumption”입니다.</p>
+<p>구글이 네온의 쿼터 소모를 줄였다는 말은 이 게시물에서만 <span class="label-verified">확인됩니다</span>.</p>
+<p>구글 <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" rel="noopener">발표문</a>은 Tasks 기능에서 한도를 더 오래 쓴다고만 적어, 이 글은 앱 전체로 일반화하지 않습니다.</p>
+<h2 id="40-와-25-는-쓸-수-있는-양을-얼마나-줄이나"><strong>40%</strong>와 <strong>25%</strong>는 쓸 수 있는 양을 얼마나 줄이나?</h2>
+<p><strong>같은 한도로 하던 일이 아스트라는 약 <strong>29%</strong>, 솔은 <strong>20%</strong> 줄어든다고 읽는 것이 가장 자연스럽습니다.</strong> 오픈AI는 “the same work will use more of your plan’s usage allowance”(같은 작업이 요금제 한도를 더 많이 쓴다)고 적었으므로, 같은 일에 드는 한도가 1.4배(아스트라), 1.25배(솔)가 됩니다.</p>
+<p>이를 ‘해석 A’라 하고, ‘한도에 닿는 시간이 <strong>40%</strong>·<strong>25%</strong> 줄었다’로 읽으면 ‘해석 B’입니다.</p>
+<p>어느 쪽인지 오픈AI는 밝히지 않았습니다.</p>
+<div class="table-scroll" tabindex="0"><table><thead><tr><th>모델</th><th>해석 A 증감</th><th>해석 B 증감</th></tr></thead><tbody><tr><td>아스트라</td><td>-<strong>29%</strong></td><td>-<strong>40%</strong></td></tr><tr><td>솔</td><td>-<strong>20%</strong></td><td>-<strong>25%</strong></td></tr></tbody></table></div>
+<p>표는 변경 전 쓸 수 있는 양을 <strong>100%</strong>로 두고 편집부가 계산한 증감입니다. 해석 A에서는 아스트라 <strong>100%</strong>→<strong>71%</strong>(1÷1.4), 솔 <strong>100%</strong>→<strong>80%</strong>(1÷1.25)가 남고, 해석 B에서는 <strong>60%</strong>와 <strong>75%</strong>가 남습니다.</p>
+<h2 id="요금제별로-쓸-수-있는-양은-얼마나-줄었을까">요금제별로 쓸 수 있는 양은 얼마나 줄었을까?</h2>
+<p><strong>표는 요금제마다 한국 앱스토어 표시가와 쓸 수 있는 양의 변화를 한 줄씩 비교합니다.</strong> 한국 가격은 <a href="https://apps.apple.com/kr/app/chatgpt/id6448311069" rel="noopener">앱스토어 ‘앱 내 구입’ 목록</a>을 2026년 11월 28일 KST에 읽은 값입니다.</p>
+<p>목록에는 결제 주기가 적혀 있지 않지만, <a href="https://help.openai.com/en/articles/11989085-what-is-chatgpt-go" rel="noopener">Go 도움말</a>은 연간 결제와 여러 달 선결제는 Go·Plus·Pro 모두 없다고 적어, 29,000원을 월 가격으로 읽었습니다.</p>
+<div class="table-scroll" tabindex="0"><table><thead><tr><th>요금제</th><th>월 표시가(원)</th><th>변화(A)</th></tr></thead><tbody><tr><td>Go</td><td>13,000</td><td>해당 없음</td></tr><tr><td>Plus</td><td>29,000</td><td>아스트라 -<strong>29%</strong> / 솔 -<strong>20%</strong></td></tr><tr><td>Pro 100</td><td>159,000</td><td>같은 비율(가정)</td></tr><tr><td>Pro 200</td><td>299,000</td><td>같은 비율(가정)</td></tr><tr><td>Pro 500</td><td>790,000</td><td>같은 비율(가정)</td></tr></tbody></table></div>
+<p><a href="https://learn.chatgpt.com/docs/pricing" rel="noopener">챗GPT Work·코덱스 요금 문서</a>의 이용 가능 요금제에는 Go가 없고, Go의 코덱스는 GPT-6 루나(Luna)만 적혀 있습니다.</p>
+<p>오픈AI는 다른 모델은 영향이 없다고 밝혔습니다.</p>
+<p>오픈AI가 Go를 영향 대상에서 뺐다고 말한 적은 없으며, 위는 문서에 대상 모델이 없다는 뜻입니다.</p>
+<p>Pro 세 등급은 감소 비율을 같다고 가정한 것이고, 절대량은 <span class="label-unverified">미확인</span>입니다.</p>
+<p>Plus는 숫자가 공개돼 있습니다.</p>
+<p>같은 <a href="https://learn.chatgpt.com/docs/pricing" rel="noopener">요금 문서</a>는 Plus의 5시간당 로컬 메시지 추정을 GPT-6.2 아스트라 6~50회, 솔 17~180회로 적고, GPT-6 아스트라는 5~45회, GPT-6.1 솔은 15~160회로 적습니다.</p>
+<p>이 표가 변경 후 값이라면 6~50회가 곧 현재 한도입니다.</p>
+<p>변경 전 값으로 거꾸로 계산하면(해석 A) 아스트라 약 8~70회, 솔 약 21~225회였습니다.</p>
+<ul><li>Pro는 <a href="https://learn.chatgpt.com/docs/pricing" rel="noopener">요금 문서</a>에 5시간 한도가 없고, <a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" rel="noopener">리셋 도움말</a>에 주간 한도가 있는데, 그 크기는 공개되지 않았습니다.</li><li>Pro 100·500의 Work·Codex 허용량은 <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" rel="noopener">릴리스 노트</a>에 따라 2026년 10월 29일 두 배가 됐습니다. 이번 감소보다 먼저 있었던 일이라 계산에 넣지 않았습니다.</li><li>오픈AI는 영향 대상을 “대부분의 이용자”로 적었습니다. 영향을 받지 않는 이용자가 누구인지는 밝히지 않았습니다.</li></ul>
+<h2 id="보상-리셋은-얼마나-도움이-되나">보상 리셋은 얼마나 도움이 되나?</h2>
+<figure class="shot"><img src="./assets/x-shots/gpt-6-2-usage-limits-2026-11-2.png" alt="아파카리(@aapakari)가 청구 수정과 이월 리셋 1회 지급을 정리한 엑스 게시물 갈무리. 게시물 영상은 저작권 보호를 위해 가렸습니다." width="1102" height="1394" loading="lazy" decoding="async"><figcaption>아파카리(@aapakari) 엑스(X) 게시물 · 게시 2026년 11월 27일 15:30 KST · 갈무리 2026년 11월 28일 13:39 KST. 게시물 영상은 가렸습니다. · <a href="https://x.com/aapakari/status/2126201859186803001" rel="noopener nofollow" target="_blank">원문 보기</a></figcaption></figure>
+<p><strong>이월 리셋 1회는 한 주기 한도를 되돌려 주지만, 줄어든 만큼을 영구히 메우지는 않습니다.</strong> 소티오는 사과의 뜻으로 Go·Plus·Pro·Business 이용자에게 이월 리셋(banked reset) 1회를 넣는다고 적었습니다.</p>
+<p><a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" rel="noopener">코덱스 리셋 도움말</a>은 이런 리셋이 한도를 영구히 늘리지 않는다고 설명합니다.</p>
+<ul><li>되돌리는 한도: Go는 월간, Plus는 5시간·주간, Pro 100·200·500은 주간 한도입니다.</li><li>조건: 이월 리셋을 쓰려면 적용 대상 한도 중 하나가 <strong>80%</strong> 미만으로 남아 있어야 합니다. 데스크톱 앱·웹·코덱스 CLI에서 쓰고, 모바일 앱에서는 못 씁니다.</li><li>만료일: 도움말은 계정에 표시된 만료일 안에 써야 한다고만 적었습니다. 블리핑컴퓨터는 자기 계정에서 한 달 뒤 만료로 보였다고 전했을 뿐이어서 이 글은 일반화하지 않습니다.</li></ul>
+<p>한 주기 한도를 모두 쓴 상태에서 리셋을 쓰면 변경 후 한도 한 주기분이 돌아옵니다.</p>
+<p>해석 A에서 그 양은 변경 전 일의 <strong>71%</strong>(아스트라)·<strong>80%</strong>(솔)이고 주기마다 <strong>29%</strong>p·<strong>20%</strong>p씩 덜 하게 되므로, 리셋 1회는 최대 약 2.5주기(71÷29)·4주기(80÷20)의 감소분을 메웁니다.</p>
+<p>해석 B에서는 1.5주기(60÷40)·3주기(75÷25)입니다.</p>
+<p>쓴 만큼만 복구되고 한 번뿐이어서 실제로는 이보다 적습니다.</p>
+<h2 id="제미나이-클로드-요금제와-비교하면-어떤가">제미나이·클로드 요금제와 비교하면 어떤가?</h2>
+<p><strong>두 서비스는 요금제 배수만 밝히고 횟수는 공개하지 않아, 오픈AI의 6~50회와 직접 비교할 수 없습니다.</strong> 가격은 미국 달러 정가이고, 원화는 2026년 11월 27일 환율(1달러=1,334.9원, <a href="https://api.frankfurter.dev/v1/2026-11-27?base=USD&amp;amp;symbols=KRW" rel="noopener">Frankfurter</a>)로 편집부가 환산한 값이라 세금·앱스토어 가산은 빠져 있습니다.</p>
+<div class="table-scroll" tabindex="0"><table><thead><tr><th>요금제</th><th>월 정가</th><th>한도 표기</th></tr></thead><tbody><tr><td>챗GPT Plus</td><td>20달러</td><td>5시간 횟수표</td></tr><tr><td>챗GPT Pro</td><td>100달러</td><td>주간 한도만</td></tr><tr><td>제미나이 Pro</td><td>19.99달러</td><td>무료의 4배</td></tr><tr><td>제미나이 Ultra</td><td>99.99달러</td><td>Pro의 5배</td></tr><tr><td>클로드 Pro</td><td>20달러</td><td>기준 1배</td></tr><tr><td>클로드 Max</td><td>100달러</td><td>Pro의 5배</td></tr><tr><td>클로드 Ultra</td><td>200달러</td><td>주간 10배</td></tr></tbody></table></div>
+<p>원화 환산은 20달러 약 26,700원, 19.99달러 약 26,700원, 100달러 약 133,500원, 200달러 약 267,000원입니다.</p>
+<p>표의 가격은 각 요금제의 가장 싼 등급입니다.</p>
+<p>챗GPT Pro는 100·200·500달러, 제미나이 Ultra는 99.99달러(Pro의 5배)와 199.99달러(Pro의 20배), 클로드 Ultra는 Pro의 주간 10배이고 인증 계정은 5시간 한도가 없습니다.</p>
+<p>클로드 프로는 연간 결제 때 월 17달러입니다.</p>
+<p>챗GPT 달러 가격은 <a href="https://openai.com/index/introducing-chatgpt-go/" rel="noopener">Go 출시 공지</a>와 <a href="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers" rel="noopener">Pro 도움말</a>이, 나머지는 <a href="https://gemini.google/subscriptions/" rel="noopener">제미나이 구독 페이지</a>, <a href="https://one.google.com/about/google-ai-plans/" rel="noopener">구글 AI 요금제</a>, <a href="https://support.google.com/gemini/answer/16275805?hl=en" rel="noopener">제미나이 앱 한도 도움말</a>, <a href="https://claude.com/pricing" rel="noopener">클로드 요금제 페이지</a>가 근거입니다.</p>
+<p>제미나이 AI 플러스는 4.99달러에 무료의 2배 한도지만 네온은 쓸 수 없고, 네온은 프로 이상에서 씁니다(<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" rel="noopener">구글 발표</a>). 구글은 알림 없이, 앤트로픽은 재량으로 한도를 바꿀 수 있다고 각각 <a href="https://support.google.com/gemini/answer/16275805?hl=en" rel="noopener">제미나이 도움말</a>과 <a href="https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work" rel="noopener">클로드 한도 도움말</a>에 적었습니다.</p>
+<p>챗GPT Plus의 한국 앱스토어 표시가는 29,000원입니다.</p>
+<p>이번에 한도 소모 속도 변경을 책임자가 인정한 곳은 오픈AI뿐입니다.</p>
+<h2 id="현재까지-확인된-내용" class="sec-verified"><span class="label-verified">확인</span> 현재까지 <span class="label-verified">확인된</span> 내용</h2>
+<p>2026년 11월 28일 13~14시대 KST에 다음을 직접 열어 대조했습니다.</p>
+<p>소티오의 엑스 게시물(전문, 공개 페이지), 소티오 직함을 적은 와이어드(2026년 6월 11일)·테크크런치(2026년 8월 25일) 인터뷰, 챗GPT 릴리스 노트, 이월 리셋 도움말, Pro 등급 도움말, Work·코덱스 요금 문서, Go 도움말, 한국 앱스토어 목록, 제미나이·클로드의 가격과 한도 페이지입니다.</p>
+<p>블리핑컴퓨터 보도는 인용문 대조에 썼습니다.</p>
+<p>엑스 게시물 <strong>2건</strong>은 스탯츠와이어(게시 2026년 11월 26일 16:59 KST)와 아파카리(게시 2026년 11월 27일 15:30 KST)입니다.</p>
+<h2 id="아직-확인하지-못한-것" class="sec-unverified"><span class="label-unverified">미확인</span> 아직 확인하지 못한 것</h2>
+<ul><li>‘<strong>40%</strong> 더 빨리’가 해석 A인지 B인지는 <span class="label-unverified">미확인</span>입니다. 요금 문서의 6~50회가 변경 후 값인지도 오픈AI가 밝히지 않았습니다. 이전 세대(5~45회)보다 크다는 점이 변경 후 값이라는 정황일 뿐입니다.</li><li>챗 탭 GPT-6.2에도 이번 정정이 적용되는지는 게시물과 문서에 없어 <span class="label-unverified">미확인</span>입니다.</li><li>Pro·Business의 주간 한도 절대량은 <span class="label-unverified">미확인</span>입니다.</li><li>이월 리셋의 한국 계정 지급 여부와 일반 만료일은 <span class="label-unverified">미확인</span>입니다.</li><li>구글이 네온의 쿼터 소모를 줄였다는 주장은 Tasks 기능 외에는 <span class="label-unverified">미확인</span>입니다.</li><li>앱스토어 목록 자체에는 Plus 29,000원의 결제 주기가 없고, 같은 목록의 ‘ChatGPT Plus 299,000원’ 항목이 무엇인지도 적혀 있지 않습니다.</li><li>제미나이·클로드의 한국 원화 공식 가격은 확인하지 못해 환율로 환산했습니다.</li></ul>
+<h2 id="누가-알렸나">누가 알렸나?</h2>
+<div class="table-scroll" tabindex="0"><table><thead><tr><th>누구</th><th>소개</th><th>역할</th></tr></thead><tbody><tr><td>소티오</td><td>핵심 제품 총괄</td><td>변경 발표</td></tr><tr><td>스탯츠와이어</td><td>프로필, <span class="label-unverified">미확인</span></td><td>숫자 확산</td></tr><tr><td>아파카리</td><td>프로필, <span class="label-unverified">미확인</span></td><td>리셋 정리</td></tr><tr><td>블리핑컴퓨터</td><td>IT 매체</td><td>인용 대조</td></tr></tbody></table></div>
+<p>스탯츠와이어·아파카리의 소개는 프로필 자기소개이며 진위는 <span class="label-unverified">미확인</span>입니다. 소티오의 직함은 위 와이어드·테크크런치 인터뷰에서 확인했습니다.</p>
+<div class="faq-block"><h2 id="자주-묻는-질문">자주 묻는 질문</h2>
+<h3 id="구독료가-그대로인데-왜-사실상-오른-셈인가요">구독료가 그대로인데 왜 사실상 오른 셈인가요?</h3>
+<p>값은 그대로지만 같은 아스트라 작업이 한도를 1.4배(해석 A) 쓰기 때문입니다. 변경 전과 같은 양을 하려면 한도당 값으로 따져 Plus 29,000원이 약 40,600원짜리 한도와 같아집니다. 편집부의 환산이고, 실제 청구액은 아닙니다.</p>
+<h3 id="이미-쓴-사용분까지-소급해서-계산되나요">이미 쓴 사용분까지 소급해서 계산되나요?</h3>
+<p>소급 청구는 없습니다. 이미 쓴 양을 새 기준으로 다시 계산하는지는 소티오 게시물에 없습니다.</p>
+<h3 id="이월-리셋은-어디서-쓰나요">이월 리셋은 어디서 쓰나요?</h3>
+<p>웹은 사용량(Usage) 설정, 데스크톱 앱은 설정의 사용량·결제(Usage &amp; billing)에서 ‘리셋 1개 가능’을 눌러 확인합니다. 코덱스 CLI에서는 /usage로 쓸 수 있습니다.</p>
+<h3 id="Go-요금제를-쓰는데-영향이-있나요">Go 요금제를 쓰는데 영향이 있나요?</h3>
+<p>Go는 아스트라·솔을 쓰지 못해 소모 속도는 그대로이고, 리셋은 월간 한도에 적용됩니다.</p>
+</div>
+<h2 id="참고-자료" class="sec-sources">참고 자료</h2>
+<ul class="source-list"><li><a href="https://x.com/thsottiaux/status/2125784147889393806" rel="noopener">티보 소티오 엑스 게시물(2026-11-26 11:50 KST)</a></li><li><a href="https://x.com/StatsWire/status/2125861866467688620" rel="noopener">스탯츠와이어 엑스 게시물(2026-11-26 16:59 KST)</a></li><li><a href="https://x.com/aapakari/status/2126201859186803001" rel="noopener">아파카리 엑스 게시물(2026-11-27 15:30 KST)</a></li><li><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/" rel="noopener">블리핑컴퓨터: OpenAI warns GPT-6.2 Astra will hit usage limits <strong>40%</strong> faster(2026-11-26)</a></li><li><a href="https://www.wired.com/story/model-behavior-interview-with-openai-codex-lead-tibo-sottiaux/" rel="noopener">와이어드: Meet the OpenAI Engineer Leading ChatGPT’s Biggest Transformation Yet(2026-06-11)</a></li><li><a href="https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/" rel="noopener">테크크런치: An interview with OpenAI head of product Thibault Sottiaux(2026-08-25)</a></li><li><a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" rel="noopener">오픈AI 도움말: ChatGPT 릴리스 노트</a></li><li><a href="https://help.openai.com/en/articles/20001498-how-resets-work-in-codex" rel="noopener">오픈AI 도움말: How resets work in Codex</a></li><li><a href="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers" rel="noopener">오픈AI 도움말: About ChatGPT Pro tiers</a></li><li><a href="https://help.openai.com/en/articles/11989085-what-is-chatgpt-go" rel="noopener">오픈AI 도움말: What is ChatGPT Go?</a></li><li><a href="https://learn.chatgpt.com/docs/pricing" rel="noopener">챗GPT Work·코덱스 요금 문서: Pricing(ChatGPT Learn)</a></li><li><a href="https://openai.com/index/introducing-chatgpt-go/" rel="noopener">오픈AI 공지: ChatGPT Go 전 세계 출시(2026-01-16)</a></li><li><a href="https://apps.apple.com/kr/app/chatgpt/id6448311069" rel="noopener">한국 앱스토어 챗GPT 앱 정보(앱 내 구입 목록)</a></li><li><a href="https://gemini.google/subscriptions/" rel="noopener">구글: 제미나이 구독</a></li><li><a href="https://one.google.com/about/google-ai-plans/" rel="noopener">구글: Google AI 요금제</a></li><li><a href="https://support.google.com/gemini/answer/16275805?hl=en" rel="noopener">구글: 제미나이 앱 한도 도움말</a></li><li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" rel="noopener">구글: Gemini 4 Neon 발표(2026-11-18)</a></li><li><a href="https://claude.com/pricing" rel="noopener">앤트로픽: 클로드 요금제</a></li><li><a href="https://support.claude.com/en/articles/8325606-what-is-the-pro-plan" rel="noopener">앤트로픽: Claude 프로 도움말</a></li><li><a href="https://support.claude.com/en/articles/11049741-what-is-the-max-plan" rel="noopener">앤트로픽: Claude 맥스 도움말</a></li><li><a href="https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work" rel="noopener">앤트로픽: Claude 사용·길이 한도 도움말</a></li><li><a href="https://api.frankfurter.dev/v1/2026-11-27?base=USD&amp;amp;symbols=KRW" rel="noopener">Frankfurter 환율 API(2026-11-27 기준 1달러=1,334.9원)</a></li></ul>
+<h2 id="관련-글">관련 글</h2>
+<ul><li><a href="./article-chatgpt-ads-plans-2026-11.html" rel="noopener">챗GPT 광고 요금제 비교, 광고 피하는 데 드는 월 비용 계산</a></li><li><a href="./article-gemini-4-neon-2026-11.html" rel="noopener">제미나이 4 네온 가격과 성능</a></li><li><a href="./guide-ai.html" rel="noopener">AI·테크 글 추천과 고른 이유</a></li></ul>
+<p>글: 에이전트빅보드 편집부. 이 글은 AI 도구로 자료를 모으고 초안을 쓴 뒤, 편집부가 공식 자료와 하나씩 대조해 검수했습니다. 숫자와 일정은 2026년 11월 28일 KST 기준입니다. <a href="./about.html" rel="noopener">에이전트빅보드 소개와 편집 방식</a></p>
+      <p class="closing-q"><strong>같은 요금으로 쓸 수 있는 양이 줄어든다면, 유지·변경·타사 이동 중 무엇을 고르시겠습니까?</strong></p>
+      <p class="updated"><time datetime="2026-11-28T14:14:00+09:00">마지막 업데이트: 2026-11-28 14:14 KST</time></p>
+      <p class="ai-disclosure">AI 도구로 자료 수집과 초안 작성을 돕고, 편집부가 공식 자료와 대조해 검수했습니다.</p>
+    </div>
+    <section class="article-trust" aria-labelledby="trust-title"><h2 id="trust-title">편집과 검토</h2><dl class="trust-list"><dt>편집</dt><dd><strong>에이전트빅보드 편집부</strong> · 익명으로 운영하는 편집팀입니다. 공식 자료와 원문을 대조해 직접 쓰고, 확인하지 못한 내용은 미확인으로 적습니다. <a href="./about.html">편집 방식</a> · <a href="./criteria.html">선별 기준</a></dd><dt>작성</dt><dd><time datetime="2026-11-28T14:15:00+09:00">2026-11-28 14:15 KST</time></dd><dt>검토일</dt><dd><time datetime="2026-11-28T14:14:00+09:00">2026-11-28 14:14 KST</time></dd><dt>정정 이력</dt><dd><p>정정한 내용이 없습니다.</p></dd><dt>정정 요청</dt><dd>사실과 다른 내용은 <a href="./contact.html">문의</a>로 알려 주시면 확인 후 고치고 이 칸에 기록합니다.</dd></dl></section>
+    </article></main>
+      
+    <aside class="drawer" data-drawer>
+      <h2>내 서랍</h2>
+      <p>담아 둔 사람과 아직 안 읽은 글을 이 기기에서만 모읍니다. 서버로 보내지 않습니다.</p>
+      <a class="btn-block" href="./my.html">서랍 열기</a>
+      <div class="drawer-stats">
+        <span><strong data-saved-count>0</strong>글</span>
+        <span><strong data-unread-count>0</strong>안 읽음</span>
+      </div>
+    </aside>
+    
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="tagline">에이전트빅보드 · 네임드 블로거 글, 고른 이유와 함께</p>
+      <nav>
+        <a href="./about.html">소개</a>
+        <a href="./criteria.html">선정 기준</a>
+        <a href="./guides.html">가이드</a>
+        <a href="./digests.html">오늘 읽을 글</a>
+        <a href="./articles.html">자체 해설</a>
+        <a href="./privacy.html">개인정보</a>
+        <a href="./terms.html">이용약관</a>
+        <a href="./contact.html">문의</a>
+      </nav>
+      <p>공개 페이지에는 제목과 짧은 소개, 원문 링크, 그리고 에이전트빅보드가 직접 쓴 해설만 있습니다. 원문 전문은 올리지 않습니다. 현재 광고는 없으며, 향후 Google 애드센스 광고가 게재될 수 있습니다. 자세한 내용은 <a href="./privacy.html">개인정보처리방침</a>을 봅니다.</p>
+    </div>
+  </footer>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
